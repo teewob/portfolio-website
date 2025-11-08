@@ -1,0 +1,78 @@
+// add index to sections
+jQuery('.hovs-index').appendTo('.sections');
+
+
+
+// vars
+var $navDropdown = jQuery('.nav-dropdown');
+
+// append stuff
+jQuery('.semplice-navbar').find('.navbar-inner').append('<div class="newsletter-sign-up"><a href="/signup" data-font="font_fjrih46ch" target="_blank">Join my newsletter</a></div>');
+jQuery('.overlay-nav').append('<div class="newsletter-sign-up-mobile"><a href="/signup" data-font="font_fjrih46ch" target="_blank">Join my newsletter</a></div>');
+jQuery('.semplice-navbar .container').append(jQuery('.nav-dropdown'));
+jQuery('.nav-dropdown').clone().prependTo('.semplice-footer .container');
+
+// handler
+jQuery(document).on('click', '.hovs-index', function(ev) {
+	ev.preventDefault();
+	jQuery('header').show();
+	gsap.to(jQuery('header'), {
+		opacity: 1,
+		duration: .25,
+		ease: 'expo.out'
+	});
+	if(jQuery($navDropdown).is(':visible')) {
+		navDropdown('hide');
+	} else {
+		navDropdown('show');
+	}
+});
+jQuery(window).on('resize', false, function(ev) {
+	var x = (jQuery('.sections').width() / 2) + 'px';
+	console.log(x);
+	jQuery('.hovs-index').css('translate', x + ' 0px');
+});
+jQuery('body').on('mouseup', false, function(ev) {
+	if (!$navDropdown.is(ev.target) && $navDropdown.has(ev.target).length === 0) {
+		navDropdown('hide');
+	}
+});
+
+// functions
+function navDropdown(visibility) {
+	if(visibility == 'show') {
+		gsap.to(jQuery('.hovs-index'), {
+			opacity: 0,
+			duration: .25,
+			ease: 'expo.out'
+		});
+		jQuery('header').removeClass('dropdown-active').addClass('dropdown-active');
+		jQuery($navDropdown).css('display', 'flex');
+		gsap.to(jQuery(s4.navbar + ' .container'), .5, {
+			height: '410px',
+			ease: Expo.easeOut
+		});
+	} else if(jQuery($navDropdown).is(':visible') && visibility == 'hide') {
+		jQuery('header').removeClass('dropdown-active');
+		gsap.to(jQuery(s4.navbar + ' .container'), .5, {
+			height: 'auto',
+			ease: Expo.easeOut,
+			onComplete: function() {
+				gsap.to(jQuery('.hovs-index'), {
+					opacity: 1,
+					duration: .4,
+					ease: 'expo.out'
+				});
+				gsap.to(jQuery('header'), {
+					opacity: 0,
+					duration: .4,
+					ease: 'expo.out',
+					onComplete: function() {
+						jQuery('header').hide().css('opacity', 0);
+						jQuery($navDropdown).css('display', 'none');
+					}
+				});
+			}
+		});
+	}
+}
