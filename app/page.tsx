@@ -30,7 +30,7 @@ export default function HomePage() {
                 <p className="max-w-2xl text-lg leading-relaxed text-white/70 md:text-xl">
                   Tiara Tenorio is a Chamorro–Filipina photographer, videographer, and visual artist from Guam, now based
                   in Oʻahu, Hawaiʻi. Her multidisciplinary practice explores culture, identity, and the environment
-                  through cinematic storytelling, illustration, and sound.
+                  through cinematic storytelling, illustration, and sound and more.
                 </p>
 
                 <div className="flex flex-col gap-10 md:flex-row md:items-end md:justify-between">
