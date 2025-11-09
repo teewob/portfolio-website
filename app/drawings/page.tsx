@@ -57,7 +57,7 @@ export default function IllustrationsPage() {
         <section className="relative">
           <div className="mx-auto w-full max-w-5xl px-6 py-24 md:py-32">
             <div className="mb-14 space-y-4">
-              <div className="text-sm font-display uppercase tracking-[0.35em] text-white/60">Artifacts archive</div>
+              <div className="text-sm font-display uppercase tracking-[0.35em] text-white/60">Sketch Archive</div>
               <h1 className="font-serif text-[4.5rem] leading-none md:text-[6rem]">Illustrations</h1>
               <Link
                 href="https://instagram.com/worksbytiara"

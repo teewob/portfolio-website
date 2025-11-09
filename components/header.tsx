@@ -11,7 +11,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Visual Stories", href: "/photography", subtitle: "Photography" },
   { name: "Moving Pictures", href: "/film", subtitle: "Film" },
-  { name: "Drawn Worlds", href: "/drawings", subtitle: "Art" },
+  { name: "SKETCH ARCHIVE", href: "/drawings", subtitle: "Art" },
   { name: "Written Word", href: "/essays", subtitle: "Essays" },
   { name: "Sonic Landscapes", href: "/music", subtitle: "Music" },
   { name: "Connect", href: "/contact" },

@@ -104,8 +104,7 @@ export default function HomePage() {
                   </div>
                   <h3 className="mt-4 font-serif text-4xl font-semibold md:text-5xl">Photography</h3>
                   <p className="mt-3 max-w-xl text-sm text-white/85 md:text-base">
-                    Capturing moments through a cinematic lens—exploring light, composition, and the beauty of the
-                    Pacific.
+                    Capturing moments through a cinematic lens—exploring light, composition, and stories that exist within spaces.
                   </p>
                 </div>
               </Link>
@@ -141,7 +140,7 @@ export default function HomePage() {
                     className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.06]"
                   />
                   <div className="absolute inset-x-0 bottom-0 p-8 text-white">
-                    <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/70">Drawn Worlds</div>
+                    <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/70">SKETCH ARCHIVE</div>
                     <h3 className="mt-3 font-serif text-3xl font-semibold">Illustration</h3>
                     <p className="mt-2 text-sm text-white/80">
                       Hand-crafted drawings exploring form, folklore, and expression.
@@ -164,7 +163,7 @@ export default function HomePage() {
                   <ArrowRight className="size-5 transition-transform group-hover:translate-x-1" />
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  Reflections on culture, identity, and environmental stewardship.
+                  Reflections, thoughts, and personal stories.
                 </p>
               </Link>
 
@@ -180,7 +179,7 @@ export default function HomePage() {
                   <ArrowRight className="size-5 transition-transform group-hover:translate-x-1" />
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/70">
-                  Compositions and sound design weaving memory with melody.
+                  Compositions, sound design, and my music.
                 </p>
               </Link>
 
@@ -215,8 +214,8 @@ export default function HomePage() {
                 </h2>
               </div>
               <p className="max-w-xl text-sm leading-relaxed text-white/70">
-                From directing community film programs to leading campaign imagery, each residency and studio role adds a
-                new layer to how I tell Pacific stories.
+                Across my experiences, I have embraced roles that fuses creativity with stewardship—where storytelling, sustainability, 
+                and human connection shape every project I take on.
               </p>
             </div>
 
@@ -287,17 +286,17 @@ export default function HomePage() {
                     project I step into.
                   </p>
                   <p>
-                    At eighteen I moved to Oʻahu to study at UH Mānoa and graduated in 2025 with a B.A. in Cinematic Arts—with
+                    At eighteen, I moved to Oʻahu to study at the University of Hawaii at Mānoa and graduated in 2025 with a Bachelors in Cinematic Arts—with
                     a deeper conviction that film can be stewardship. Documentary and Indigenous storytelling anchor my
                     practice because they honor land, lineage, and community.
                   </p>
                   <p>
                     I’m Chamorro–Filipina. My work is island-rooted—photos and films about people who keep knowledge of ʻāina
-                    and moanā alive. Time spent in sustainability and agroforestry on the Waiʻanae coast reshaped how I frame
+                    and culture alive. Time spent in sustainability roles and agroforestry on the Waiʻanae coast reshaped how I frame
                     light, pace, and gesture.
                   </p>
                   <p>
-                    Today I live on Oʻahu carrying Saipan’s sky, Guåhan’s shore, and the voices that raised me. If my work does
+                    Today I live on Oʻahu inspired by Hawai'i whilst carrying the voices that raised me from Guam and Saipan. If my work does
                     its job, it helps people recognize themselves, honor their elders, and care for land. If you want to
                     collaborate on film, photo, or community documentation—let’s take our time together.
                   </p>

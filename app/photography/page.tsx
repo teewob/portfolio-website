@@ -15,14 +15,16 @@ export default function PhotographyPage() {
       <main className="flex-1">
         <section className="relative">
           <div className="max-w-viewport mx-auto px-6 py-24 md:py-28">
-            <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-              <div>
-                <h1 className="font-serif text-4xl font-semibold leading-tight md:text-5xl">Photography</h1>
-                <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground/80">
-                  Immersive photo collections exploring island life, portraiture, and environmental storytelling.
-                </p>
-              </div>
-              <div className="text-sm font-display uppercase tracking-[0.3em] text-muted-foreground/70">@tiara.archive</div>
+            <div className="mb-14 space-y-4">
+              <div className="text-sm font-display uppercase tracking-[0.35em] text-black/60">Visual Stories</div>
+              <h1 className="font-serif text-[4.5rem] leading-none text-black md:text-[6rem]">Photography</h1>
+              <Link
+                href="https://instagram.com/filmsfromtiara"
+                target="_blank"
+                className="text-xs font-display uppercase tracking-[0.3em] text-muted-foreground/70 transition hover:text-black"
+              >
+                @filmsfromtiara
+              </Link>
             </div>
 
             <div className="mt-16 flex flex-col gap-12">
