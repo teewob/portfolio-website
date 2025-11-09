@@ -58,15 +58,15 @@ export default function HomePage() {
               </div>
 
               <div className="relative">
-                <div className="grain-mask rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-[0_35px_80px_rgba(0,0,0,0.6)]">
-                  <div className="overflow-hidden rounded-[24px] border border-white/20 bg-white/10">
+                <div className="grain-mask  p-10 shadow-[0_35px_90px_rgba(0,0,0,0.65)]">
+                <div className="mx-auto aspect-square w-[60vw] max-w-[500px]">
                     <img
-                      src="/placeholder-user.jpg"
+                      src="/homepage/tiara-portrait.jpg"
                       alt="Tiara Tenorio portrait"
                       className="h-full w-full object-cover object-center"
                     />
                   </div>
-                  <h2 className="mt-6 font-serif text-3xl font-semibold leading-tight text-white">Tiara Tenorio</h2>
+                
                 </div>
               </div>
             </div>
@@ -260,24 +260,22 @@ export default function HomePage() {
         <section id="about" className="relative bg-gradient-to-b from-black via-[#05050a] to-[#0d0f1d] text-white">
           <div className="mx-auto w-full max-w-6xl px-6 py-24 md:px-8 md:py-36">
             <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
-              <div className="relative overflow-hidden rounded-[36px] border border-white/15 bg-white/5 p-3">
-                <div className="overflow-hidden rounded-[28px]">
+              <div className="">
+                <div>
                   <img
-                    src="/tiara-waikiki.jpg"
+                    src="/homepage/tiara-oceanside.jpg"
                     alt="Tiara Tenorio sitting oceanside at dusk"
-                    className="h-[420px] w-full object-cover"
+                    className="w-full h-[80vh] object-contain"
                   />
                 </div>
-                <div className="absolute bottom-6 left-6 rounded-full border border-white/20 bg-black/60 px-4 py-1 text-xs font-display uppercase tracking-[0.35em] text-white/70 backdrop-blur">
-                  Oʻahu · Hawaiʻi
-                </div>
+                
               </div>
 
               <div className="space-y-8">
                 <div className="space-y-3">
                   <div className="text-[11px] font-display uppercase tracking-[0.45em] text-white/50">About</div>
                   <h2 className="font-serif text-5xl leading-[1.1] md:text-[64px]">Na’an-hu si Tiara Tenorio</h2>
-                  <p className="text-sm uppercase tracking-[0.35em] text-white/60">“My name is Tiara.”</p>
+                  <p className="text-sm uppercase tracking-[0.35em] text-white/60">“My name is Tiara”</p>
                 </div>
                 <div className="space-y-6 text-lg leading-relaxed text-white/80">
                   <p>

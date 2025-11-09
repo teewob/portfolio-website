@@ -5,7 +5,7 @@ import Link from "next/link"
 
 import { QuoteCTA } from "@/components/quote-cta"
 import { contactCta } from "@/lib/pages/contact"
-import { photoCollections } from "@/lib/pages/photography"
+import { photoCollections, photoGalleries } from "@/lib/pages/photography"
 
 export default function PhotographyPage() {
   return (
@@ -63,14 +63,61 @@ export default function PhotographyPage() {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
 
+        <section className="relative">
+          <div className="max-w-viewport mx-auto px-6 pb-24">
+            <div className="rounded-[42px] bg-black px-8 py-16 text-white md:px-12 md:py-20">
+              <div className="space-y-4">
+                <div className="text-sm font-display uppercase tracking-[0.35em] text-white/60">Gallery</div>
+                <h2 className="font-serif text-[3.5rem] leading-none md:text-[4.5rem]">Loose Rolls</h2>
+                <p className="text-sm text-white/70">
+               
+                </p>
+              </div>
+
+              <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {photoGalleries.map((gallery) => (
+                  <Link
+                    key={gallery.id}
+                    href={`/photography/gallery/${gallery.slug}`}
+                    className="group flex flex-col gap-4"
+                  >
+                    <div className="relative aspect-square overflow-hidden rounded-[28px] border border-white/15 bg-white/5">
+                      <img
+                        src={gallery.cover}
+                        alt={gallery.title}
+                        className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                      <div className="absolute inset-x-0 bottom-0 p-6">
+                        <p className="text-xs font-display uppercase tracking-[0.35em] text-white/70">{gallery.subtitle}</p>
+                        <p className="font-serif text-2xl text-white">{gallery.title}</p>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      {gallery.preview.map((preview) => (
+                        <div
+                          key={`${gallery.id}-${preview}`}
+                          className="h-16 flex-1 overflow-hidden rounded-[12px] border border-white/15"
+                        >
+                          <img src={preview} alt="Gallery preview" className="h-full w-full object-cover" />
+                        </div>
+                      ))}
+                    </div>
+                  </Link>
+                ))}
+              </div>
+
+            </div>
             <QuoteCTA
               tone="light"
               quote={contactCta.quote}
               body={[contactCta.email]}
               links={contactCta.socials}
               primary={{ label: "Contact", href: "/contact" }}
-              className="mt-16"
+              className="mt-12"
             />
           </div>
         </section>

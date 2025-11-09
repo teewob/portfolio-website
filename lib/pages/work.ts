@@ -32,14 +32,14 @@ export const workRoles: WorkRole[] = [
     intro:
       "Grew the farm's digital presence with daily vertical stories that layered wellness, regenerative farming, and chef-led experiences.",
     summary:
-      "Partnered with the internal marketing team to translate greenhouse innovations into cinematic, vertical-first content. Delivered a cadence of reels, paid traffic hooks, and campaign imagery that kept Sensei’s wellness ecosystem top of mind for visitors across Mākena and Ko Olina.",
+      "Sensei Farms is an indoor hydroponic farming company dedicated to strengthening local food security by growing fresh produce year-round. As part of the in-house marketing team, I helped translate the farm’s mission and innovation into visual storytelling—producing reels, photography, and campaigns that highlighted sustainability, community impact, and Hawai‘i-grown wellness across digital platforms.",
     heroImage: "/film-videography-.jpg",
     cardImage: "/cinematic-landscape-photography-hawaii-ocean.jpg",
     contributions: [
-      "Concepted and produced 140+ vertical reels showcasing hydroponic harvests, chef collaborations, and guest immersion.",
-      "Maintained a two-week content calendar that balanced education, lifestyle, and conversion-focused storytelling.",
-      "Developed lightweight motion templates in After Effects to keep captions and data overlays brand-consistent.",
-      "Collaborated with culinary and agriculture teams to capture process footage within active grow rooms.",
+      "Produced 100+ short-form videos and photo sets showcasing Sensei’s farm-to-table process, chef collaborations, and greenhouse innovation.",
+      "Curated and maintained the Instagram grid and content calendar to grow engagement and align with brand campaigns..",
+      "Conducted quarterly shoots across Lāna‘i—capturing interviews, portraits, and product imagery.",
+      "Designed branded motion graphics and visuals while analyzing performance metrics to refine creative direction.",
     ],
     services: ["Content Strategy", "Vertical Video", "Campaign Photography", "On-site Direction"],
     gallery: [
@@ -86,7 +86,7 @@ export const workRoles: WorkRole[] = [
         aspect: "portrait",
       },
     ],
-    location: "Ko Olina, HI",
+    location: "Lānaʻi, HI",
   },
   {
     slug: "pacific-lens-collective",
