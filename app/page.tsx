@@ -262,17 +262,14 @@ export default function HomePage() {
 
         <section id="about" className="relative bg-gradient-to-b from-black via-[#05050a] to-[#0d0f1d] text-white">
           <div className="mx-auto w-full max-w-6xl px-6 py-24 md:px-8 md:py-36">
-            <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center"
-            />
-            </div>
-                <div>
-                  <img
-                    src="/homepage/tiara-oceanside.jpg"
-                    alt="Tiara Tenorio sitting oceanside at dusk"
-                    className="w-full h-[80vh] object-cover"
-                  />
-                </div>
-              
+            <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
+              <div>
+                <img
+                  src="/homepage/tiara-oceanside.jpg"
+                  alt="Tiara Tenorio sitting oceanside at dusk"
+                  className="h-[80vh] w-full object-cover"
+                />
+              </div>
 
               <div className="space-y-8">
                 <div className="space-y-3">
