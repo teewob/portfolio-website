@@ -44,7 +44,15 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
               <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-white/80">{collection.description}</p>
             </div>
 
-            {collection.story ? <PhotoEssay story={collection.story} /> : <PhotoGallery items={collection.gallery} />}
+            {collection.story ? (
+              <PhotoEssay story={collection.story} />
+            ) : (
+              <PhotoGallery
+                items={collection.gallery}
+                layout={collection.galleryLayout}
+                showCaptions={collection.showGalleryCaptions}
+              />
+            )}
 
             <div className="mt-16 text-center text-xs font-display uppercase tracking-[0.35em] text-white/60">
               <Link href="/photography" className="transition hover:text-white">

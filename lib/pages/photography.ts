@@ -25,6 +25,8 @@ type PhotoCollection = {
     caption: string
   }[]
   story?: PhotoStory
+  galleryLayout?: "grid" | "masonry"
+  showGalleryCaptions?: boolean
 }
 
 export const photoCollections: PhotoCollection[] = [
@@ -285,21 +287,227 @@ export const photoCollections: PhotoCollection[] = [
     category: "Documentary Photography",
     description:
       "A street-level portrait of Honolulu’s pulse, the working class, wanderers, and the unseen the geometry of concrete and sun.  ",
-    cover: "/film-production-videography-cinematic-storytelling.jpg",
+    cover: "/honolulu%20grit/DSCF6469.JPG",
     gallery: [
       {
-        src: "/film-production-videography-cinematic-storytelling.jpg",
-        caption: "Hands preparing ulu saplings for planting rows.",
+        src: "/honolulu%20grit/20220911-DSCF2021.jpg",
+        caption: "",
       },
       {
-        src: "/film-production-videography-cinematic.jpg",
-        caption: "Pano view of the mala and irrigation lines at dawn.",
+        src: "/honolulu%20grit/20220911-DSCF2023.jpg",
+        caption: "",
       },
       {
-        src: "/placeholder.jpg",
-        caption: "Harvest day notes taped to the tool shed wall.",
+        src: "/honolulu%20grit/20220912-IMG_5704.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/20220912-IMG_5744.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/20220912-IMG_5763.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/20220920-DSCF2160.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/20220920-DSCF2215.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/20220920-DSCF2222.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/20220920-DSCF2233.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/20220920-DSCF2242.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/20220920-DSCF2243.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/AgJan22-48.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/AgJan22-52.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/AgJan22-88.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/DSCF0395.JPG",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/DSCF0828.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/DSCF0857.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/DSCF2381.JPG",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/DSCF6469.JPG",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/DSCF6503.JPG",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/DSCF7486.JPG",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/DSCF8914.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/IMG_3275.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/IMG_3276.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/IMG_3277.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/IMG_3278.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/IMG_3281.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/IMG_3282.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/IMG_3283.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/IMG_3285.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/IMG_3286.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio-16.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio-22.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio-23.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio-28.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio-3.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio-4.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio-8.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio-85.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio-9.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio11-22-30.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio11-22-8.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio11-22-84.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio11-25-22-40.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio_1%203.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio_2%203.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio_3%203.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio_4.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio_5%203.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio_5.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio_6%203.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio_6.jpg",
+        caption: "",
+      },
+      {
+        src: "/honolulu%20grit/Tenorio_7%203.jpg",
+        caption: "",
       },
     ],
+    galleryLayout: "masonry",
+    showGalleryCaptions: false,
   },
 ]
 

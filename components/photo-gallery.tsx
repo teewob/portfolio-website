@@ -14,11 +14,14 @@ type GalleryItem = {
 
 type PhotoGalleryProps = {
   items: GalleryItem[]
+  layout?: "grid" | "masonry"
+  showCaptions?: boolean
 }
 
-export function PhotoGallery({ items }: PhotoGalleryProps) {
+export function PhotoGallery({ items, layout = "grid", showCaptions = true }: PhotoGalleryProps) {
   const [open, setOpen] = useState(false)
   const [index, setIndex] = useState(0)
+  const isMasonry = layout === "masonry"
 
   const handleOpen = (idx: number) => {
     setIndex(idx)
@@ -37,17 +40,46 @@ export function PhotoGallery({ items }: PhotoGalleryProps) {
 
   return (
     <>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        className={cn(
+          isMasonry
+            ? "columns-1 gap-4 sm:columns-2 lg:columns-3 [column-fill:balance]"
+            : "grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        )}
+      >
         {items.map((item, idx) => (
           <button
             key={item.src}
-            className="group flex flex-col gap-3 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+            className={cn(
+              "group text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40",
+              isMasonry ? "mb-6 block w-full" : "flex flex-col gap-3"
+            )}
             onClick={() => handleOpen(idx)}
           >
-            <div className="relative overflow-hidden rounded-[18px] border border-white/10 bg-white/5">
-              <Image src={item.src} alt={item.caption} width={600} height={800} className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]" />
+            <div
+              className={cn(
+                "relative overflow-hidden rounded-[18px] border border-white/10 bg-white/5",
+                isMasonry && "bg-black/60"
+              )}
+            >
+              {isMasonry ? (
+                <img
+                  src={item.src}
+                  alt={item.caption || `Gallery image ${idx + 1}`}
+                  className="h-auto w-full object-contain"
+                  loading="lazy"
+                />
+              ) : (
+                <Image
+                  src={item.src}
+                  alt={item.caption || `Gallery image ${idx + 1}`}
+                  width={600}
+                  height={800}
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
+                />
+              )}
             </div>
-            <p className="text-xs uppercase tracking-[0.35em] text-white/60">{item.caption}</p>
+            {showCaptions && <p className="mt-3 text-xs uppercase tracking-[0.35em] text-white/60">{item.caption}</p>}
           </button>
         ))}
       </div>
