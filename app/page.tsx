@@ -6,6 +6,7 @@ import Link from "next/link"
 import { ArrowRight, Camera, Film, Palette, FileText, Music } from "lucide-react"
 
 import { QuoteCTA } from "@/components/quote-cta"
+import { PhotographyShowcase } from "@/components/photography-showcase"
 import { contactCta } from "@/lib/pages/contact"
 import { experiences } from "@/lib/pages/home"
 
@@ -86,48 +87,33 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="mt-16 grid gap-8 lg:grid-cols-[1.2fr_0.9fr]">
+            <div className="mt-16 space-y-8">
               <Link
-                href="/photography"
-                className="group relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5"
+                href="/film"
+                className="group relative block overflow-hidden rounded-[36px] border border-white/10 bg-white/5"
               >
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-90" />
-                <img
-                  src="/cinematic-landscape-photography-hawaii-ocean-sunse.jpg"
-                  alt="Photography work"
-                  className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.05]"
-                />
-                <div className="absolute inset-x-0 bottom-0 p-10 text-white">
-                  <div className="flex items-center gap-3 text-[11px] font-display uppercase tracking-[0.35em] text-white/70">
-                    <span className="inline-block size-2 rounded-full bg-white/80" />
-                    Visual Stories
-                  </div>
-                  <h3 className="mt-4 font-serif text-4xl font-semibold md:text-5xl">Photography</h3>
-                  <p className="mt-3 max-w-xl text-sm text-white/85 md:text-base">
-                    Capturing moments through a cinematic lens—exploring light, composition, and stories that exist within spaces.
-                  </p>
-                </div>
-              </Link>
-
-              <div className="grid gap-8">
-                <Link
-                  href="/film"
-                  className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5"
-                >
+                <div className="relative aspect-[16/9] w-full overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-80 transition-all duration-500 group-hover:opacity-90" />
                   <img
                     src="/film-production-videography-cinematic-storytelling.jpg"
                     alt="Film work"
-                    className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.06]"
+                    className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]"
                   />
-                  <div className="absolute inset-x-0 bottom-0 p-8 text-white">
-                    <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/70">Moving Pictures</div>
-                    <h3 className="mt-3 font-serif text-3xl font-semibold">Film</h3>
-                    <p className="mt-2 text-sm text-white/80">
-                      Visual storytelling through motion and narrative direction.
+                  <div className="absolute inset-x-0 bottom-0 p-10 text-white">
+                    <div className="flex items-center gap-3 text-[11px] font-display uppercase tracking-[0.35em] text-white/70">
+                      <span className="inline-block size-2 rounded-full bg-white/80" />
+                      Moving Pictures
+                    </div>
+                    <h3 className="mt-4 font-serif text-[40px] font-semibold md:text-[52px]">Film</h3>
+                    <p className="mt-3 max-w-2xl text-sm text-white/85 md:text-base">
+                      
                     </p>
                   </div>
-                </Link>
+                </div>
+              </Link>
+
+              <div className="grid gap-8 lg:grid-cols-2">
+                <PhotographyShowcase />
 
                 <Link
                   href="/drawings"
@@ -140,10 +126,13 @@ export default function HomePage() {
                     className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.06]"
                   />
                   <div className="absolute inset-x-0 bottom-0 p-8 text-white">
-                    <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/70">SKETCH ARCHIVE</div>
+                    <div className="flex items-center gap-3 text-[11px] font-display uppercase tracking-[0.35em] text-white/70">
+                      <span className="inline-block size-2 rounded-full bg-white/80" />
+                      Sketch Archive
+                    </div>
                     <h3 className="mt-3 font-serif text-3xl font-semibold">Illustration</h3>
                     <p className="mt-2 text-sm text-white/80">
-                      Hand-crafted drawings and motion graphics art.
+                      
                     </p>
                   </div>
                 </Link>
@@ -155,7 +144,8 @@ export default function HomePage() {
                 href="/essays"
                 className="group relative overflow-hidden rounded-[26px] border border-white/10 bg-white/5 p-8 transition-transform duration-300 hover:-translate-y-1"
               >
-                <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/60">
+                <div className="flex items-center gap-3 text-[11px] font-display uppercase tracking-[0.35em] text-white/60">
+                  <span className="inline-block size-2 rounded-full bg-white/70" />
                   Written Word
                 </div>
                 <h3 className="mt-5 flex items-center gap-3 font-serif text-2xl font-semibold text-white">
@@ -171,7 +161,8 @@ export default function HomePage() {
                 href="/music"
                 className="group relative overflow-hidden rounded-[26px] border border-white/10 bg-white/5 p-8 transition-transform duration-300 hover:-translate-y-1"
               >
-                <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/60">
+                <div className="flex items-center gap-3 text-[11px] font-display uppercase tracking-[0.35em] text-white/60">
+                  <span className="inline-block size-2 rounded-full bg-white/70" />
                   Sonic Landscapes
                 </div>
                 <h3 className="mt-5 flex items-center gap-3 font-serif text-2xl font-semibold text-white">
@@ -188,7 +179,7 @@ export default function HomePage() {
                 className="group relative flex h-full flex-col justify-between overflow-hidden rounded-[26px] border border-white/10 bg-white/90 p-8 text-black transition-transform duration-300 hover:-translate-y-1"
               >
                 <div className="text-[11px] font-display uppercase tracking-[0.35em] text-primary-foreground/70">
-                  Collaborations
+                  
                 </div>
                 <div>
                   <h3 className="mt-5 font-serif text-2xl font-semibold">Let's Connect</h3>
