@@ -13,7 +13,7 @@ export type WorkRole = {
   company: string
   title: string
   tenure: string
-  intro: string
+  intro?: string
   summary: string
   heroImage: string
   cardImage: string
@@ -29,8 +29,7 @@ export const workRoles: WorkRole[] = [
     company: "Sensei Farms",
     title: "Social Media Content Creator",
     tenure: "Dec 2021 — May 2024",
-    intro:
-      "Grew the farm's digital presence with daily vertical stories that layered wellness, regenerative farming, and chef-led experiences.",
+   
     summary:
       "Sensei Farms is an indoor hydroponic farming company dedicated to strengthening local food security by growing fresh produce year-round. As part of the in-house marketing team, I helped translate the farm’s mission and innovation into visual storytelling—producing reels, photography, and campaigns that highlighted sustainability, community impact, and Hawai‘i-grown wellness across digital platforms.",
     heroImage: "/film-videography-.jpg",
@@ -89,14 +88,13 @@ export const workRoles: WorkRole[] = [
     location: "Lānaʻi, HI",
   },
   {
-    slug: "pacific-lens-collective",
-    company: "Pacific Lens Collective",
-    title: "Lead Photographer",
-    tenure: "2023 — Present",
-    intro:
-      "Directing editorial photo essays and short-form documentaries for cultural institutions in Hawaiʻi.",
+    slug: "hans-hedemann-surf-school",
+    company: "Hans Hedemann Surf School",
+    title: "Shop Photographer & Videographer",
+    tenure: "Jan 2025 — Present",
+
     summary:
-      "Lead creative on documentary-style commissions amplifying Pacific artists and organizers. I guide shoots from pre-production through delivery, building visual systems that honor community direction.",
+      "Located at the most populated destination in Waikīkī, Hans Hedemann Surf School is one of Hawaiʻi’s most established surf institutions—founded by professional surfer Hans Hedemann to share the joy and discipline of surfing with visitors from around the world. Within this setting, I support both lesson operations and creative media, guiding students through ocean safety and hands-on instruction while documenting their surf experiences through aerial and DSLR footage.",
     heroImage: "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
     cardImage: "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
     contributions: [
@@ -104,7 +102,7 @@ export const workRoles: WorkRole[] = [
       "Light, shoot, and edit multi-day field assignments with a hybrid cinema + still workflow.",
       "Deliver cohesive asset libraries (photo + motion) tailored to partner press kits.",
     ],
-    services: ["Editorial Direction", "Documentary Photography", "Field Production"],
+    services: ["Ocean Instruction", " Aerial Media Production", "Client Experience Management"],
     gallery: [
       {
         id: "plc-photo-01",
