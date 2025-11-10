@@ -224,21 +224,67 @@ export const photoCollections: PhotoCollection[] = [
     category: "Photo Essay",
     description:
       "An exploration of cat gangs and rogues of Honolulu, revealing how these creatures have formed communities, navigate survial, and adapt to the city's edges. ",
-    cover: "/artistic-sketches-drawings-portraits-illustration.jpg",
+    cover: "/the%20strays/Tenorio-1.jpg",
     gallery: [
       {
-        src: "/artistic-sketches-drawings-portraits-illustration.jpg",
-        caption: "Mother and daughter preparing woven lei in Kalihi.",
+        src: "/the%20strays/Tenorio-1.jpg",
+        caption: "The Strays · Frame 01",
       },
       {
-        src: "/artistic-sketches-drawings-portraits.jpg",
-        caption: "Studio portrait of a Chamorro tattoo artist in Honolulu.",
+        src: "/the%20strays/Tenorio-5.jpg",
+        caption: "The Strays · Frame 05",
       },
       {
-        src: "/placeholder-user.jpg",
-        caption: "Candid laughter after a long interview session.",
+        src: "/the%20strays/Tenorio-12.jpg",
+        caption: "The Strays · Frame 12",
       },
     ],
+    story: {
+      intro: [
+        "",
+      ],
+      conclusion: [
+      
+      ],
+      sections: [
+        {
+          id: "manoa-rogues",
+          heading: "“Rogues” of Mānoa",
+          body: [
+            "The Mānoa Rogues are a loose-knit society of cats who band together when it suits them, then scatter across the valley’s maze of cul-de-sacs. They haunt carports, rooflines, and back decks, always close enough to the people who unknowingly supply their kingdoms.",
+            "Though timid and wary, they are cunning and deeply resourceful—slipping between yards at dusk, sharing intel on which porches leave food out, and vanishing at the first sign of rain.",
+          ],
+          images: [
+            "/the%20strays/Tenorio-1.jpg",
+            "/the%20strays/Tenorio-2.jpg",
+            "/the%20strays/Tenorio-3.jpg",
+            "/the%20strays/Tenorio-4.jpg",
+            "/the%20strays/Tenorio-5.jpg",
+            "/the%20strays/Tenorio-6.jpg",
+            "/the%20strays/Tenorio-7.jpg",
+            "/the%20strays/Tenorio-8.jpg",
+            "/the%20strays/Tenorio-9.jpg",
+          ],
+        },
+        {
+          id: "diamond-head-dust-bowlers",
+          heading: "Diamond Head “Dust Bowlers”",
+          body: [
+            "The Dust Bowlers of Diamond Head are a hardy bunch living along the crater’s dry ridges. Dusty paws, sun-bleached coats, and a willingness to greet hikers have made them minor legends.",
+            "They are friendlier than their Mānoa cousins, yet they operate with the same tactical awareness—carving out lookout points, sharing scraps, and always recruiting new drifters who can stomach the midday heat.",
+          ],
+          images: [
+            "/the%20strays/Tenorio-10.jpg",
+            "/the%20strays/Tenorio-11.jpg",
+            "/the%20strays/Tenorio-12.jpg",
+            "/the%20strays/Tenorio-13.jpg",
+            "/the%20strays/Tenorio-14.jpg",
+            "/the%20strays/Tenorio-15.jpg",
+            "/the%20strays/Tenorio-16.jpg",
+          ],
+        },
+      ],
+    },
   },
   {
     id: 3,

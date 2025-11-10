@@ -108,26 +108,34 @@ export function PhotoEssay({ story }: PhotoEssayProps) {
       </div>
 
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-6xl border-none bg-black/95 p-0 text-white" showCloseButton={false}>
-          <div className="relative flex flex-col">
-            <button className="absolute right-4 top-4 rounded-full border border-white/30 bg-black/60 p-2" onClick={() => setOpen(false)}>
-              <X className="size-4" />
-            </button>
-            <div className="relative h-[85vh] w-full overflow-hidden">
+        <DialogContent
+          className="flex h-screen w-screen max-w-none translate-x-0 translate-y-0 items-center justify-center border-none bg-black/95 p-0 text-white shadow-none sm:!max-w-none"
+          showCloseButton={false}
+          style={{ top: 0, left: 0 }}
+        >
+          <button className="absolute right-6 top-6 rounded-full border border-white/40 bg-black/70 p-3" onClick={() => setOpen(false)} aria-label="Close gallery">
+            <X className="size-4" />
+          </button>
+          <div className="relative flex h-full w-full max-w-5xl flex-col">
+            <div className="relative flex-1">
               {currentImage && (
-                <img src={currentImage.src} alt={currentImage.heading ?? "Photo essay frame"} className="h-full w-full object-contain" />
+                <div className="absolute inset-0 flex items-center justify-center p-6">
+                  <img src={currentImage.src} alt={currentImage.heading ?? "Photo essay frame"} className="h-full w-full object-contain" />
+                </div>
               )}
-              <div className="absolute inset-x-0 top-1/2 flex -translate-y-1/2 justify-between px-4">
-                <button className="rounded-full border border-white/30 bg-black/70 p-3" onClick={handlePrev} aria-label="Previous image">
-                  <ArrowLeft className="size-5" />
-                </button>
-                <button className="rounded-full border border-white/30 bg-black/70 p-3" onClick={handleNext} aria-label="Next image">
-                  <ArrowRight className="size-5" />
-                </button>
-              </div>
-              <div className="absolute bottom-6 left-6 text-xs font-display uppercase tracking-[0.35em] text-white/70">
-                {activeIndex + 1} / {images.length}
-              </div>
+            </div>
+            <div className="absolute inset-y-0 left-8 flex items-center">
+              <button className="rounded-full border border-white/40 bg-black/70 p-4" onClick={handlePrev} aria-label="Previous image">
+                <ArrowLeft className="size-7" />
+              </button>
+            </div>
+            <div className="absolute inset-y-0 right-8 flex items-center">
+              <button className="rounded-full border border-white/40 bg-black/70 p-4" onClick={handleNext} aria-label="Next image">
+                <ArrowRight className="size-7" />
+              </button>
+            </div>
+            <div className="pointer-events-none absolute bottom-12 left-0 right-0 text-center text-xs font-display uppercase tracking-[0.4em] text-white/70">
+              {activeIndex + 1} / {images.length}
             </div>
           </div>
         </DialogContent>
