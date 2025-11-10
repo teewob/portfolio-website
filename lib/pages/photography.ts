@@ -91,9 +91,9 @@ export const photoCollections: PhotoCollection[] = [
       sections: [
         {
           id: "queen-kapiolani-valet",
-          heading: "Front Desk Frequencies",
+          heading: "Bell Man",
           body: [
-            "In front of the Queen Kapi‘olani Hotel stands a young Filipino man—grinning with ease, a ukulele in hand. He works as a valet, one of many Filipinos who make up the unseen backbone of Hawai‘i’s bustling service industry. Born and raised on O‘ahu, his story reflects the complexity of identity formation in Hawai‘i: rooted in Filipino ancestry, but shaped by the rhythms and spirit of the islands.",
+            "In front of the Queen Kapi‘olani Hotel stands a young Filipino man—grinning with ease, a ukulele in hand. He works as a bellman, one of many Filipinos who make up the unseen backbone of Hawai‘i’s bustling service industry. Born and raised on O‘ahu, his story reflects the complexity of identity formation in Hawai‘i: rooted in Filipino ancestry, but shaped by the rhythms and spirit of the islands.",
             "Filipinos in Hawai‘i do not simply replicate Philippine traditions; they also adopt and reshape local ones, finding belonging in a shared “local” ethos. The ukulele, once a symbol of Hawaiian cultural pride, becomes part of a working-class Filipino rhythm in Honolulu’s hotel economy.",
           ],
           images: [
@@ -128,19 +128,6 @@ export const photoCollections: PhotoCollection[] = [
           ],
         },
         {
-          id: "street-fragments",
-          heading: "Side Street Fragments",
-          body: [
-            "Between interviews I kept shooting—quick frames of sidewalks, traffic pauses, and onlookers who reminded me of family back home. These fragments are breaths between the longer conversations, proof that even the in-between moments hold story.",
-          ],
-          images: [
-            "/filipinos%20in%20hawaii/fih09.jpg",
-            "/filipinos%20in%20hawaii/fih10.jpg",
-            "/filipinos%20in%20hawaii/fih12.jpg",
-          ],
-          layout: "stacked",
-        },
-        {
           id: "lei-shopkeepers",
           heading: "Altars Of Everyday",
           body: [
@@ -150,20 +137,24 @@ export const photoCollections: PhotoCollection[] = [
           ],
           images: [
             "/filipinos%20in%20hawaii/fih08.jpg",
+            "/filipinos%20in%20hawaii/fih09.jpg",
+            "/filipinos%20in%20hawaii/fih10.jpg",
             "/filipinos%20in%20hawaii/fih11.jpg",
             "/filipinos%20in%20hawaii/fih07.jpg",
+        ,
           ],
         },
         {
           id: "night-windows",
-          heading: "Night Windows",
+          heading: "Rizal Square",
           body: [
-            "When the streets emptied, neon and sodium vapor lights carved new textures into the city. These frames track the glow, the tire tracks, and the small gestures that keep the city humming long after the sun disappears.",
+            "At Rizal Square, Filipinos gathering to play cards and talk story beneath the gaze of José Rizal—a quiet ritual of kinship and routine."
           ],
           images: [
             "/filipinos%20in%20hawaii/fih13.jpg",
             "/filipinos%20in%20hawaii/fih14.jpg",
-            "/filipinos%20in%20hawaii/DSCF8808.jpg",
+            "/filipinos%20in%20hawaii/fih12.jpg"
+            ,
           ],
           layout: "stacked",
         },
