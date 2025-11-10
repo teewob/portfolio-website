@@ -17,9 +17,9 @@ export default function FilmPage() {
           <div className="max-w-viewport mx-auto grid gap-10 px-6 py-24 md:grid-cols-[1.2fr_0.8fr] md:py-32">
             <div className="space-y-6">
               <div className="text-[12px] font-display uppercase tracking-superwide text-white/60">Moving Pictures</div>
-              <h1 className="font-serif text-5xl leading-tight md:text-[4.5rem]">Cinematic essays rooted in Pacific memory.</h1>
+              <h1 className="font-serif text-5xl leading-tight md:text-[6.5rem]">Cinema</h1>
               <p className="text-base leading-relaxed text-white/75 md:text-lg">
-                Each film is treated like an archival document: ceremony, protest, foodways, and futurist imagination are edited with tenderness and accountability to the communities who invite me in.
+                I film to remember what the world feels like when it’s honest. My process blends documentary practice with personal memory, edited with tenderness and accountability to the communities and stories that trust me to hold them.
               </p>
               <div className="flex flex-wrap gap-3 text-[11px] font-display uppercase tracking-[0.3em] text-white/60">
                 <span className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-1">
@@ -46,13 +46,7 @@ export default function FilmPage() {
                     </li>
                   ))}
               </ul>
-              <Link
-                href="/contact"
-                className="group mt-6 inline-flex items-center gap-3 text-xs font-display uppercase tracking-[0.35em] text-white transition hover:text-white/80"
-              >
-                Request screener
-                <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-              </Link>
+              
             </div>
           </div>
         </section>
@@ -98,12 +92,7 @@ export default function FilmPage() {
                       About film
                       <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                     </Link>
-                    <Link
-                      href="/contact"
-                      className="inline-flex items-center gap-3 rounded-full border border-white/10 px-6 py-3 text-[11px] font-display uppercase tracking-[0.35em] text-white/70 transition hover:text-white"
-                    >
-                      Request screening
-                    </Link>
+                 
                   </div>
                 </div>
 
@@ -132,49 +121,40 @@ export default function FilmPage() {
           </section>
         ))}
 
-        <section className="border-b border-white/10 bg-black">
+        <section id="screenplays" className="border-b border-white/10 bg-black">
           <div className="max-w-viewport mx-auto px-6 py-24">
             <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
                 <div className="text-[12px] font-display uppercase tracking-superwide text-white/60">Screenplays</div>
                 <h2 className="mt-3 font-serif text-4xl">Pitch decks and narrative treatments in motion.</h2>
               </div>
-              <p className="max-w-xl text-sm leading-relaxed text-white/70">
-                Long-form stories under development exploring futurism, sovereignty, and coming-of-age rituals across the Pacific.
-              </p>
             </div>
 
             <div className="grid gap-8 lg:grid-cols-3">
               {screenplays.map((script) => (
-                <article
+                <Link
                   key={script.id}
-                  className="group flex flex-col rounded-[28px] border border-white/10 bg-white/5 shadow-[0_25px_80px_rgba(0,0,0,0.5)]"
+                  href={`/film/screenplays/${script.slug}`}
+                  className="group flex flex-col rounded-[28px] border border-white/10 bg-white/5 shadow-[0_25px_80px_rgba(0,0,0,0.5)] transition hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden rounded-t-[28px]">
-                    <img
-                      src={script.cover}
-                      alt={script.title}
-                      className="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.04]"
-                    />
-                    <div className="absolute left-6 top-6 rounded-full border border-white/30 bg-black/50 px-4 py-1 text-[10px] font-display uppercase tracking-[0.35em] text-white/80">
-                      {script.status}
+                  <article className="flex h-full flex-col">
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-t-[28px]">
+                      <img
+                        src={script.cover}
+                        alt={script.title}
+                        className="h-full w-full object-cover transition duration-[1200ms] group-hover:scale-[1.04]"
+                      />
+                      <div className="absolute inset-0 bg-black/10 opacity-0 transition group-hover:opacity-100" />
                     </div>
-                  </div>
-                  <div className="flex flex-1 flex-col gap-4 p-6">
-                    <h3 className="font-serif text-3xl">{script.title}</h3>
-                    <p className="text-sm leading-relaxed text-white/70">{script.logline}</p>
-                    <p className="text-xs uppercase tracking-[0.3em] text-white/60">{script.inspiration}</p>
-                    <div className="mt-auto">
-                      <Link
-                        href="/contact"
-                        className="inline-flex items-center gap-3 text-xs font-display uppercase tracking-[0.35em] text-white transition hover:text-white/70"
-                      >
-                        Request pitch
-                        <ArrowRight className="size-4" />
-                      </Link>
+                    <div className="flex flex-1 flex-col gap-4 p-6">
+                      <h3 className="font-serif text-3xl">{script.title}</h3>
+                      <div className="mt-auto inline-flex items-center gap-3 text-xs font-display uppercase tracking-[0.35em] text-white/80 group-hover:text-white">
+                        View pitch
+                        <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                      </div>
                     </div>
-                  </div>
-                </article>
+                  </article>
+                </Link>
               ))}
             </div>
           </div>
@@ -187,8 +167,7 @@ export default function FilmPage() {
               quote={contactCta.quote}
               body={[contactCta.email]}
               links={contactCta.socials}
-              primary={{ label: "Commission a film", href: "/contact" }}
-              secondary={{ label: "Download film CV", href: "/contact" }}
+              primary={{ label: "Contact", href: "/contact" }}
             />
           </div>
         </section>

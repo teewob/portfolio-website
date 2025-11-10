@@ -33,8 +33,7 @@ export default async function GalleryPage({ params }: GalleryPageProps) {
               <h1 className="font-serif text-[3.5rem] leading-none md:text-[4.5rem]">{gallery.title}</h1>
               <p className="text-xs font-display uppercase tracking-[0.35em] text-white/60">{gallery.subtitle}</p>
               <p className="max-w-3xl text-sm leading-relaxed text-white/75">
-                Loose frames, work-in-progress rolls, and monthly drops captured on film—splayed out exactly how they
-                landed.
+                
               </p>
             </div>
 
@@ -42,7 +41,7 @@ export default async function GalleryPage({ params }: GalleryPageProps) {
 
             <div className="mt-16 text-center text-xs font-display uppercase tracking-[0.35em] text-white/60">
               <Link href="/photography" className="transition hover:text-white">
-                Back to Archive
+                Back to Visual Stories
               </Link>
             </div>
           </div>

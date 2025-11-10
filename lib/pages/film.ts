@@ -16,11 +16,13 @@ export type FilmProject = {
 
 export type ScreenplayProject = {
   id: number
+  slug: string
   title: string
-  logline: string
-  status: "In Development" | "Completed" | "Pitching"
-  inspiration: string
+  summary: string
   cover: string
+  treatment: string
+  pdfUrl: string
+  moodboard: { src: string; alt: string }[]
 }
 
 export const filmProjects: FilmProject[] = [
@@ -122,30 +124,33 @@ export const filmProjects: FilmProject[] = [
 export const screenplays: ScreenplayProject[] = [
   {
     id: 1,
+    slug: "notch-the-canoe-at-dawn",
     title: "Notch the Canoe at Dawn",
-    logline:
+    summary:
       "A young Chamorro navigator steals a carbon-fiber canoe to guide her brother back from deployment, only to discover the stars are shifting.",
-    status: "Pitching",
-    inspiration: "Based on oral histories from the Marianas Trench monitoring station.",
     cover: "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
+    treatment: "A tactile blend of spacefaring lore and island futurism told through logbook entries and underwater macro frames.",
+    pdfUrl: "/pitches/notch-the-canoe.pdf",
+    moodboard: [
+      { src: "/film-production-videography-cinematic-storytelling.jpg", alt: "Night paddle practice" },
+      { src: "/cinematic-landscape-photography-hawaii-ocean.jpg", alt: "Pre-dawn coastline" },
+      { src: "/music-instruments-sound-recording-studio.jpg", alt: "Analog navigation console" },
+    ],
   },
   {
     id: 2,
+    slug: "taro-circuit",
     title: "Taro Circuit",
-    logline:
+    summary:
       "In a near-future Waikīkī, climate refugees race underground hydroponic pods to earn water rations, forcing one teen mechanic to sabotage the system.",
-    status: "In Development",
-    inspiration: "Futurist agroforestry research and Honolulu traffic lore.",
     cover: "/film-production-videography-cinematic-storytelling.jpg",
-  },
-  {
-    id: 3,
-    title: "Salt of Our Names",
-    logline:
-      "An essay film told through voicemail exchanges between a mother and daughter as they reinvent a salt-harvesting ritual across islands.",
-    status: "Completed",
-    inspiration: "Documentary notes gathered during Saltwater Kin.",
-    cover: "/cinematic-landscape-photography-hawaii-ocean.jpg",
+    treatment: "Textured neon palettes meet mud-stained engineering notebooks in a kinetic coming-of-age chase film.",
+    pdfUrl: "/pitches/taro-circuit.pdf",
+    moodboard: [
+      { src: "/artistic-sketches-drawings-portraits-illustration.jpg", alt: "Hydroponic pod sketches" },
+      { src: "/film-production-videography-cinematic.jpg", alt: "Underground growlights" },
+      { src: "/music-instruments-sound-recording.jpg", alt: "Tactile Foley lab" },
+    ],
   },
 ]
 

@@ -41,7 +41,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
 
             <div className="mt-16 text-center text-xs font-display uppercase tracking-[0.35em] text-white/60">
               <Link href="/photography" className="transition hover:text-white">
-                Back to Archive
+                Back to Visual Stories
               </Link>
             </div>
           </div>

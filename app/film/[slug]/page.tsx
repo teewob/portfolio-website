@@ -158,8 +158,7 @@ export default async function FilmDetailPage({ params }: FilmPageParams) {
               quote={contactCta.quote}
               body={[contactCta.email]}
               links={contactCta.socials}
-              primary={{ label: "Request full screener", href: "/contact" }}
-              secondary={{ label: "Discuss distribution", href: "/contact" }}
+              primary={{ label: "Contact", href: "/contact" }}
             />
           </div>
         </section>

@@ -98,9 +98,10 @@ export const workRoles: WorkRole[] = [
     heroImage: "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
     cardImage: "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
     contributions: [
-      "Produce narrative decks and shot lists rooted in cultural protocols before every commission.",
-      "Light, shoot, and edit multi-day field assignments with a hybrid cinema + still workflow.",
-      "Deliver cohesive asset libraries (photo + motion) tailored to partner press kits.",
+      "Led ocean safety briefings and personalized surf lessons based on skill level and conditions.",
+      "Operated drone and DSLR systems to capture surf footage and create guest media packages.",
+      "Provided in-water guidance to ensure safety, confidence, and overall guest experience.",
+      "Supported shop operations, coordinating rentals, bookings, and instructor scheduling."
     ],
     services: ["Ocean Instruction", " Aerial Media Production", "Client Experience Management"],
     gallery: [

@@ -58,15 +58,15 @@ export default function HomePage() {
               </div>
 
               <div className="relative">
-                <div className="grain-mask rounded-[32px] border border-white/15 bg-white/5 p-10 shadow-[0_35px_90px_rgba(0,0,0,0.65)]">
-                  <div className="mx-auto aspect-square w-[60vw] max-w-[500px] overflow-hidden rounded-[26px] border border-white/15">
+                <div className="grain-mask  p-10 shadow-[0_35px_90px_rgba(0,0,0,0.65)]">
+                <div className="mx-auto aspect-square w-[60vw] max-w-[500px]">
                     <img
                       src="/homepage/tiara-portrait.jpg"
                       alt="Tiara Tenorio portrait"
                       className="h-full w-full object-cover object-center"
                     />
                   </div>
-                  <h2 className="mt-8 font-serif text-3xl font-semibold leading-tight text-white">Tiara Tenorio</h2>
+                
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@ export default function HomePage() {
                     <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/70">SKETCH ARCHIVE</div>
                     <h3 className="mt-3 font-serif text-3xl font-semibold">Illustration</h3>
                     <p className="mt-2 text-sm text-white/80">
-                      Hand-crafted drawings exploring form, folklore, and expression.
+                      Hand-crafted drawings and motion graphics art.
                     </p>
                   </div>
                 </Link>
@@ -262,19 +262,17 @@ export default function HomePage() {
 
         <section id="about" className="relative bg-gradient-to-b from-black via-[#05050a] to-[#0d0f1d] text-white">
           <div className="mx-auto w-full max-w-6xl px-6 py-24 md:px-8 md:py-36">
-            <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
-              <div className="relative rounded-[36px] border border-white/15 bg-white/5 p-4 shadow-[0_35px_80px_rgba(0,0,0,0.45)]">
-                <div className="overflow-hidden rounded-[30px] border border-white/15">
+            <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center"
+            />
+            </div>
+                <div>
                   <img
                     src="/homepage/tiara-oceanside.jpg"
                     alt="Tiara Tenorio sitting oceanside at dusk"
-                    className="h-[520px] w-full object-cover"
+                    className="w-full h-[80vh] object-cover"
                   />
                 </div>
-                <div className="absolute bottom-8 left-8 rounded-full border border-white/20 bg-black/60 px-4 py-1 text-xs font-display uppercase tracking-[0.35em] text-white/70 backdrop-blur">
-                  Oʻahu · Hawaiʻi
-                </div>
-              </div>
+              
 
               <div className="space-y-8">
                 <div className="space-y-3">
