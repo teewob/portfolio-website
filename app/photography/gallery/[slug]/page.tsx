@@ -27,14 +27,14 @@ export default async function GalleryPage({ params }: GalleryPageProps) {
       <Header />
       <main className="flex-1">
         <section className="relative">
-          <div className="mx-auto w-full max-w-5xl px-6 py-24 md:py-32">
+          <div className="mx-auto w-full max-w-7xl px-6 py-24 md:py-32">
             <div className="mb-12 space-y-4">
               <div className="text-sm font-display uppercase tracking-[0.35em] text-white/60">Gallery</div>
               <h1 className="font-serif text-[3.5rem] leading-none md:text-[4.5rem]">{gallery.title}</h1>
               <p className="text-xs font-display uppercase tracking-[0.35em] text-white/60">{gallery.subtitle}</p>
-              <p className="max-w-3xl text-sm leading-relaxed text-white/75">
-                
-              </p>
+              {gallery.description && (
+                <p className="max-w-3xl text-sm leading-relaxed text-white/75">{gallery.description}</p>
+              )}
             </div>
 
             <LooseGallery photos={gallery.photos} />

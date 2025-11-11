@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, type MouseEvent } from "react"
 import Image from "next/image"
 import { ArrowLeft, ArrowRight, X } from "lucide-react"
 
@@ -22,6 +22,11 @@ export function PhotoGallery({ items, layout = "grid", showCaptions = true }: Ph
   const [open, setOpen] = useState(false)
   const [index, setIndex] = useState(0)
   const isMasonry = layout === "masonry"
+  const handleBackdropClick = (event: MouseEvent<HTMLDivElement>) => {
+    if (event.target === event.currentTarget) {
+      setOpen(false)
+    }
+  }
 
   const handleOpen = (idx: number) => {
     setIndex(idx)
@@ -89,6 +94,7 @@ export function PhotoGallery({ items, layout = "grid", showCaptions = true }: Ph
           className="flex h-screen w-screen max-w-none translate-x-0 translate-y-0 items-center justify-center border-none bg-black/95 p-0 text-white shadow-none sm:!max-w-none"
           showCloseButton={false}
           style={{ top: 0, left: 0 }}
+          onClick={handleBackdropClick}
         >
           <button className="absolute right-6 top-6 rounded-full border border-white/40 bg-black/70 p-3" onClick={() => setOpen(false)} aria-label="Close gallery">
             <X className="size-4" />
