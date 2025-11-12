@@ -73,13 +73,16 @@ export function PhotographyShowcase() {
   const currentSlide = slides[currentIndex]
 
   return (
-    <Link href="/photography" className="group relative block h-full overflow-hidden rounded-[28px] border border-white/10 bg-white/5">
-      <div className="relative aspect-[4/3] w-full overflow-hidden">
+    <Link
+      href="/photography"
+      className="group relative block overflow-hidden rounded-[28px] border border-white/10 bg-white/5"
+    >
+      <div className="relative aspect-square w-full overflow-hidden">
         {previousIndex !== null && slides[previousIndex] && (
           <img
             src={slides[previousIndex].src}
             alt={slides[previousIndex].title}
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover object-center"
             style={{ opacity: isCurrentVisible ? 0 : 1, transition: `opacity ${FADE_DURATION}ms ease` }}
           />
         )}
@@ -87,7 +90,7 @@ export function PhotographyShowcase() {
           key={currentSlide.src}
           src={currentSlide.src}
           alt={currentSlide.title}
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover object-center"
           style={{ opacity: isCurrentVisible ? 1 : 0, transition: `opacity ${FADE_DURATION}ms ease` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent opacity-80 transition-all duration-500 group-hover:opacity-90" />
@@ -98,7 +101,7 @@ export function PhotographyShowcase() {
           </div>
           <h3 className="mt-4 font-serif text-3xl font-semibold">Photography</h3>
           <p className="mt-2 max-w-md text-sm text-white/80">
-          Documentary photography and intimate portrates of  the city and my personal life.
+         
           </p>
         </div>
       </div>
