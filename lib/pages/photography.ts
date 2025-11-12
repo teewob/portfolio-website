@@ -74,9 +74,9 @@ const roll002Photos: LooseRollMedia[] = [
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844816/beachet8_elpkum.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844831/fqs_2025-03-13_140910.573_tu7gxe.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844832/fqs_2025-03-30_023218.453_sjgxra.jpg",
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844817/bells_wbsxtr.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844833/fqs_2025-04-06_132639.250_hz0bbj.jpg", //trees landscape
    { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844973/bellawardGIF_iwt27b.mp4", type: "video" },
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844833/fqs_2025-04-06_132639.250_hz0bbj.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844817/bells_wbsxtr.jpg", //bellawalking landscape
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844817/bllaz_j2bzuo.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844817/bllaz1_hu55ix.jpg",
    { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844975/tee_ydoxgy.mp4", type: "video" },
@@ -103,12 +103,12 @@ const roll002Photos: LooseRollMedia[] = [
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844838/fqs_2025-05-25_155146.387_qbulek.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-05-25_161044.065_rtnyzi.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-05-25_161052.445_p8zpfh.jpg",
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-05-26_184641.792_xvfvd6.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844850/fqs_2025-06-28_171104.045_sghrhi.jpg", //yard
   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844974/elladrury_mbuikc.mp4", type: "video" },
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844861/kub_bgtpvi.jpg",
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844861/kub1_zjzhy0.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-06-05_054113.872_khdb9u.jpg", //pink kapahulu
   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844986/avagiobridge_i1znpc.mp4", type: "video" },
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-06-05_054113.872_khdb9u.jpg",
+    "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844861/kub_bgtpvi.jpg", //kubo window 1
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844861/kub1_zjzhy0.jpg", //kubo window 2
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844840/fqs_2025-06-08_135817.057_rgaobz.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844843/fqs_2025-06-08_141604.631_aadbtj.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844843/fqs_2025-06-10_053407.036_t8ulzx.jpg",
@@ -124,12 +124,13 @@ const roll002Photos: LooseRollMedia[] = [
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844847/fqs_2025-06-20_135122.010_zfa0kd.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844848/fqs_2025-06-20_135155.121_dmytdy.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844848/fqs_2025-06-20_135317.745_eirt0c.jpg",
+    "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762936497/fqs_2025-05-25_144153.217_hktl07.jpg", //tee smiles at ted
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844877/teds3_duc5px.jpg", //ella smiles at teds
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844876/teds_sh52ue.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844877/teds2_noamqa.jpg",
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844877/teds3_duc5px.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844877/teds4_s8cqix.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844850/fqs_2025-06-27_192217.512_tvyqnt.jpg",
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844850/fqs_2025-06-28_171104.045_sghrhi.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-05-26_184641.792_xvfvd6.jpg", //avagio texasbraz
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844851/fqs_2025-06-28_171115.405_kmgt6j.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844878/unc_x84mv6.jpg",
   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844985/unc_ebnp7h.mp4", type: "video" },
@@ -508,7 +509,7 @@ export const photoGalleries: PhotoGallery[] = [
     slug: "roll-002",
     title: "Roll002",
     subtitle: "Summer 2025 · 33mm Film",
-    description: "Roll002 · Summer 2025 · 33mm film.",
+    description: "The summer I turned 22, graduated with my cool film degree. The world is my oyster.",
     cover: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-05-25_161044.065_rtnyzi.jpg",
     preview: [
       "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844856/grad2_qxp1iy.jpg",
