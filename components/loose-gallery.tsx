@@ -4,7 +4,7 @@ import { useEffect, useState, type MouseEvent } from "react"
 import { ArrowLeft, ArrowRight, X } from "lucide-react"
 
 import { Dialog, DialogContent } from "@/components/ui/dialog"
-import { cn } from "@/lib/utils"
+import { cn, resolveMediaUrl } from "@/lib/utils"
 
 type LooseGalleryItem = string | { src: string; type?: "image" | "video" }
 
@@ -57,7 +57,9 @@ export function LooseGallery({ photos }: LooseGalleryProps) {
   return (
     <>
       <div className="columns-1 gap-6 [column-fill:_balance] sm:columns-2 lg:columns-4">
-        {normalizedPhotos.map((item, idx) => (
+        {normalizedPhotos.map((item, idx) => {
+          const mediaUrl = resolveMediaUrl(item.src, item.type === "video" ? "video" : "image")
+          return (
           <button
             key={`${item.src}-${idx}`}
             type="button"
@@ -66,7 +68,7 @@ export function LooseGallery({ photos }: LooseGalleryProps) {
           >
             {item.type === "video" ? (
               <video
-                src={item.src}
+                src={mediaUrl}
                 autoPlay
                 loop
                 muted
@@ -74,10 +76,10 @@ export function LooseGallery({ photos }: LooseGalleryProps) {
                 className="h-auto w-full rounded-[28px] object-cover"
               />
             ) : (
-              <img src={item.src} alt={`Gallery image ${idx + 1}`} className="h-auto w-full" />
+              <img src={mediaUrl} alt={`Gallery image ${idx + 1}`} className="h-auto w-full" />
             )}
           </button>
-        ))}
+        )})}
       </div>
 
       <Dialog open={open} onOpenChange={setOpen}>
@@ -101,7 +103,7 @@ export function LooseGallery({ photos }: LooseGalleryProps) {
                 {current.type === "video" ? (
                   <video
                     key={current.src}
-                    src={current.src}
+                    src={resolveMediaUrl(current.src, "video")}
                     autoPlay
                     loop
                     muted
@@ -110,7 +112,11 @@ export function LooseGallery({ photos }: LooseGalleryProps) {
                     className="h-full w-full object-contain"
                   />
                 ) : (
-                  <img src={current.src} alt={`Gallery image ${index + 1}`} className="h-full w-full object-contain" />
+                  <img
+                    src={resolveMediaUrl(current.src)}
+                    alt={`Gallery image ${index + 1}`}
+                    className="h-full w-full object-contain"
+                  />
                 )}
               </div>
             </div>

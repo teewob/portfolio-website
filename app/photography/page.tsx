@@ -6,6 +6,7 @@ import Link from "next/link"
 import { QuoteCTA } from "@/components/quote-cta"
 import { contactCta } from "@/lib/pages/contact"
 import { photoCollections, photoGalleries } from "@/lib/pages/photography"
+import { resolveMediaUrl } from "@/lib/utils"
 
 export default function PhotographyPage() {
   return (
@@ -28,40 +29,43 @@ export default function PhotographyPage() {
             </div>
 
             <div className="mt-16 flex flex-col gap-12">
-              {photoCollections.map((collection) => (
-                <Link
-                  key={collection.id}
-                  href={`/photography/${collection.slug}`}
-                  className="group flex flex-col gap-6 text-left lg:flex-row"
-                >
-                  <div className="relative w-full overflow-hidden rounded-[32px] border border-border/70 bg-muted lg:w-2/3">
-                    <img
-                      src={`${collection.cover}?height=720&width=1280&query=photo+collection+${collection.id}`}
-                      alt={collection.title}
-                      className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.05]"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent" />
-                    <div className="absolute bottom-6 left-6 text-xs font-display uppercase tracking-[0.35em] text-white/70">
-                      Preview
-                    </div>
-                  </div>
-                  <div className="flex flex-1 flex-col justify-between rounded-[32px] border border-border/70 bg-card/90 p-8 shadow-[0_25px_60px_rgba(18,17,15,0.12)]">
-                    <div className="space-y-4">
-                      <div className="flex flex-wrap items-center gap-3 text-xs font-display uppercase tracking-[0.3em] text-muted-foreground/70">
-                        <span>{collection.role}</span>
-                        <span className="size-[3px] rounded-full bg-muted-foreground/50" />
-                        <span>{collection.category}</span>
+              {photoCollections.map((collection) => {
+                const coverSrc = resolveMediaUrl(collection.cover)
+                return (
+                  <Link
+                    key={collection.id}
+                    href={`/photography/${collection.slug}`}
+                    className="group flex flex-col gap-6 text-left lg:flex-row"
+                  >
+                    <div className="relative w-full overflow-hidden rounded-[32px] border border-border/70 bg-muted lg:w-2/3">
+                      <img
+                        src={`${coverSrc}?height=720&width=1280&query=photo+collection+${collection.id}`}
+                        alt={collection.title}
+                        className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.05]"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent" />
+                      <div className="absolute bottom-6 left-6 text-xs font-display uppercase tracking-[0.35em] text-white/70">
+                        Preview
                       </div>
-                      <h3 className="font-serif text-3xl font-semibold text-foreground">{collection.title}</h3>
-                      <p className="text-sm leading-relaxed text-muted-foreground/85">{collection.description}</p>
                     </div>
-                    <span className="group inline-flex items-center gap-3 text-sm font-display uppercase tracking-[0.3em] text-foreground">
-                      View Collection
-                      <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
-                    </span>
-                  </div>
-                </Link>
-              ))}
+                    <div className="flex flex-1 flex-col justify-between rounded-[32px] border border-border/70 bg-card/90 p-8 shadow-[0_25px_60px_rgba(18,17,15,0.12)]">
+                      <div className="space-y-4">
+                        <div className="flex flex-wrap items-center gap-3 text-xs font-display uppercase tracking-[0.3em] text-muted-foreground/70">
+                          <span>{collection.role}</span>
+                          <span className="size-[3px] rounded-full bg-muted-foreground/50" />
+                          <span>{collection.category}</span>
+                        </div>
+                        <h3 className="font-serif text-3xl font-semibold text-foreground">{collection.title}</h3>
+                        <p className="text-sm leading-relaxed text-muted-foreground/85">{collection.description}</p>
+                      </div>
+                      <span className="group inline-flex items-center gap-3 text-sm font-display uppercase tracking-[0.3em] text-foreground">
+                        View Collection
+                        <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
+                      </span>
+                    </div>
+                  </Link>
+                )
+              })}
             </div>
           </div>
         </section>
@@ -78,36 +82,39 @@ export default function PhotographyPage() {
               </div>
 
               <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {photoGalleries.map((gallery) => (
-                  <Link
-                    key={gallery.id}
-                    href={`/photography/gallery/${gallery.slug}`}
-                    className="group flex flex-col gap-4"
-                  >
-                    <div className="relative aspect-square overflow-hidden rounded-[28px] border border-white/15 bg-white/5">
-                      <img
-                        src={gallery.cover}
-                        alt={gallery.title}
-                        className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                      <div className="absolute inset-x-0 bottom-0 p-6">
-                        <p className="text-xs font-display uppercase tracking-[0.35em] text-white/70">{gallery.subtitle}</p>
-                        <p className="font-serif text-2xl text-white">{gallery.title}</p>
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      {gallery.preview.map((preview) => (
-                        <div
-                          key={`${gallery.id}-${preview}`}
-                          className="h-16 flex-1 overflow-hidden rounded-[12px] border border-white/15"
-                        >
-                          <img src={preview} alt="Gallery preview" className="h-full w-full object-cover" />
+                {photoGalleries.map((gallery) => {
+                  const coverSrc = resolveMediaUrl(gallery.cover)
+                  return (
+                    <Link
+                      key={gallery.id}
+                      href={`/photography/gallery/${gallery.slug}`}
+                      className="group flex flex-col gap-4"
+                    >
+                      <div className="relative aspect-square overflow-hidden rounded-[28px] border border-white/15 bg-white/5">
+                        <img
+                          src={coverSrc}
+                          alt={gallery.title}
+                          className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                        <div className="absolute inset-x-0 bottom-0 p-6">
+                          <p className="text-xs font-display uppercase tracking-[0.35em] text-white/70">{gallery.subtitle}</p>
+                          <p className="font-serif text-2xl text-white">{gallery.title}</p>
                         </div>
-                      ))}
-                    </div>
-                  </Link>
-                ))}
+                      </div>
+                      <div className="flex gap-2">
+                        {gallery.preview.map((preview) => (
+                          <div
+                            key={`${gallery.id}-${preview}`}
+                            className="h-16 flex-1 overflow-hidden rounded-[12px] border border-white/15"
+                          >
+                            <img src={resolveMediaUrl(preview)} alt="Gallery preview" className="h-full w-full object-cover" />
+                          </div>
+                        ))}
+                      </div>
+                    </Link>
+                  )
+                })}
               </div>
 
             </div>

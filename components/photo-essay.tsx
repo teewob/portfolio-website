@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, X } from "lucide-react"
 
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { PhotoStory } from "@/lib/pages/photography"
+import { resolveMediaUrl } from "@/lib/utils"
 
 type PhotoEssayProps = {
   story: PhotoStory
@@ -83,7 +84,9 @@ export function PhotoEssay({ story }: PhotoEssayProps) {
             </div>
 
             <div className="mx-auto mt-10 flex max-w-4xl flex-col gap-6">
-              {section.images.map((src, imageIdx) => (
+              {section.images.map((src, imageIdx) => {
+                const imageSrc = resolveMediaUrl(src)
+                return (
                 <button
                   key={`${section.id}-image-${imageIdx}`}
                   type="button"
@@ -92,13 +95,13 @@ export function PhotoEssay({ story }: PhotoEssayProps) {
                   aria-label="Open image in fullscreen"
                 >
                   <img
-                    src={src}
+                    src={imageSrc}
                     alt={section.heading ? `${section.heading} frame ${imageIdx + 1}` : `Photo essay frame ${imageIdx + 1}`}
                     className="w-full max-w-full object-contain transition duration-500 group-hover:opacity-90"
                     loading="lazy"
                   />
                 </button>
-              ))}
+              )})}
             </div>
           </article>
         ))}
@@ -126,7 +129,11 @@ export function PhotoEssay({ story }: PhotoEssayProps) {
             <div className="relative flex-1">
               {currentImage && (
                 <div className="absolute inset-0 flex items-center justify-center p-6">
-                  <img src={currentImage.src} alt={currentImage.heading ?? "Photo essay frame"} className="h-full w-full object-contain" />
+                  <img
+                    src={resolveMediaUrl(currentImage.src)}
+                    alt={currentImage.heading ?? "Photo essay frame"}
+                    className="h-full w-full object-contain"
+                  />
                 </div>
               )}
             </div>

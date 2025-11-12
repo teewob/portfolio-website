@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import Link from "next/link"
 
 import { photoCollections } from "@/lib/pages/photography"
+import { resolveMediaUrl } from "@/lib/utils"
 
 const SLIDE_INTERVAL = 5000
 const FADE_DURATION = 800
@@ -19,7 +20,7 @@ export function PhotographyShowcase() {
 
     photoCollections.forEach((collection) => {
       collection.gallery.slice(0, 3).forEach((item) => {
-        previewImages.push({ src: item.src, title: collection.title })
+        previewImages.push({ src: resolveMediaUrl(item.src), title: collection.title })
       })
     })
 

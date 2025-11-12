@@ -5,7 +5,7 @@ import Image from "next/image"
 import { ArrowLeft, ArrowRight, X } from "lucide-react"
 
 import { Dialog, DialogContent } from "@/components/ui/dialog"
-import { cn } from "@/lib/utils"
+import { cn, resolveMediaUrl } from "@/lib/utils"
 
 type GalleryItem = {
   src: string
@@ -52,7 +52,9 @@ export function PhotoGallery({ items, layout = "grid", showCaptions = true }: Ph
             : "grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item, idx) => {
+          const imageSrc = resolveMediaUrl(item.src)
+          return (
           <button
             key={item.src}
             className={cn(
@@ -69,14 +71,14 @@ export function PhotoGallery({ items, layout = "grid", showCaptions = true }: Ph
             >
               {isMasonry ? (
                 <img
-                  src={item.src}
+                  src={imageSrc}
                   alt={item.caption || `Gallery image ${idx + 1}`}
                   className="h-auto w-full object-contain"
                   loading="lazy"
                 />
               ) : (
                 <Image
-                  src={item.src}
+                  src={imageSrc}
                   alt={item.caption || `Gallery image ${idx + 1}`}
                   width={600}
                   height={800}
@@ -86,7 +88,7 @@ export function PhotoGallery({ items, layout = "grid", showCaptions = true }: Ph
             </div>
             {showCaptions && <p className="mt-3 text-xs uppercase tracking-[0.35em] text-white/60">{item.caption}</p>}
           </button>
-        ))}
+        )})}
       </div>
 
       <Dialog open={open} onOpenChange={setOpen}>
@@ -102,7 +104,13 @@ export function PhotoGallery({ items, layout = "grid", showCaptions = true }: Ph
           <div className="relative flex h-full w-full max-w-5xl flex-col">
             <div className="relative flex-1">
               <div className="absolute inset-0 flex items-center justify-center p-6">
-                <Image src={items[index].src} alt={items[index].caption} fill className="!static h-full w-full object-contain" priority />
+                <Image
+                  src={resolveMediaUrl(items[index].src)}
+                  alt={items[index].caption}
+                  fill
+                  className="!static h-full w-full object-contain"
+                  priority
+                />
               </div>
             </div>
             <div className="absolute inset-y-0 left-8 flex items-center">

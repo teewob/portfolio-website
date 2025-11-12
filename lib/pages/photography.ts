@@ -42,126 +42,124 @@ type PhotoGallery = {
   photos: LooseRollMedia[]
 }
 
-const mediaPath = (folder: string, file: string) => `/${folder}/${encodeURIComponent(file)}`
-
 const roll002Photos: LooseRollMedia[] = [
-  mediaPath("roll002", "C3B905BE-8AE8-4D8F-96B8-50074A58F917.jpg"),
-  mediaPath("roll002", "apart.jpg"),
-  mediaPath("roll002", "apart1.jpg"),
-  mediaPath("roll002", "fqs 2025-03-12 175900.632.JPEG"),
-  mediaPath("roll002", "fqs 2025-02-03 082232.232.JPEG"),
-  mediaPath("roll002", "fqs 2025-02-03 082218.456.JPEG"),
-  mediaPath("roll002", "bar1.JPEG"),
-  mediaPath("roll002", "bar2.JPEG"),
-    { src: mediaPath("roll002", "grad.mp4"), type: "video" },
-  mediaPath("roll002", "grad1.JPEG"),
-  mediaPath("roll002", "grad2.JPEG"),
-  mediaPath("roll002", "grad3.JPEG"),
-  mediaPath("roll002", "fqs 2025-02-11 073944.000.JPEG"),
-  mediaPath("roll002", "bdayg.JPEG"),
-  mediaPath("roll002", "bdayg1.JPEG"),
-  mediaPath("roll002", "bdayg2.JPEG"),
-  mediaPath("roll002", "bdayg3.JPEG"),
-  { src: mediaPath("roll002", "glassesparty.mp4"), type: "video" },
-  mediaPath("roll002", "flowers.JPEG"),
-  mediaPath("roll002", "flowers1.JPEG"),
-  mediaPath("roll002", "beachet.JPEG"),
-  mediaPath("roll002", "beachet1.JPEG"),
-  mediaPath("roll002", "beachet2.JPEG"),
-  mediaPath("roll002", "beachet3.JPEG"),
-  mediaPath("roll002", "beachet4.JPEG"),
-  mediaPath("roll002", "beachet5.JPEG"),
-  mediaPath("roll002", "beachet6.JPEG"),
-  mediaPath("roll002", "beachet7.JPEG"),
-  mediaPath("roll002", "beachet8.JPEG"),
-  mediaPath("roll002", "fqs 2025-03-13 140910.573.JPEG"),
-  mediaPath("roll002", "fqs 2025-03-30 023218.453.jpg"),
-  mediaPath("roll002", "bells.JPEG"),
-   { src: mediaPath("roll002", "bellawardGIF.mp4"), type: "video" },
-  mediaPath("roll002", "fqs 2025-04-06 132639.250.JPEG"),
-  mediaPath("roll002", "bllaz.JPEG"),
-  mediaPath("roll002", "bllaz1.JPEG"),
-   { src: mediaPath("roll002", "tee.mp4"), type: "video" },
-  mediaPath("roll002", "fqs 2025-04-18 184326.679.JPEG"),
-  mediaPath("roll002", "brooke.JPEG"),
-  mediaPath("roll002", "brooke1.JPEG"),
-  { src: mediaPath("roll002", "ellaguitar.mp4"), type: "video" },
-  mediaPath("roll002", "fqs 2025-05-03 235343.454.jpg"),
-  mediaPath("roll002", "fqs 2025-05-03 235353.507.jpg"),
-  mediaPath("roll002", "fqs 2025-05-03 235439.855.jpg"),
-  mediaPath("roll002", "fqs 2025-05-04 093044.785.JPEG"),
-  mediaPath("roll002", "fqs 2025-05-04 102239.763.JPEG"),
-  { src: mediaPath("roll002", "larsell.mp4"), type: "video" },
-  mediaPath("roll002", "elstee.JPEG"),
-  { src: mediaPath("roll002", "nolasellatee.mp4"), type: "video" },
-   mediaPath("roll002", "fqs 2025-06-15 141710.517.JPEG"),
-  mediaPath("roll002", "fqs 2025-05-11 083444.343.JPEG"),
-  mediaPath("roll002", "kai.JPEG"),
-  mediaPath("roll002", "kai1.JPEG"),
-  mediaPath("roll002", "kai2.JPEG"),
-  mediaPath("roll002", "kai3.JPEG"),
-  { src: mediaPath("roll002", "tiaraportraits.mp4"), type: "video" },
-  mediaPath("roll002", "fqs 2025-05-25 153746.675.JPEG"),
-  mediaPath("roll002", "fqs 2025-05-25 155146.387.JPEG"),
-  mediaPath("roll002", "fqs 2025-05-25 161044.065.JPEG"),
-  mediaPath("roll002", "fqs 2025-05-25 161052.445.JPEG"),
-  mediaPath("roll002", "fqs 2025-05-26 184641.792.JPEG"),
-  { src: mediaPath("roll002", "elladrury.mp4"), type: "video" },
-  mediaPath("roll002", "kub.JPEG"),
-  mediaPath("roll002", "kub1.JPEG"),
-  { src: mediaPath("roll002", "avagiobridge.mp4"), type: "video" },
-  mediaPath("roll002", "fqs 2025-06-05 054113.872.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-08 135817.057.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-08 141604.631.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-10 053407.036.JPEG"),
-  mediaPath("roll002", "lytee.JPEG"),
-  mediaPath("roll002", "lytee1.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-12 121144.132.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-13 144311.760.JPEG"),
-  { src: mediaPath("roll002", "ellapool.mp4"), type: "video" },
-  mediaPath("roll002", "taro.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-11 184112.093.jpg"),
-  { src: mediaPath("roll002", "gioavatarot.mp4"), type: "video" },
-  mediaPath("roll002", "fqs 2025-06-20 135112.773.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-20 135122.010.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-20 135155.121.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-20 135317.745.JPEG"),
-  mediaPath("roll002", "teds.JPEG"),
-  mediaPath("roll002", "teds2.JPEG"),
-  mediaPath("roll002", "teds3.JPEG"),
-  mediaPath("roll002", "teds4.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-27 192217.512.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-28 171104.045.JPEG"),
-  mediaPath("roll002", "fqs 2025-06-28 171115.405.JPEG"),
-  mediaPath("roll002", "unc.JPEG"),
-  { src: mediaPath("roll002", "unc.mp4"), type: "video" },
-  { src: mediaPath("roll002", "kewaloblues.mp4"), type: "video" },
-  mediaPath("roll002", "peppas.JPEG"),
-  mediaPath("roll002", "peppas1.JPEG"),
-  mediaPath("roll002", "fqs 2025-07-18 210903.501.JPEG"),
-  mediaPath("roll002", "pte1.jpg"),
-  mediaPath("roll002", "pte2.jpg"),
-  mediaPath("roll002", "pte3.jpg"),
-  mediaPath("roll002", "pte4.jpg"),
-  mediaPath("roll002", "fqs 2025-07-20 113545.924.JPEG"),
-  mediaPath("roll002", "fqs 2025-07-22 140128.524.JPEG"),
-  mediaPath("roll002", "fqs 2025-07-22 175056.535.JPEG"),
-  mediaPath("roll002", "party3.jpg"),
-  mediaPath("roll002", "party.jpg"),
-  mediaPath("roll002", "party1.jpg"),
-  mediaPath("roll002", "party2.jpg"),
-  mediaPath("roll002", "party4.jpg"),
-  { src: mediaPath("roll002", "larsmat.mp4"), type: "video" },
-  mediaPath("roll002", "party5.jpg"),
-  mediaPath("roll002", "party6.jpg"),
-  mediaPath("roll002", "party7.jpg"),
-  mediaPath("roll002", "party8.jpg"),
-  mediaPath("roll002", "party9.jpg"),
-  mediaPath("roll002", "bobs.jpg"),
-  mediaPath("roll002", "bobs1.jpg"),
-  mediaPath("roll002", "teemir.jpg"),
-  mediaPath("roll002", "teemir1.jpg"),
-  mediaPath("roll002", "fqs 2025-07-27 101201.684.JPEG"),
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844820/C3B905BE-8AE8-4D8F-96B8-50074A58F917_ijexec.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844809/apart_n9ptyh.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844810/apart1_oc1az9.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844829/fqs_2025-03-12_175900.632_d0cfzg.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844826/fqs_2025-02-03_082232.232_imjmzj.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844826/fqs_2025-02-03_082218.456_oz7eep.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844810/bar1_fcr8cq.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844810/bar2_g5kss5.jpg",
+    { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844985/grad_whcxr7.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844855/grad1_lcgo2h.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844856/grad2_qxp1iy.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844857/grad3_ggoblx.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844827/fqs_2025-02-11_073944.000_tgdakm.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844811/bdayg_uuzg6k.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844811/bdayg1_b4lq01.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844811/bdayg2_elvlny.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844811/bdayg3_nydqwy.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844960/glassesparty_khl4vb.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844823/flowers_e06hfm.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844825/flowers1_txdcyh.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844811/beachet_pu6r8b.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844811/beachet1_vkxib2.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844812/beachet2_g1jwf3.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844812/beachet3_yijmxh.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844812/beachet4_mjjgas.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844815/beachet5_beoowf.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844816/beachet6_d6l8z9.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844816/beachet7_xjhsgg.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844816/beachet8_elpkum.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844831/fqs_2025-03-13_140910.573_tu7gxe.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844832/fqs_2025-03-30_023218.453_sjgxra.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844817/bells_wbsxtr.jpg",
+   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844973/bellawardGIF_iwt27b.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844833/fqs_2025-04-06_132639.250_hz0bbj.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844817/bllaz_j2bzuo.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844817/bllaz1_hu55ix.jpg",
+   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844975/tee_ydoxgy.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844833/fqs_2025-04-18_184326.679_si1kwl.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844820/brooke_tdzjzj.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844820/brooke1_guuccv.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844984/ellaguitar_hlpkv9.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844833/fqs_2025-05-03_235343.454_yf5kbm.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844834/fqs_2025-05-03_235353.507_zld4zz.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844834/fqs_2025-05-03_235439.855_sq4ize.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844834/fqs_2025-05-04_093044.785_xvlhmm.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844836/fqs_2025-05-04_102239.763_j6klcx.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844975/larsell_hdnf0n.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844821/elstee_us59xe.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844996/nolasellatee_ah5lfu.mp4", type: "video" },
+   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844846/fqs_2025-06-15_141710.517_o3khwh.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844838/fqs_2025-05-11_083444.343_twza0t.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844858/kai_jzplk2.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844859/kai1_letslm.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844859/kai2_wwulpi.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844860/kai3_nqa12t.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844982/tiaraportraits_geoxky.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844838/fqs_2025-05-25_153746.675_xbln0x.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844838/fqs_2025-05-25_155146.387_qbulek.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-05-25_161044.065_rtnyzi.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-05-25_161052.445_p8zpfh.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-05-26_184641.792_xvfvd6.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844974/elladrury_mbuikc.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844861/kub_bgtpvi.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844861/kub1_zjzhy0.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844986/avagiobridge_i1znpc.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-06-05_054113.872_khdb9u.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844840/fqs_2025-06-08_135817.057_rgaobz.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844843/fqs_2025-06-08_141604.631_aadbtj.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844843/fqs_2025-06-10_053407.036_t8ulzx.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844862/lytee_b5y3vg.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844864/lytee1_i5cld3.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844844/fqs_2025-06-12_121144.132_vgnlxl.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844845/fqs_2025-06-13_144311.760_d7of2r.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844985/ellapool_orjj5e.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844873/taro_ijxiag.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844843/fqs_2025-06-11_184112.093_bgao5e.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762845236/gioavatarot_xadqbc.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844847/fqs_2025-06-20_135112.773_sdszsj.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844847/fqs_2025-06-20_135122.010_zfa0kd.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844848/fqs_2025-06-20_135155.121_dmytdy.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844848/fqs_2025-06-20_135317.745_eirt0c.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844876/teds_sh52ue.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844877/teds2_noamqa.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844877/teds3_duc5px.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844877/teds4_s8cqix.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844850/fqs_2025-06-27_192217.512_tvyqnt.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844850/fqs_2025-06-28_171104.045_sghrhi.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844851/fqs_2025-06-28_171115.405_kmgt6j.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844878/unc_x84mv6.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844985/unc_ebnp7h.mp4", type: "video" },
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844965/kewaloblues_odjzcq.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844870/peppas_yw4jg0.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844872/peppas1_nrutih.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844851/fqs_2025-07-18_210903.501_fqst30.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844872/pte1_tkeg3i.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844873/pte2_cw8ydn.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844873/pte3_sjyak7.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844873/pte4_qlzik2.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844851/fqs_2025-07-20_113545.924_jr52df.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844853/fqs_2025-07-22_140128.524_hzvzx5.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844854/fqs_2025-07-22_175056.535_ajsr9h.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844865/party3_g7jd7g.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844865/party_lhy1zt.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844864/party1_dbuip8.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844865/party2_isnhzg.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844865/party4_yuv7jx.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844977/larsmat_iilrz8.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844866/party5_qn707s.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844869/party6_hrnuin.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844869/party7_zti7gq.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844869/party8_uiba6y.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844869/party9_liqezf.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844817/bobs_wheuam.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844819/bobs1_cud8oi.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844877/teemir_dctnut.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844878/teemir1_gkypcb.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844855/fqs_2025-07-27_101201.684_ghsivh.jpg",
 ]
 
 export const photoCollections: PhotoCollection[] = [
@@ -173,43 +171,43 @@ export const photoCollections: PhotoCollection[] = [
     category: "Photo Essay",
     description:
       "A portrait series documenting the everyday lives of Filipinos who shape Hawai‘i’s working landscape—from hotel staff and construction crews to lei makers and local shopkeepers. Shot across Waikīkī and Chinatown, the collection traces stories of migration, belonging, and identity within Hawai‘i’s layered multicultural history. ",
-    cover: "/filipinos%20in%20hawaii/fih01.jpg",
+    cover: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916096/fih01_nqgsrf.jpg",
     gallery: [
       {
-        src: "/filipinos%20in%20hawaii/fih01.jpg",
-        caption: "Filipinos in Hawai'i · Frame 01",
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916102/fih08_bfwi2k.jpg",
+        caption: "Filipinos in Hawai'i · Frame 09",
       },
       {
-        src: "/filipinos%20in%20hawaii/fih02.jpg",
-        caption: "Filipinos in Hawai'i · Frame 02",
-      },
-      {
-        src: "/filipinos%20in%20hawaii/fih03.jpg",
-        caption: "Filipinos in Hawai'i · Frame 03",
-      },
-      {
-        src: "/filipinos%20in%20hawaii/fih034.jpg",
-        caption: "Filipinos in Hawai'i · Frame 04",
-      },
-      {
-        src: "/filipinos%20in%20hawaii/fih04.jpg",
-        caption: "Filipinos in Hawai'i · Frame 05",
-      },
-      {
-        src: "/filipinos%20in%20hawaii/fih05.jpg",
-        caption: "Filipinos in Hawai'i · Frame 06",
-      },
-      {
-        src: "/filipinos%20in%20hawaii/fih06.jpg",
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916101/fih06_bfgyq5.jpg",
         caption: "Filipinos in Hawai'i · Frame 07",
       },
       {
-        src: "/filipinos%20in%20hawaii/fih07.jpg",
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916100/fih07_nrlo9p.jpg",
         caption: "Filipinos in Hawai'i · Frame 08",
       },
       {
-        src: "/filipinos%20in%20hawaii/fih08.jpg",
-        caption: "Filipinos in Hawai'i · Frame 09",
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916089/fih034_vhim8h.jpg",
+        caption: "Filipinos in Hawai'i · Frame 04",
+      },
+      {
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916096/fih01_nqgsrf.jpg",
+        caption: "Filipinos in Hawai'i · Frame 01",
+      },
+      {
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916109/fih05_jxw0r7.jpg",
+        caption: "Filipinos in Hawai'i · Frame 06",
+      },
+      {
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916094/fih03_w9dihk.jpg",
+        caption: "Filipinos in Hawai'i · Frame 03",
+      },
+      {
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916095/fih02_tidp3u.jpg",
+        caption: "Filipinos in Hawai'i · Frame 02",
+      },
+      {
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916108/fih04_jvwzco.jpg",
+        caption: "Filipinos in Hawai'i · Frame 05",
       },
     ],
     story: {
@@ -234,9 +232,9 @@ export const photoCollections: PhotoCollection[] = [
             "Filipinos in Hawai‘i do not simply replicate Philippine traditions; they also adopt and reshape local ones, finding belonging in a shared “local” ethos. The ukulele, once a symbol of Hawaiian cultural pride, becomes part of a working-class Filipino rhythm in Honolulu’s hotel economy.",
           ],
           images: [
-            "/filipinos%20in%20hawaii/fih01.jpg",
-            "/filipinos%20in%20hawaii/fih02.jpg",
-            "/filipinos%20in%20hawaii/fih03.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916096/fih01_nqgsrf.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916095/fih02_tidp3u.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916094/fih03_w9dihk.jpg",
           ],
         },
         {
@@ -248,7 +246,7 @@ export const photoCollections: PhotoCollection[] = [
             "And finally, I asked about her goals. She said, “I want to be able to buy my mom a house.” I told her, “Me too!” and she laughed. “That’s such a common thing for us Filipinos—we just want to provide and give back to our family. I know.”",
             "Kryz is a reflection of what it means to be a Born-Again Filipino—someone who may not speak perfect Tagalog or have grown up in the Philippines, but still carries the culture deeply. Her pride, her intention, and her gratitude are what make her story so familiar—and so beautiful.",
           ],
-          images: ["/filipinos%20in%20hawaii/fih034.jpg"],
+          images: ["https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916089/fih034_vhim8h.jpg"],
           layout: "wide",
         },
         {
@@ -259,9 +257,9 @@ export const photoCollections: PhotoCollection[] = [
             "When I explained I was photographing Filipinos for a school project, the group of workers laughed. One of them joked, “Be careful, she’s I.C.E!” It was hilarious in the moment, but it also said something about the Filipino experience here. Even born-and-raised locals carry the weight of migration—how easily our presence can still feel questioned, but also to the everyday humanity of it—how it shows up in the noise of jackhammers, in the quiet pride of a guy like Junior, and in the jokes we use to make light of a history that’s often heavy.",
           ],
           images: [
-            "/filipinos%20in%20hawaii/fih04.jpg",
-            "/filipinos%20in%20hawaii/fih05.jpg",
-            "/filipinos%20in%20hawaii/fih06.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916108/fih04_jvwzco.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916109/fih05_jxw0r7.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916101/fih06_bfgyq5.jpg",
           ],
         },
         {
@@ -273,12 +271,11 @@ export const photoCollections: PhotoCollection[] = [
             "There’s something about that kind of visual clutter that feels like home. In a place as far from the Philippines as Honolulu, Filipino immigrants make their spaces their own. This photo connects to the idea of transnationalism—how identity, memory, and family stretch across oceans, showing up in the smallest personal details. These shopkeepers are running a business—continuing a quiet legacy of care, kinship, and cultural grounding in a place that may never fully feel like home, but becomes one anyway.",
           ],
           images: [
-            "/filipinos%20in%20hawaii/fih08.jpg",
-            "/filipinos%20in%20hawaii/fih09.jpg",
-            "/filipinos%20in%20hawaii/fih10.jpg",
-            "/filipinos%20in%20hawaii/fih11.jpg",
-            "/filipinos%20in%20hawaii/fih07.jpg",
-        ,
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916102/fih08_bfwi2k.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916099/fih09_tm2qvj.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916098/fih10_v7aapm.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916098/fih11_rzejw6.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916100/fih07_nrlo9p.jpg",
           ],
         },
         {
@@ -288,10 +285,9 @@ export const photoCollections: PhotoCollection[] = [
             "At Rizal Square, Filipinos gathering to play cards and talk story beneath the gaze of José Rizal—a quiet ritual of kinship and routine."
           ],
           images: [
-            "/filipinos%20in%20hawaii/fih13.jpg",
-            "/filipinos%20in%20hawaii/fih14.jpg",
-            "/filipinos%20in%20hawaii/fih12.jpg"
-            ,
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916111/fih13_gvhon3.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916110/fih14_s24vtl.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916089/fih12_kzmvvz.jpg"
           ],
           layout: "stacked",
         },
@@ -304,10 +300,10 @@ export const photoCollections: PhotoCollection[] = [
             "Zarra represents Differential Inclusion. Filipinos like her are welcomed into Hawai‘i’s economy as necessary labor—especially in tourism—but they rarely get the recognition or ownership they deserve. Still, she does everything with grace, humor, and that strong, steady energy so many Filipina moms carry. She reminds me why so much of this state works in the first place—because of people like her.",
           ],
           images: [
-            "/filipinos%20in%20hawaii/DSCF7759-2.jpg",
-            "/filipinos%20in%20hawaii/DSCF8094.jpg",
-            "/filipinos%20in%20hawaii/DSCF8095.jpg",
-            "/filipinos%20in%20hawaii/DSCF8097.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916097/DSCF7759-2_kkei1t.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916090/DSCF8094_ltdkt7.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916089/DSCF8095_xxtx8n.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916092/DSCF8097_kdcxgn.jpg",
           ],
         },
         {
@@ -319,10 +315,10 @@ export const photoCollections: PhotoCollection[] = [
             "Every Sunday, we go to Max’s of Manila to eat, talk story, and reflect on how far we’ve come in learning to be proud. This is Identity as Performance—because being Filipino isn’t just what you inherit, it’s how you show up, stand by each other, and live it every day.",
           ],
           images: [
-            "/filipinos%20in%20hawaii/DSCF8721.jpg",
-            "/filipinos%20in%20hawaii/DSCF8718.jpg",
-            "/filipinos%20in%20hawaii/DSCF8724.jpg",
-            "/filipinos%20in%20hawaii/DSCF8689.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916088/DSCF8721_w6ga8p.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916092/DSCF8718_pf03jq.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916093/DSCF8724_zbnuqw.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916091/DSCF8689_phaelc.jpg",
           ],
         },
         {
@@ -334,11 +330,11 @@ export const photoCollections: PhotoCollection[] = [
             "This photo speaks to Contradictory Class Mobility. These women are essential to the functioning of Waikīkī’s tourism economy, yet invisible to most of the people they serve. Their labor is undervalued, but their spirit? Undeniable. They reminded me that pride doesn’t always show up in loud declarations—it lives in the small, loving ways Filipinos recognize one another, even between strangers.",
           ],
           images: [
-            "/filipinos%20in%20hawaii/DSCF8113.jpg",
-            "/filipinos%20in%20hawaii/DSCF8107.jpg",
-            "/filipinos%20in%20hawaii/DSCF8110.jpg",
-            "/filipinos%20in%20hawaii/DSCF8109.jpg",
-            "/filipinos%20in%20hawaii/DSCF8108.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916104/DSCF8113_ix0jjh.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916105/DSCF8107_xs74zk.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916103/DSCF8110_okusxo.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916107/DSCF8109_pnbxdf.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762916106/DSCF8108_ttht49.jpg",
           ],
         },
       ],
@@ -352,18 +348,18 @@ export const photoCollections: PhotoCollection[] = [
     category: "Photo Essay",
     description:
       "An exploration of cat gangs and rogues of Honolulu, revealing how these creatures have formed communities, navigate survial, and adapt to the city's edges. ",
-    cover: "/the%20strays/Tenorio-1.jpg",
+    cover: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845322/Tenorio-1_qmxhba.jpg",
     gallery: [
       {
-        src: "/the%20strays/Tenorio-1.jpg",
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845322/Tenorio-1_qmxhba.jpg",
         caption: "The Strays · Frame 01",
       },
       {
-        src: "/the%20strays/Tenorio-5.jpg",
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845322/Tenorio-5_vemr88.jpg",
         caption: "The Strays · Frame 05",
       },
       {
-        src: "/the%20strays/Tenorio-12.jpg",
+        src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845320/Tenorio-12_zunnua.jpg",
         caption: "The Strays · Frame 12",
       },
     ],
@@ -383,15 +379,15 @@ export const photoCollections: PhotoCollection[] = [
             "Though timid and wary, they are cunning and deeply resourceful—slipping between yards at dusk, sharing intel on which porches leave food out, and vanishing at the first sign of rain.",
           ],
           images: [
-            "/the%20strays/Tenorio-1.jpg",
-            "/the%20strays/Tenorio-2.jpg",
-            "/the%20strays/Tenorio-3.jpg",
-            "/the%20strays/Tenorio-4.jpg",
-            "/the%20strays/Tenorio-5.jpg",
-            "/the%20strays/Tenorio-6.jpg",
-            "/the%20strays/Tenorio-7.jpg",
-            "/the%20strays/Tenorio-8.jpg",
-            "/the%20strays/Tenorio-9.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845322/Tenorio-1_qmxhba.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845321/Tenorio-2_arq1p9.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845322/Tenorio-3_zkiudg.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845324/Tenorio-4_wo0wza.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845322/Tenorio-5_vemr88.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845323/Tenorio-6_sqznp6.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845321/Tenorio-7_rnlo1r.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845322/Tenorio-8_hwcw0j.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845320/Tenorio-9_fqpfat.jpg",
           ],
         },
         {
@@ -402,13 +398,13 @@ export const photoCollections: PhotoCollection[] = [
             "They are friendlier than their Mānoa cousins, yet they operate with the same tactical awareness—carving out lookout points, sharing scraps, and always recruiting new drifters who can stomach the midday heat.",
           ],
           images: [
-            "/the%20strays/Tenorio-10.jpg",
-            "/the%20strays/Tenorio-11.jpg",
-            "/the%20strays/Tenorio-12.jpg",
-            "/the%20strays/Tenorio-13.jpg",
-            "/the%20strays/Tenorio-14.jpg",
-            "/the%20strays/Tenorio-15.jpg",
-            "/the%20strays/Tenorio-16.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845323/Tenorio-10_jwkjgi.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845319/Tenorio-11_ocfkjf.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845320/Tenorio-12_zunnua.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845320/Tenorio-13_cw3c9i.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845322/Tenorio-14_dohc6h.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845320/Tenorio-15_x1ezk7.jpg",
+            "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762845321/Tenorio-16_ocp2am.jpg",
           ],
         },
       ],
@@ -422,224 +418,63 @@ export const photoCollections: PhotoCollection[] = [
     category: "Documentary Photography",
     description:
       "A street-level portrait of Honolulu’s pulse, the working class, wanderers, and the unseen the geometry of concrete and sun.  ",
-    cover: "/honolulu%20grit/DSCF6469.JPG",
+    cover: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915975/hongriresiz4_v11k3i.jpg",
     gallery: [
-      {
-        src: "/honolulu%20grit/20220911-DSCF2021.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/20220911-DSCF2023.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/20220912-IMG_5704.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/20220912-IMG_5744.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/20220912-IMG_5763.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/20220920-DSCF2160.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/20220920-DSCF2215.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/20220920-DSCF2222.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/20220920-DSCF2233.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/20220920-DSCF2242.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/20220920-DSCF2243.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/AgJan22-48.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/AgJan22-52.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/AgJan22-88.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/DSCF0395.JPG",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/DSCF0828.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/DSCF0857.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/DSCF2381.JPG",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/DSCF6469.JPG",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/DSCF6503.JPG",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/DSCF7486.JPG",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/DSCF8914.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/IMG_3275.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/IMG_3276.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/IMG_3277.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/IMG_3278.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/IMG_3281.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/IMG_3282.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/IMG_3283.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/IMG_3285.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/IMG_3286.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio-16.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio-22.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio-23.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio-28.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio-3.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio-4.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio-8.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio-85.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio-9.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio11-22-30.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio11-22-8.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio11-22-84.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio11-25-22-40.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio_1%203.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio_2%203.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio_3%203.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio_4.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio_5%203.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio_5.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio_6%203.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio_6.jpg",
-        caption: "",
-      },
-      {
-        src: "/honolulu%20grit/Tenorio_7%203.jpg",
-        caption: "",
-      },
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846069/IMG_3286_b4v4xz.jpg", caption: "" }, //SQU mcully shoes
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915971/hongriresiz10_cdtnlr.jpg", caption: "" }, //L manoa greens
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846067/IMG_3275_nzmqqe.jpg", caption: "" }, //P mcully powerlines
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846075/Tenorio_6_uakkte.jpg", caption: "" }, //red mahana
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846070/Tenorio_5_ay0ijv.jpg", caption: "" }, //blue mahana
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846072/Tenorio_4_gfcl9q.jpg", caption: "" }, //L newspaper
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846075/Tenorio-8_y0axwm.jpg", caption: "" }, //P camry greens
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846072/Tenorio_2_3_jkbzyo.jpg", caption: "" }, //P chinese restaurant folk
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915975/hongriresiz4_v11k3i.jpg", caption: "" }, //L pink s king st 
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846069/IMG_3285_rqt5pm.jpg", caption: "" }, //L pink blue hues skyline f mahana
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846069/AgJan22-48_fuwmi5.jpg", caption: "" }, //L ross
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915971/hongriresiz5_yiz9ss.jpg", caption: "" }, //P mcdonalds wheelchair
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846071/Tenorio-16_fzrjni.jpg", caption: "" }, //P dorms red exit
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846070/Tenorio-3_qcjsi2.jpg", caption: "" }, //P bunny man
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846071/DSCF7486_ctcsht.jpg", caption: "" }, //L ramen packet
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846075/Tenorio-9_g0rqk8.jpg", caption: "" }, //P telephone 
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846068/IMG_3277_yphexs.jpg", caption: "" }, //P moped makalei
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846075/Tenorio11-25-22-40_ayncj5.jpg", caption: "" }, //P blue beach makalei
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846081/DSCF2381_sk3hs0.jpg", caption: "" }, //P duck in stream
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915971/hongriresiz7_hzd8cd.jpg", caption: "" }, //L pink mcully 
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846068/AgJan22-52_o2kgw8.jpg", caption: "" }, //L annaobriens moped
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846076/Tenorio_6_3_idz2mo.jpg", caption: "" }, //P rainbow drive in
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846070/Tenorio-4_hhdk4y.jpg", caption: "" }, //P date st shaka
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846073/Tenorio_5_3_tcwg2s.jpg", caption: "" }, //P liquors store
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846068/IMG_3276_jkr9in.jpg", caption: "" }, //L waimea rock
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846071/DSCF0857_m6mmmf.jpg", caption: "" }, //P kinau market dates
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846081/Tenorio-23_lots7t.jpg", caption: "" }, //L elementary basketball
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915973/hongriresiz2_zphejn.jpg", caption: "" }, //P orange windows
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846080/DSCF0395_ii3v19.jpg", caption: "" }, //L 777
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846071/DSCF8914_aq0yoc.jpg", caption: "" }, //L basketball 
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915971/hongriresiz9_nrhvyo.jpg", caption: "" }, //P mcully oven
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846070/Tenorio11-22-84_g01hbe.jpg", caption: "" }, //L makalei apartment dark
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915968/hongriresiz11_s9tvdv.jpg", caption: "" }, //L grafiti walls
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915969/hongriresiz3_vdqbms.jpg", caption: "" }, //P powerlines alas     
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915973/hongriresiz1_cmeph1.jpg", caption: "" }, //P 104 door
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846069/Tenorio_liph01.jpg", caption: "" }, //L makalei sunset
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846075/Tenorio_7_3_bi98e3.jpg", caption: "" }, //P homeless man book
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915968/hongriresiz6_caihih.jpg", caption: "" }, //P ala wai man
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846079/Tenorio-85_inuou7.jpg", caption: "" }, //L makalei rainbow
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846081/20220920-DSCF2233_kdsf6e.jpg", caption: "" }, //SQU palletes
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846068/20220911-DSCF2023_nd7pqy.jpg", caption: "" }, //P ala wai 
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846079/Tenorio-28_ulmbba.jpg", caption: "" }, //P inside mom and pop
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846075/Tenorio11-22-8_rdyqlo.jpg", caption: "" }, //L longsdrugs sking n beret
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846069/IMG_3281_ihubhe.jpg", caption: "" }, //L shoes in pink mcully powerlines
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846071/Tenorio_1_3_vao9dm.jpg", caption: "" }, //P kona coffee homeless
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846076/Tenorio-22_ascyao.jpg", caption: "" }, //P datestreet stream junk
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762915971/hongriresiz8_eaoheh.jpg", caption: "" }, //P sky scraper by alas
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846069/IMG_3283_ea1rzb.jpg", caption: "" }, //P mom and pop telephone booth
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846069/IMG_3282_wapx1m.jpg", caption: "" }, //P kinau streetfreeways
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846072/Tenorio_3_3_a96c18.jpg", caption: "" }, //P diamondhead neighborhood
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846068/IMG_3278_tzyvid.jpg", caption: "" }, //L makalei horizon sails
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846070/Tenorio11-22-30_s7uzco.jpg", caption: "" }, //GARAGE
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846068/AgJan22-88_vimlga.jpg", caption: "" }, //l homeless tent
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762846071/DSCF0828_gydurj.jpg", caption: "" }, //P friends on kinau 
+      
     ],
     galleryLayout: "masonry",
     showGalleryCaptions: false,
@@ -674,11 +509,11 @@ export const photoGalleries: PhotoGallery[] = [
     title: "Roll002",
     subtitle: "Summer 2025 · 33mm Film",
     description: "Roll002 · Summer 2025 · 33mm film.",
-    cover: mediaPath("roll002", "fqs 2025-05-25 161044.065.JPEG"),
+    cover: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-05-25_161044.065_rtnyzi.jpg",
     preview: [
-      mediaPath("roll002", "grad2.JPEG"),
-      mediaPath("roll002", "kai2.JPEG"),
-      mediaPath("roll002", "party4.jpg"),
+      "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844856/grad2_qxp1iy.jpg",
+      "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844859/kai2_wwulpi.jpg",
+      "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844865/party4_yuv7jx.jpg",
     ],
     photos: roll002Photos,
   },
