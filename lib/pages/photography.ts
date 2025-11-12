@@ -42,6 +42,182 @@ type PhotoGallery = {
   photos: LooseRollMedia[]
 }
 
+const roll001Photos: LooseRollMedia[] = [
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940918/teeoceangif_oaxoah.mp4", type: "video" },
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940783/teeedkewal_n7k1so.mp4", type: "video" }, //kewalos gif
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940641/teeedkewal1_ei8otl.jpg", //southshore bay from kewalos
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940654/waikikisunsets_xjr6pc.jpg", //P waikiki sunset
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941056/sunteeportraits_lrwsg5.mp4", type: "video" }, //P tiara sun gif
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940652/teesun1_ws2ygy.jpg", //P tee sun 1
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940644/teesun2_de3rd4.jpg", //P tee sun 2
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940963/teeinsun_k5dwoe.mp4", type: "video" },
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940660/dolepark_n9gvym.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940573/dolepark1_j1qzcq.jpg",
+
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940643/teeedsurf_qch7lm.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941074/teeedsurf_jinkr9.mp4", type: "video" },
+
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940567/crawford_abdly1.jpg",//crawford
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940647/tonggs_yid5bj.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940649/tonggs1_bn6txz.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940587/ellateetongs_jorl6l.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940596/ellateetongs1_bvytdo.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940657/ellateetongs2_nsb8k5.jpg",
+ 
+
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940916/teenaps_agdcpi.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940585/ella1_c92r5n.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940594/ella2_ac0ofv.jpg",
+
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940623/kap_ysu4vq.jpg",//ella kap
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940627/kap2_djjmah.jpg",
+
+  
+  
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940581/edsonatkap_szaovh.jpg", //single
+
+
+
+  
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940623/kewaled_alxxoo.jpg", //KEWALOS
+  
+
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940557/poker1_nt72od.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940557/poker_yucerc.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940558/poker2_ruaiqo.jpg",
+
+
+  
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940552/3greenkube_kyo36d.jpg", //green kube coconut
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940637/4greenkube_buzsvk.jpg",
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940554/IMG_3946_pfsrwb.jpg", //ava tee at hulas
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940621/ket_vzwxmu.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940622/ket1_ol9tap.jpg",
+
+
+
+   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940581/edtee3_tttruc.jpg", //ed tee in car
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940586/edtee4_lnpx5g.jpg",
+
+
+
+"https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940630/queenkap_y5biip.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940626/knots1_hpqrwn.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940627/knots2_nkhagt.jpg",
+   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941037/peyjoy_c43mtm.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940629/peyjoy1_fzqltb.jpg",
+
+
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940553/1greenkube_dfoprp.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940576/2greenkube_h2hftl.jpg",
+
+
+
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941036/embermobilekub_oz3qde.mp4", type: "video" },
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941038/kuboforcoconuts_crdwbd.mp4", type: "video" },
+
+
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941021/kubobeachport_xtvuyi.mp4", type: "video" }, //kubo beach sand
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940625/kewaled1_htek2f.jpg", //KEWALOS SUNSET
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940950/purplekewalowaves_uyaf97.mp4", type: "video" },
+
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940567/5kubobeach_e7pflh.jpg",
+   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940583/DSCN0207_rbnfvr.jpg", //ella tee night out
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940567/4kubobeach_w5c6s2.jpg", //koko head kahala
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940567/3kubobeach_o6t4c1.jpg", ///b
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940556/2kubobeach_wvpd37.jpg",
+
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940801/ellaworm_dexzrj.mp4", type: "video" },
+    
+
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940570/drivin_z9z1ho.jpg", //CAR SELFIES
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940581/drivin1_oelo8h.jpg",
+
+ "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940577/DSCN0468_yyx1v1.jpg", //DJ TEE
+    { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941050/peytee_yjo42o.mp4", type: "video" },
+
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940567/bridgekinau_cadrxm.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940644/strtkinau_oyizjf.jpg",
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941030/salad_pyfru2.mp4", type: "video" },
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940638/stlouisdrive_s1gccc.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940639/stlouisdrive1_yaacup.jpg",
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940646/teesurfs_duevod.jpg", //tee smilesflower
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940561/avasflowers_anigph.jpg",
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940567/avasis_j777qe.jpg",  //AVA SIS
+ 
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940552/DSCN0131_w7nr1a.jpg", //GUITAR TEE
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940555/IMG_9814_ndx2bn.jpg",
+ 
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940554/DSCN0208_vbugjb.jpg", //ednightout
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940553/DSCN0200_djlk3n.jpg", //teenightout
+
+
+
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940613/fqs_2025-01-25_175340.774_e4amsd.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940615/fqs_2025-06-21_191328.302_nlyiji.jpg", //bean
+
+  
+
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940971/shawngrad4_x2d3iw.mp4", type: "video" }, //SHAWN grad hulas
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940633/shawngrad_vbpngh.jpg", 
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940634/shawngrad1_qbrvdx.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940636/shawngrad2_qcwaot.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940636/shawngrad3_s225pe.jpg",
+  
+  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940928/edtee_giffy_etvcwc.mp4", type: "video" }, //ed tee in mobile gif
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940635/river_ds0ehe.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940631/rainybow_q9pyx1.jpg",
+
+
+    { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941036/kubshif_d5v6dj.mp4", type: "video" },
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940617/geetar1_jhocih.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940616/geetar2_pan4qx.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940618/geetar3_duat1r.jpg",
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940547/cat1_v1kfia.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940547/cat2_etcxcs.jpg",
+
+
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940589/fqs_2025-01-06_151828.817_ljoawm.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940596/fqs_2025-01-12_102219.978_ywcdjd.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940597/fqs_2025-01-14_143022.110_umpomi.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940595/fqs_2025-01-15_173838.761_e9nkd1.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940601/fqs_2025-01-15_175129.697_hmgvtt.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940598/fqs_2025-01-15_175138.590_ap0xlu.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940602/fqs_2025-01-15_175402.346_mdfemx.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940608/fqs_2025-01-20_172734.909_h93zj7.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940605/fqs_2025-01-20_172900.241_eusghm.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940604/fqs_2025-01-22_090828.029_pcdjcs.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940610/fqs_2025-01-24_164439.786_nqgf5v.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940612/fqs_2025-01-24_181834.044_ljwgoo.jpg",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940612/fqs_2025-01-25_114459.376_x42b0r.jpg",
+  
+  
+]
+
 const roll002Photos: LooseRollMedia[] = [
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844820/C3B905BE-8AE8-4D8F-96B8-50074A58F917_ijexec.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844809/apart_n9ptyh.jpg",
@@ -489,20 +665,14 @@ export const photoGalleries: PhotoGallery[] = [
     id: "roll001",
     slug: "roll-001",
     title: "Roll001",
-    subtitle: "August 2024 · 33mm",
-    cover: "/cinematic-landscape-photography-hawaii-ocean.jpg",
+    subtitle: "Spring 2025 · 33mm",
+    cover: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940654/waikikisunsets_xjr6pc.jpg",
     preview: [
-      "/cinematic-landscape-photography-hawaii-ocean.jpg",
-      "/film-production-videography-cinematic-storytelling.jpg",
-      "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
+      "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940654/waikikisunsets_xjr6pc.jpg",
+      "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940647/tonggs_yid5bj.jpg",
+      "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940623/kewaled_alxxoo.jpg",
     ],
-    photos: [
-      "/cinematic-landscape-photography-hawaii-ocean.jpg",
-      "/film-production-videography-cinematic-storytelling.jpg",
-      "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
-      "/artistic-sketches-drawings-portraits-illustration.jpg",
-      "/film-production-videography-cinematic.jpg",
-    ],
+    photos: roll001Photos,
   },
   {
     id: "roll002",
