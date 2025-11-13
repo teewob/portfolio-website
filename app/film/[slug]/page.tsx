@@ -84,7 +84,7 @@ export default async function FilmDetailPage({ params }: FilmPageParams) {
           <div className="max-w-viewport mx-auto grid gap-8 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="space-y-6">
               <div>
-                <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/60">Synopsis</div>
+                <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/60">About</div>
                 <p className="mt-4 text-base leading-relaxed text-white/80">{film.description}</p>
               </div>
               {film.awards && film.awards.length > 0 && (

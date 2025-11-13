@@ -68,10 +68,6 @@ export default function FilmPage() {
                   />
                 </div>
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                <div className="pointer-events-none absolute bottom-6 left-6 flex items-center gap-3 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-display uppercase tracking-[0.35em] backdrop-blur">
-                  Watch &amp; learn more
-                  <ExternalLink className="size-4" />
-                </div>
               </Link>
 
               <div className="mt-10 grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
@@ -80,10 +76,6 @@ export default function FilmPage() {
                   <h2 className="font-serif text-4xl leading-tight">{film.title}</h2>
                   <p className="text-base leading-relaxed text-white/75">{film.overview}</p>
                   <p className="text-sm leading-relaxed text-white/65">{film.description}</p>
-                  <div className="flex flex-wrap gap-4 text-xs font-display uppercase tracking-[0.35em] text-white/60">
-                    <span>Role: {film.role}</span>
-                    <span>Runtime: {film.stats.find((s) => s.label === "Runtime")?.value}</span>
-                  </div>
                   <div className="flex flex-wrap gap-3">
                     <Link
                       href={`/film/${film.slug}`}
