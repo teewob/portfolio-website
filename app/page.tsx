@@ -8,6 +8,7 @@ import { ArrowRight, Camera, Film, Palette, FileText, Music } from "lucide-react
 import { QuoteCTA } from "@/components/quote-cta"
 import { PhotographyShowcase } from "@/components/photography-showcase"
 import { SelectedFilmPreview } from "@/components/selected-film-preview"
+import { SelectedIllustrationPreview } from "@/components/selected-illustration-preview"
 import { contactCta } from "@/lib/pages/contact"
 import { experiences } from "@/lib/pages/home"
 
@@ -116,12 +117,12 @@ export default function HomePage() {
                   href="/drawings"
                   className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-80 transition-all duration-500 group-hover:opacity-90" />
-                  <img
-                    src="/artistic-sketches-drawings-portraits-illustration.jpg"
-                    alt="Drawing work"
-                    className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.06]"
-                  />
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <div className="absolute inset-0">
+                      <SelectedIllustrationPreview />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-80 transition-all duration-500 group-hover:opacity-90" />
+                  </div>
                   <div className="absolute inset-x-0 bottom-0 p-8 text-white">
                     <div className="flex items-center gap-3 text-[11px] font-display uppercase tracking-[0.35em] text-white/70">
                       <span className="inline-block size-2 rounded-full bg-white/80" />

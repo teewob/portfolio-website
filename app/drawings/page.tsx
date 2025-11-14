@@ -2,47 +2,42 @@
 
 import { useCallback, useEffect, useState } from "react"
 import Link from "next/link"
-import { ArrowRight, ChevronLeft, ChevronRight, X } from "lucide-react"
+import { ChevronLeft, ChevronRight, X } from "lucide-react"
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { QuoteCTA } from "@/components/quote-cta"
 import { contactCta } from "@/lib/pages/contact"
-import { artifacts } from "@/lib/pages/illustrations"
+import { illustrationPieces } from "@/lib/pages/illustrations"
 
 export default function IllustrationsPage() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
-  const activeArtifact = activeIndex !== null ? artifacts[activeIndex] : null
+  const orderedPieces = illustrationPieces
+  const activePiece = activeIndex !== null ? orderedPieces[activeIndex] : null
 
   const closeLightbox = useCallback(() => setActiveIndex(null), [])
 
   const showNext = useCallback(() => {
     setActiveIndex((prev) => {
       if (prev === null) return prev
-      return (prev + 1) % artifacts.length
+      return (prev + 1) % orderedPieces.length
     })
-  }, [])
+  }, [orderedPieces.length])
 
   const showPrev = useCallback(() => {
     setActiveIndex((prev) => {
       if (prev === null) return prev
-      return (prev - 1 + artifacts.length) % artifacts.length
+      return (prev - 1 + orderedPieces.length) % orderedPieces.length
     })
-  }, [])
+  }, [orderedPieces.length])
 
   useEffect(() => {
     if (activeIndex === null) return
 
     const handleKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        closeLightbox()
-      }
-      if (event.key === "ArrowRight") {
-        showNext()
-      }
-      if (event.key === "ArrowLeft") {
-        showPrev()
-      }
+      if (event.key === "Escape") closeLightbox()
+      if (event.key === "ArrowRight") showNext()
+      if (event.key === "ArrowLeft") showPrev()
     }
 
     window.addEventListener("keydown", handleKey)
@@ -68,36 +63,61 @@ export default function IllustrationsPage() {
               </Link>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {artifacts.map((artifact, index) => (
-                <button
-                  key={artifact.id}
-                  type="button"
-                  onClick={() => setActiveIndex(index)}
-                  className="group flex flex-col gap-3 rounded-[20px] bg-white/5 p-4 text-left outline-none transition focus-visible:ring-2 focus-visible:ring-white/80"
-                >
-                  <div className="aspect-[4/5] overflow-hidden rounded-[16px] border border-white/10 bg-black/40">
-                    <img
-                      src={artifact.image}
-                      alt={artifact.title}
-                      className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
-                    />
-                  </div>
-                  <div className="space-y-1 text-xs text-white/70">
-                    <h3 className="font-serif text-lg font-semibold text-white">{artifact.title}</h3>
-                    <p className="tracking-wide">{artifact.caption}</p>
-                  </div>
-                </button>
-              ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="w-full px-4 pb-24 md:px-10">
+            <div
+              className="mx-auto grid w-full max-w-[1600px] gap-4"
+              style={{ gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))", gridAutoFlow: "dense" }}
+            >
+              {orderedPieces.map((piece, index) => {
+                const span = Math.min(Math.max(piece.cols ?? 1, 1), 3)
+                const isVideo = piece.type === "video"
+                return (
+                  <button
+                    key={piece.id}
+                    type="button"
+                    onClick={() => setActiveIndex(index)}
+                    style={{ gridColumn: `span ${span}` }}
+                    className="group relative block w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80"
+                  >
+                    {isVideo ? (
+                      <video
+                        src={piece.src}
+                        muted
+                        loop
+                        autoPlay
+                        playsInline
+                        controls={false}
+                        preload="metadata"
+                        className="block h-auto w-full object-cover"
+                      />
+                    ) : (
+                      <img
+                        src={piece.src}
+                        alt={`Illustration ${piece.id}`}
+                        className="block h-auto w-full object-cover"
+                        loading="lazy"
+                      />
+                    )}
+                  </button>
+                )
+              })}
             </div>
 
+          </div>
+        </section>
+
+        <section className="px-6 pb-24">
+          <div className="mx-auto w-full max-w-5xl">
             <QuoteCTA
               tone="dark"
               quote={contactCta.quote}
               body={[contactCta.email]}
               links={contactCta.socials}
               primary={{ label: "Contact", href: "/contact" }}
-              className="mt-16"
             />
           </div>
         </section>
@@ -105,7 +125,7 @@ export default function IllustrationsPage() {
 
       <Footer />
 
-      {activeArtifact && (
+      {activePiece && (
         <div className="fixed inset-0 z-[80] bg-black/90 backdrop-blur-sm">
           <button
             type="button"
@@ -128,8 +148,17 @@ export default function IllustrationsPage() {
               </button>
 
               <div className="flex-1">
-                <div className="aspect-[4/5] w-full overflow-hidden rounded-[32px] border border-white/20 bg-black/40 shadow-[0_30px_120px_rgba(0,0,0,0.65)]">
-                  <img src={activeArtifact.image} alt={activeArtifact.title} className="h-full w-full object-contain" />
+                <div className="w-full overflow-hidden border border-white/20 bg-black/40 shadow-[0_30px_120px_rgba(0,0,0,0.65)]">
+                  {activePiece.type === "video" ? (
+                    <video
+                      src={activePiece.src}
+                      controls
+                      playsInline
+                      className="h-full w-full object-contain"
+                    />
+                  ) : (
+                    <img src={activePiece.src} alt={`Illustration ${activePiece.id}`} className="h-full w-full object-contain" />
+                  )}
                 </div>
               </div>
 
@@ -143,19 +172,15 @@ export default function IllustrationsPage() {
               </button>
             </div>
 
-            <div className="flex w-full max-w-3xl flex-col items-center text-center text-xs uppercase tracking-[0.3em] text-white/70">
-              <p className="font-serif text-2xl tracking-normal text-white">{activeArtifact.title}</p>
-              <p className="mt-2 text-sm tracking-[0.2em] text-white/70">{activeArtifact.caption}</p>
-              <div className="mt-4 flex items-center gap-4 text-[11px] font-display">
-                <span>
-                  {activeIndex !== null ? `${activeIndex + 1} / ${artifacts.length}` : null}
-                </span>
+            <div className="flex w-full max-w-3xl flex-col items-center text-center text-xs font-display uppercase tracking-[0.3em] text-white/70">
+              <div className="mt-4 flex items-center gap-4 text-[11px]">
+                <span>{activeIndex !== null ? `${activeIndex + 1} / ${orderedPieces.length}` : null}</span>
                 <div className="flex gap-2 sm:hidden">
                   <button
                     type="button"
                     onClick={showPrev}
                     className="rounded-full border border-white/20 bg-white/10 p-3 text-white transition hover:bg-white/25"
-                    aria-label="Previous illustration"
+                    aria-label="Previous piece"
                   >
                     <ChevronLeft className="h-4 w-4" />
                   </button>
@@ -163,7 +188,7 @@ export default function IllustrationsPage() {
                     type="button"
                     onClick={showNext}
                     className="rounded-full border border-white/20 bg-white/10 p-3 text-white transition hover:bg-white/25"
-                    aria-label="Next illustration"
+                    aria-label="Next piece"
                   >
                     <ChevronRight className="h-4 w-4" />
                   </button>
