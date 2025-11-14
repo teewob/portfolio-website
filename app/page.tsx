@@ -7,6 +7,7 @@ import { ArrowRight, Camera, Film, Palette, FileText, Music } from "lucide-react
 
 import { QuoteCTA } from "@/components/quote-cta"
 import { PhotographyShowcase } from "@/components/photography-showcase"
+import { SelectedFilmPreview } from "@/components/selected-film-preview"
 import { contactCta } from "@/lib/pages/contact"
 import { experiences } from "@/lib/pages/home"
 
@@ -93,12 +94,8 @@ export default function HomePage() {
                 className="group relative block overflow-hidden rounded-[36px] border border-white/10 bg-white/5"
               >
                 <div className="relative aspect-[16/9] w-full overflow-hidden">
+                  <SelectedFilmPreview className="absolute inset-0" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent opacity-80 transition-all duration-500 group-hover:opacity-90" />
-                  <img
-                    src="/film-production-videography-cinematic-storytelling.jpg"
-                    alt="Film work"
-                    className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-[1.04]"
-                  />
                   <div className="absolute inset-x-0 bottom-0 p-10 text-white">
                     <div className="flex items-center gap-3 text-[11px] font-display uppercase tracking-[0.35em] text-white/70">
                       <span className="inline-block size-2 rounded-full bg-white/80" />

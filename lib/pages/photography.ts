@@ -665,7 +665,7 @@ export const photoGalleries: PhotoGallery[] = [
     id: "roll001",
     slug: "roll-001",
     title: "Roll001",
-    subtitle: "Spring 2025 · 33mm",
+    subtitle: "Spring 2025 · 33mm Film",
     cover: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940654/waikikisunsets_xjr6pc.jpg",
     preview: [
       "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940654/waikikisunsets_xjr6pc.jpg",
@@ -679,7 +679,7 @@ export const photoGalleries: PhotoGallery[] = [
     slug: "roll-002",
     title: "Roll002",
     subtitle: "Summer 2025 · 33mm Film",
-    description: "The summer I turned 22, graduated with my cool film degree. The world is my oyster.",
+    description: "The summer I turned 22 and graduated with my cool film degree.",
     cover: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844839/fqs_2025-05-25_161044.065_rtnyzi.jpg",
     preview: [
       "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844856/grad2_qxp1iy.jpg",

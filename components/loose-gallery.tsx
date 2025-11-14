@@ -6,19 +6,37 @@ import { ArrowLeft, ArrowRight, X } from "lucide-react"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 import { cn, resolveMediaUrl } from "@/lib/utils"
 
-type LooseGalleryItem = string | { src: string; type?: "image" | "video" }
+type LooseGalleryItem = string | { src: string; type?: "image" | "video"; alt?: string }
 
 interface LooseGalleryProps {
   photos: LooseGalleryItem[]
+  variant?: "masonry" | "grid"
+  wrapperClassName?: string
+  itemClassName?: string
+  mediaClassName?: string
+  rounded?: boolean
+  showLoader?: boolean
+  unstyledItems?: boolean
 }
 
 const normalizeItem = (item: LooseGalleryItem) =>
-  typeof item === "string" ? { src: item, type: "image" as const } : { src: item.src, type: item.type ?? "image" }
+  typeof item === "string"
+    ? { src: item, type: "image" as const }
+    : { src: item.src, type: item.type ?? "image", alt: item.alt }
 
-export function LooseGallery({ photos }: LooseGalleryProps) {
+export function LooseGallery({
+  photos,
+  variant = "masonry",
+  wrapperClassName,
+  itemClassName,
+  mediaClassName,
+  rounded = true,
+  showLoader = true,
+  unstyledItems = false,
+}: LooseGalleryProps) {
   const [open, setOpen] = useState(false)
   const [index, setIndex] = useState(0)
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(showLoader)
 
   if (!photos?.length) return null
 
@@ -38,10 +56,14 @@ export function LooseGallery({ photos }: LooseGalleryProps) {
   }
 
   useEffect(() => {
+    if (!showLoader) {
+      setIsLoading(false)
+      return
+    }
     setIsLoading(true)
     const timer = setTimeout(() => setIsLoading(false), 2000)
     return () => clearTimeout(timer)
-  }, [photos])
+  }, [photos, showLoader])
 
   const current = normalizedPhotos[index]
   const handleBackdropClick = (event: MouseEvent<HTMLDivElement>) => {
@@ -54,32 +76,47 @@ export function LooseGallery({ photos }: LooseGalleryProps) {
     return <FilmLoader />
   }
 
+  const containerClasses =
+    variant === "grid"
+      ? cn("grid gap-4 sm:grid-cols-2 lg:grid-cols-4", wrapperClassName)
+      : cn("columns-1 gap-6 [column-fill:_balance] sm:columns-2 lg:columns-4", wrapperClassName)
+
+  const sharedButtonClasses = unstyledItems
+    ? ""
+    : "block w-full overflow-hidden border border-white/10 bg-white/5 transition hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+  const buttonClasses = cn(
+    sharedButtonClasses,
+    !unstyledItems && variant === "masonry" ? "mb-6 break-inside-avoid" : "",
+    !unstyledItems ? (rounded ? (variant === "grid" ? "rounded-[20px]" : "rounded-[28px]") : "rounded-none") : "",
+    itemClassName
+  )
+
+  const mediaClasses = cn(
+    "h-auto w-full object-cover transition duration-500 group-hover:scale-[1.02]",
+    !unstyledItems ? (rounded ? (variant === "grid" ? "rounded-[20px]" : "rounded-[28px]") : "rounded-none") : "",
+    mediaClassName
+  )
+
   return (
     <>
-      <div className="columns-1 gap-6 [column-fill:_balance] sm:columns-2 lg:columns-4">
+      <div className={containerClasses}>
         {normalizedPhotos.map((item, idx) => {
           const mediaUrl = resolveMediaUrl(item.src, item.type === "video" ? "video" : "image")
           return (
-          <button
-            key={`${item.src}-${idx}`}
-            type="button"
-            onClick={() => handleOpen(idx)}
-            className="mb-6 block w-full break-inside-avoid overflow-hidden rounded-[28px] border border-white/10 bg-white/5 transition hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
-          >
-            {item.type === "video" ? (
-              <video
-                src={mediaUrl}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="h-auto w-full rounded-[28px] object-cover"
-              />
-            ) : (
-              <img src={mediaUrl} alt={`Gallery image ${idx + 1}`} className="h-auto w-full" />
-            )}
-          </button>
-        )})}
+            <button
+              key={`${item.src}-${idx}`}
+              type="button"
+              onClick={() => handleOpen(idx)}
+              className={cn("group", buttonClasses)}
+            >
+              {item.type === "video" ? (
+                <video src={mediaUrl} autoPlay loop muted playsInline className={mediaClasses} />
+              ) : (
+                <img src={mediaUrl} alt={item.alt ?? `Gallery image ${idx + 1}`} className={mediaClasses} />
+              )}
+            </button>
+          )
+        })}
       </div>
 
       <Dialog open={open} onOpenChange={setOpen}>
@@ -114,7 +151,7 @@ export function LooseGallery({ photos }: LooseGalleryProps) {
                 ) : (
                   <img
                     src={resolveMediaUrl(current.src)}
-                    alt={`Gallery image ${index + 1}`}
+                    alt={current.alt ?? `Gallery image ${index + 1}`}
                     className="h-full w-full object-contain"
                   />
                 )}

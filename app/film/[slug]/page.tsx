@@ -6,6 +6,8 @@ import { ArrowLeft } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { QuoteCTA } from "@/components/quote-cta"
+import { LooseGallery } from "@/components/loose-gallery"
+import { PosterCarousel } from "@/components/poster-carousel"
 import { contactCta } from "@/lib/pages/contact"
 import { filmProjects } from "@/lib/pages/film"
 
@@ -125,26 +127,73 @@ export default async function FilmDetailPage({ params }: FilmPageParams) {
           </div>
         </section>
 
-        {film.gallery && film.gallery.length > 0 && (
+        {film.festivalGallery && film.festivalGallery.length > 0 && (
           <section className="border-b border-white/10 bg-black">
             <div className="max-w-viewport mx-auto px-6 py-20">
-              <div className="mb-8">
-                <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/60">Behind the scenes</div>
-                <h2 className="mt-2 font-serif text-3xl text-white">Stills &amp; storyboard frames</h2>
+              <div className="mb-6">
+                <h2 className="font-serif text-3xl text-white">Screening Q&amp;A</h2>
               </div>
-              <div className="grid gap-6 md:grid-cols-3">
+              <LooseGallery
+                photos={film.festivalGallery.map((photo) => ({ src: photo.src, alt: photo.alt }))}
+                variant="grid"
+                wrapperClassName="gap-4 sm:grid-cols-2 lg:grid-cols-4"
+                rounded={false}
+                itemClassName="border-white/15 bg-white/5 hover:-translate-y-0"
+                mediaClassName="object-cover"
+                showLoader={false}
+              />
+            </div>
+          </section>
+        )}
+
+        {(film.posters && film.posters.length > 0) || film.storyboardUrl ? (
+          <section className="border-b border-white/10 bg-black">
+            <div className="max-w-viewport mx-auto px-6 py-20">
+              <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+                {film.posters && film.posters.length > 0 && (
+                  <PosterCarousel posters={film.posters} className="h-[640px] w-full" />
+                )}
+                {film.storyboardUrl && (
+                  <div className="flex flex-col gap-3">
+                    <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5">
+                      <object
+                        data={`${film.storyboardUrl}#toolbar=0&navpanes=0&scrollbar=0`}
+                        type="application/pdf"
+                        className="h-[640px] w-full"
+                        aria-label={`${film.title} storyboards`}
+                      >
+                        <p className="p-4 text-sm text-white/70">
+                          Unable to display the storyboard.{" "}
+                          <a href={film.storyboardUrl} target="_blank" rel="noreferrer" className="underline">
+                            Download the PDF
+                          </a>
+                          .
+                        </p>
+                      </object>
+                    </div>
+                    <div className="text-xs font-display uppercase tracking-[0.35em] text-white/60">Storyboarding</div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </section>
+        ) : null}
+
+        {film.gallery && film.gallery.length > 0 && film.slug !== "self-care-mental-health" && (
+          <section className="border-b border-white/10 bg-black">
+            <div className="max-w-viewport mx-auto px-6 py-20">
+              <div className="mb-6">
+                <h2 className="font-serif text-3xl text-white">Stills</h2>
+              </div>
+              <div className="grid gap-0 md:grid-cols-2">
                 {film.gallery.map((asset) => (
-                  <figure
-                    key={asset.src}
-                    className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5"
-                  >
+                  <div key={asset.src} className="w-full">
                     {asset.type === "video" ? (
-                      <video src={asset.src} autoPlay loop muted playsInline className="h-full w-full object-cover" />
+                      <video src={asset.src} autoPlay loop muted playsInline className="block w-full" />
                     ) : (
-                      <img src={asset.src} alt={asset.alt} className="h-full w-full object-cover" />
+                      <img src={asset.src} alt={asset.alt} className="block w-full" />
                     )}
-                    <figcaption className="px-5 py-3 text-xs uppercase tracking-[0.3em] text-white/60">{asset.alt}</figcaption>
-                  </figure>
+                  </div>
                 ))}
               </div>
             </div>
