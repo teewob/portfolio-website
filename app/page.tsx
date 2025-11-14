@@ -28,7 +28,7 @@ export default function HomePage() {
             <div className="grid gap-12 lg:grid-cols-[1.25fr_0.85fr] lg:items-end">
               <div className="space-y-10">
                 <h1 className="font-serif text-5xl font-semibold leading-[1.05] text-balance text-white md:text-6xl lg:text-[70px]">
-                  I create stories through light, motion, and the living archive of place.
+                  I create stories through light, motion, sound, and the living archive of place.
                 </h1>
                 <p className="max-w-2xl text-lg leading-relaxed text-white/70 md:text-xl">
                   Tiara Tenorio is a Chamorro–Filipina photographer, videographer, and visual artist from Guam, now based
