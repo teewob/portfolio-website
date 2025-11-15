@@ -10,9 +10,21 @@ type WorkHeroImageProps = {
   src: string
   alt: string
   className?: string
+  imageClassName?: string
+  modalImageClassName?: string
+  unstyled?: boolean
+  hideCloseButton?: boolean
 }
 
-export function WorkHeroImage({ src, alt, className }: WorkHeroImageProps) {
+export function WorkHeroImage({
+  src,
+  alt,
+  className,
+  imageClassName,
+  modalImageClassName,
+  unstyled = false,
+  hideCloseButton = false,
+}: WorkHeroImageProps) {
   const [open, setOpen] = useState(false)
 
   const handleBackdropClick = (event: MouseEvent<HTMLDivElement>) => {
@@ -27,12 +39,21 @@ export function WorkHeroImage({ src, alt, className }: WorkHeroImageProps) {
         type="button"
         onClick={() => setOpen(true)}
         className={cn(
-          "group block w-full overflow-hidden rounded-[32px] border border-white/10 bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40",
+          "group block w-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40",
+          unstyled ? "" : "overflow-hidden rounded-[32px] border border-white/10 bg-white/5",
           className
         )}
         aria-label="Open hero image"
       >
-        <img src={src} alt={alt} className="h-full w-full object-cover transition group-hover:scale-[1.01]" />
+        <img
+          src={src}
+          alt={alt}
+          className={cn(
+            "h-full w-full object-cover transition",
+            unstyled ? "" : "group-hover:scale-[1.01]",
+            imageClassName
+          )}
+        />
       </button>
 
       <Dialog open={open} onOpenChange={setOpen}>
@@ -43,18 +64,28 @@ export function WorkHeroImage({ src, alt, className }: WorkHeroImageProps) {
           onClick={handleBackdropClick}
         >
           <div className="relative flex h-full w-full max-w-5xl flex-col" onClick={(event) => event.stopPropagation()}>
-            <button
-              type="button"
-              className="absolute right-4 top-4 z-10 rounded-full border border-white/40 bg-black/70 p-3 sm:right-6 sm:top-6"
-              onClick={() => setOpen(false)}
-              aria-label="Close hero image"
-            >
-              <X className="size-4" />
-            </button>
+            {!hideCloseButton && (
+              <button
+                type="button"
+                className="absolute right-4 top-4 z-10 rounded-full border border-white/40 bg-black/70 p-3 sm:right-6 sm:top-6"
+                onClick={() => setOpen(false)}
+                aria-label="Close hero image"
+              >
+                <X className="size-4" />
+              </button>
+            )}
 
             <div className="relative flex-1">
               <div className="absolute inset-0 flex items-center justify-center p-6">
-                <img src={src} alt={alt} className="max-h-[90vh] w-full rounded-[32px] object-contain" />
+                <img
+                  src={src}
+                  alt={alt}
+                  className={cn(
+                    "max-h-[90vh] w-full object-contain",
+                    unstyled ? "" : "rounded-[32px]",
+                    modalImageClassName
+                  )}
+                />
               </div>
             </div>
           </div>

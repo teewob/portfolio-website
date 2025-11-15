@@ -66,7 +66,7 @@ export default async function WorkDetailPage({ params }: WorkPageParams) {
 
             <div className="grid gap-10 lg:grid-cols-[1.3fr_0.7fr] lg:items-center">
               <div className="space-y-6">
-                <div className="text-[12px] font-display uppercase tracking-superwide text-white/60">Case Study</div>
+                <div className="text-[12px] font-display uppercase tracking-superwide text-white/60">Experience</div>
                 <h1 className="font-serif text-5xl leading-tight md:text-6xl">{role.company}</h1>
                 <p className="max-w-3xl text-base leading-relaxed text-white/75 md:text-lg">{role.summary}</p>
               </div>

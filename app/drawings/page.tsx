@@ -151,8 +151,11 @@ export default function IllustrationsPage() {
                 <div className="w-full overflow-hidden border border-white/20 bg-black/40 shadow-[0_30px_120px_rgba(0,0,0,0.65)]">
                   {activePiece.type === "video" ? (
                     <video
+                      key={activePiece.id}
                       src={activePiece.src}
                       controls
+                      autoPlay
+                      loop
                       playsInline
                       className="h-full w-full object-contain"
                     />

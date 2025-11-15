@@ -11,6 +11,7 @@ import { SelectedFilmPreview } from "@/components/selected-film-preview"
 import { SelectedIllustrationPreview } from "@/components/selected-illustration-preview"
 import { contactCta } from "@/lib/pages/contact"
 import { experiences } from "@/lib/pages/home"
+import { WorkHeroImage } from "@/components/work-hero-image"
 
 export default function HomePage() {
   return (
@@ -214,7 +215,7 @@ export default function HomePage() {
                   <Link
                     key={experience.company}
                     href={`/work/${experience.slug}`}
-                    aria-label={`View ${experience.company} case study`}
+                    aria-label={`View ${experience.company} resume`}
                     className="group relative flex min-w-[280px] max-w-[360px] snap-start flex-col rounded-[28px] border border-white/10 bg-white/5 shadow-[0_25px_60px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                   >
                     <div className="relative h-56 overflow-hidden rounded-t-[28px]">
@@ -253,10 +254,13 @@ export default function HomePage() {
           <div className="mx-auto w-full max-w-6xl px-6 py-24 md:px-8 md:py-36">
             <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
               <div className="flex justify-center">
-                <img
+                <WorkHeroImage
                   src="/homepage/tiara-oceanside.jpg"
                   alt="Tiara Tenorio sitting oceanside at dusk"
-                  className="w-full max-w-3xl h-auto object-contain"
+                  unstyled
+                  className="w-full max-w-3xl"
+                  imageClassName="w-full h-auto object-contain"
+                  hideCloseButton
                 />
               </div>
 
@@ -268,8 +272,8 @@ export default function HomePage() {
                 </div>
                 <div className="space-y-6 text-lg leading-relaxed text-white/80">
                   <p>
-                    I was born in Saipan and raised on Guam, where my dad’s stories traveled through constellations. Nights on
-                    the roof of his Toyota made me a listener before I ever held a camera, and that listening guides every
+                    I was born in Saipan and raised on Guam. My father, like many in our family, were storytellers—an art that I'd inherited. Stargazing nights on
+                    the roof of dad's Toyota made me a listener before I ever held a camera, and that listening guides every
                     project I step into.
                   </p>
                   <p>
