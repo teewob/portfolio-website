@@ -7,22 +7,11 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { QuoteCTA } from "@/components/quote-cta"
 import { contactCta } from "@/lib/pages/contact"
-import { getWorkRole, workRoles, type WorkGalleryItem } from "@/lib/pages/work"
+import { getWorkRole, workRoles } from "@/lib/pages/work"
+import { WorkContentGallery } from "@/components/work-content-gallery"
 
 type WorkDetailParams = { slug: string }
 type WorkPageParams = { params: Promise<WorkDetailParams> }
-
-const aspectClassMap: Record<NonNullable<WorkGalleryItem["aspect"]>, string> = {
-  portrait: "row-span-2",
-  landscape: "sm:col-span-2",
-  wide: "sm:col-span-2 lg:col-span-3",
-  square: "",
-}
-
-const tileClassForAspect = (aspect?: WorkGalleryItem["aspect"]) => {
-  if (!aspect) return ""
-  return aspectClassMap[aspect] ?? ""
-}
 
 export function generateStaticParams() {
   return workRoles.map((role) => ({ slug: role.slug }))
@@ -53,12 +42,18 @@ export default async function WorkDetailPage({ params }: WorkPageParams) {
     notFound()
   }
 
+  const isSensei = role.slug === "sensei-farms"
+  const pageBackground = isSensei
+    ? "bg-gradient-to-b from-[#020f08] via-[#0a2814] to-[#031208]"
+    : "bg-black"
+  const sectionBackground = isSensei ? "bg-transparent" : "bg-black"
+
   return (
-    <div className="flex min-h-screen flex-col bg-black text-white">
+    <div className={`flex min-h-screen flex-col text-white ${pageBackground}`}>
       <Header />
 
       <main className="flex-1">
-        <section className="border-b border-white/10 bg-black">
+        <section className={`border-b border-white/10 ${sectionBackground}`}>
           <div className="max-w-viewport mx-auto px-6 py-16 md:py-24">
             <Link
               href="/#experience"
@@ -120,7 +115,7 @@ export default async function WorkDetailPage({ params }: WorkPageParams) {
           </div>
         </section>
 
-        <section className="border-b border-white/5 bg-black">
+        <section className={`border-b border-white/5 ${sectionBackground}`}>
           <div className="max-w-viewport mx-auto px-6 py-20 md:py-28">
             <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
@@ -132,42 +127,11 @@ export default async function WorkDetailPage({ params }: WorkPageParams) {
               </div>
             </div>
 
-            <div className="grid auto-rows-[220px] gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {role.gallery.map((item) => (
-                <figure
-                  key={item.id}
-                  className={`group relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 ${tileClassForAspect(item.aspect)}`}
-                >
-                  {item.type === "video" ? (
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      poster={item.poster}
-                      className="h-full w-full object-cover transition duration-[1500ms] group-hover:scale-[1.03]"
-                    >
-                      <source src={item.src} />
-                    </video>
-                  ) : (
-                    <img
-                      src={item.src}
-                      alt={item.alt}
-                      className="h-full w-full object-cover transition duration-[1500ms] group-hover:scale-[1.03]"
-                    />
-                  )}
-
-                  <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 flex flex-col gap-1 bg-gradient-to-t from-black/80 via-black/10 to-transparent p-5 text-xs uppercase tracking-[0.3em]">
-                    <span className="font-serif text-base tracking-normal text-white">{item.alt}</span>
-                    {item.caption && <span className="text-white/70">{item.caption}</span>}
-                  </figcaption>
-                </figure>
-              ))}
-            </div>
+            <WorkContentGallery items={role.gallery} />
           </div>
         </section>
 
-        <section className="bg-black">
+        <section className={sectionBackground}>
           <div className="max-w-viewport mx-auto px-6 py-24 md:py-32">
             <QuoteCTA
               tone="dark"

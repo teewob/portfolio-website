@@ -34,7 +34,7 @@ export default function FilmPage() {
             </div>
 
             <div className="rounded-[32px] border border-white/15 bg-white/5 p-6">
-              <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/60">Awards & Festivals</div>
+              <div className="text-[11px] font-display uppercase tracking-[0.35em] text-white/60">Screenings & Accomplishments</div>
               <ul className="mt-4 space-y-3 text-sm text-white/80">
                 {filmProjects
                   .flatMap((film) => film.awards ?? [])

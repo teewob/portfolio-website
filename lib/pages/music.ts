@@ -19,7 +19,7 @@ export const sonicLandscapes: SonicLandscapeAlbum = {
   title: "Alaska",
   releaseYear: 2022,
   overview:
-    "The feeling of vastness. For I had experienced the quiet awe of discovery of my existence in this universe. It was the moment I saw the moon and stars in the sky beyond two dimensions.",
+    "The feeling of vastness. For I had experienced the quiet awe of discovery of my existence in this universe. It was the moment I saw the moon and stars in the sky beyond the two dimensions that I'd always seen it in.",
   cover: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763122896/alaskavers1_qfutuv.png",
   tracks: [
     {
