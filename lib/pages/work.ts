@@ -476,20 +476,6 @@ export const workRoles: WorkRole[] = [
       },
       
       {
-        id: "hhs-photo-02",
-        type: "image",
-        src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763195294/IMG_0060_ul8oo4.jpg",
-        alt: "Instructor lining up boards on Waikīkī sand",
-        aspect: "portrait",
-      },
-      {
-        id: "hhs-photo-03",
-        type: "image",
-        src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763195290/IMG_0015_kjvebl.jpg",
-        alt: "Close-up of surf wax and fins pre-lesson",
-        aspect: "portrait",
-      },
-      {
         id: "hhs-video-02",
         type: "video",
         src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763195259/hanslandscgifs_lledlb.mp4",
@@ -515,6 +501,20 @@ export const workRoles: WorkRole[] = [
         type: "image",
         src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763195298/IMG_1389_lqpwm3.jpg",
         alt: "Surf lesson students heading into rolling sets",
+        aspect: "portrait",
+      },
+      {
+        id: "hhs-photo-02",
+        type: "image",
+        src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763195294/IMG_0060_ul8oo4.jpg",
+        alt: "Instructor lining up boards on Waikīkī sand",
+        aspect: "portrait",
+      },
+      {
+        id: "hhs-photo-03",
+        type: "image",
+        src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763195290/IMG_0015_kjvebl.jpg",
+        alt: "Close-up of surf wax and fins pre-lesson",
         aspect: "portrait",
       },
     ],
