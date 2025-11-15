@@ -83,19 +83,29 @@ export function WorkContentGallery({ items }: { items: WorkGalleryItem[] }) {
                 )}
               >
                 {item.type === "video" ? (
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    poster={item.poster}
-                    onLoadedMetadata={(event) =>
-                      registerOrientation(item.id, event.currentTarget.videoWidth, event.currentTarget.videoHeight)
-                    }
-                    className="absolute inset-0 h-full w-full cursor-pointer object-cover"
-                  >
-                    <source src={item.src} />
-                  </video>
+                  item.provider === "youtube" ? (
+                    <iframe
+                      src={item.src}
+                      title={item.alt}
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowFullScreen
+                      className="absolute inset-0 h-full w-full"
+                    />
+                  ) : (
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      poster={item.poster}
+                      onLoadedMetadata={(event) =>
+                        registerOrientation(item.id, event.currentTarget.videoWidth, event.currentTarget.videoHeight)
+                      }
+                      className="absolute inset-0 h-full w-full cursor-pointer object-cover"
+                    >
+                      <source src={item.src} />
+                    </video>
+                  )
                 ) : (
                   <img
                     src={item.src}
@@ -140,16 +150,27 @@ export function WorkContentGallery({ items }: { items: WorkGalleryItem[] }) {
               <div className="relative flex-1">
                 <div className="absolute inset-0 flex items-center justify-center p-6">
                   {activeItem.type === "video" ? (
-                    <video
-                      key={activeItem.id}
-                      src={activeItem.src}
-                      poster={activeItem.poster}
-                      autoPlay
-                      loop
-                      controls
-                      playsInline
-                      className="max-h-[90vh] w-full rounded-[32px] object-contain"
-                    />
+                    activeItem.provider === "youtube" ? (
+                      <iframe
+                        key={activeItem.id}
+                        src={activeItem.fullscreenSrc ?? activeItem.src}
+                        title={activeItem.alt}
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowFullScreen
+                        className="max-h-[90vh] w-full rounded-[32px]"
+                      />
+                    ) : (
+                      <video
+                        key={activeItem.id}
+                        src={activeItem.src}
+                        poster={activeItem.poster}
+                        autoPlay
+                        loop
+                        controls
+                        playsInline
+                        className="max-h-[90vh] w-full rounded-[32px] object-contain"
+                      />
+                    )
                   ) : (
                     <img
                       src={activeItem.src}

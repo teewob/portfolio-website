@@ -6,6 +6,8 @@ export type WorkGalleryItem = {
   caption?: string
   aspect?: "portrait" | "landscape"
   poster?: string
+  provider?: "youtube"
+  fullscreenSrc?: string
 }
 
 export type WorkRole = {
@@ -453,7 +455,7 @@ export const workRoles: WorkRole[] = [
     summary:
       "Located at the most populated destination in Waikīkī, Hans Hedemann Surf School is one of Hawaiʻi’s most established surf institutions—founded by professional surfer Hans Hedemann to share the joy and discipline of surfing with visitors from around the world. Within this setting, I support both lesson operations and creative media, guiding students through ocean safety and hands-on instruction while documenting their surf experiences through aerial and DSLR footage.",
     heroImage: "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
-    cardImage: "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
+    cardImage: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763195294/IMG_0060_ul8oo4.jpg",
     contributions: [
       "Led ocean safety briefings and personalized surf lessons based on skill level and conditions.",
       "Operated drone and DSLR systems to capture surf footage and create guest media packages.",
@@ -463,27 +465,56 @@ export const workRoles: WorkRole[] = [
     services: ["Ocean Instruction", " Aerial Media Production", "Client Experience Management"],
     gallery: [
       {
-        id: "plc-photo-01",
-        type: "image",
-        src: "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
-        alt: "Ocean horizon at dusk",
-        caption: "ʻĀina stewardship residency portrait",
+        id: "hhs-video-01",
+        type: "video",
+        src: "https://www.youtube.com/embed/niiKuU22jt4?autoplay=1&mute=1&loop=1&controls=0&playsinline=1&playlist=niiKuU22jt4",
+        fullscreenSrc: "https://www.youtube.com/embed/niiKuU22jt4?autoplay=1&controls=1&rel=0&mute=0",
+        alt: "Drone flyover capturing Waikīkī surf lineup",
+        caption: "Aerial drone pass over Publics lineup",
+        provider: "youtube",
         aspect: "landscape",
       },
+      
       {
-        id: "plc-photo-02",
+        id: "hhs-photo-02",
         type: "image",
-        src: "/cinematic-landscape-photography-hawaii-ocean.jpg",
-        alt: "Cultural practitioner portrait",
-        caption: "Cultural practitioner series",
+        src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763195294/IMG_0060_ul8oo4.jpg",
+        alt: "Instructor lining up boards on Waikīkī sand",
         aspect: "portrait",
       },
       {
-        id: "plc-photo-03",
+        id: "hhs-photo-03",
         type: "image",
-        src: "/film-production-videography-cinematic-storytelling.jpg",
-        alt: "Documentary still",
-        caption: "Documentary stills for festival decks",
+        src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763195290/IMG_0015_kjvebl.jpg",
+        alt: "Close-up of surf wax and fins pre-lesson",
+        aspect: "portrait",
+      },
+      {
+        id: "hhs-video-02",
+        type: "video",
+        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763195259/hanslandscgifs_lledlb.mp4",
+        alt: "Looping aerial pan across Publics lineup",
+        aspect: "landscape",
+      },
+      {
+        id: "hhs-video-03",
+        type: "video",
+        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763195259/porthanslongboarder_caexwb.mp4",
+        alt: "Longboarder trimming across small Waikīkī wave",
+        aspect: "portrait",
+      },
+      {
+        id: "hhs-video-04",
+        type: "video",
+        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763195248/hansjetty_olpb0e.mp4",
+        alt: "Jetty view of surf class paddle-out",
+        aspect: "landscape",
+      },
+      {
+        id: "hhs-photo-01",
+        type: "image",
+        src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763195298/IMG_1389_lqpwm3.jpg",
+        alt: "Surf lesson students heading into rolling sets",
         aspect: "portrait",
       },
     ],

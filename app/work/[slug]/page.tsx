@@ -116,7 +116,7 @@ export default async function WorkDetailPage({ params }: WorkPageParams) {
               <div>
                 <div className="text-[12px] font-display uppercase tracking-superwide text-white/60">Content Gallery</div>
                 <h2 className="mt-4 font-serif text-4xl">
-                  {isSensei ? "Campaign reels, portraits, and process artifacts." : "My time on the west side."}
+                  {isSensei ? "Campaign reels, portraits, and process artifacts." : "Drone Operations and Visual Assets"}
                 </h2>
               </div>
               <div className="text-xs font-display uppercase tracking-[0.35em] text-white/60">
