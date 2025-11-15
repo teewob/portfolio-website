@@ -32,7 +32,7 @@ export const workRoles: WorkRole[] = [
    
     summary:
       "Sensei Farms is an indoor hydroponic farming company dedicated to strengthening local food security by growing fresh produce year-round. As part of the in-house marketing team, I helped translate the farm’s mission and innovation into visual storytelling—producing reels, photography, and campaigns that highlighted sustainability, community impact, and Hawai‘i-grown wellness across digital platforms.",
-    heroImage: "/film-videography-.jpg",
+    heroImage: "/homepage/sensei farms.png",
     cardImage: "/cinematic-landscape-photography-hawaii-ocean.jpg",
     contributions: [
       "Produced 100+ short-form videos and photo sets showcasing Sensei’s farm-to-table process, chef collaborations, and greenhouse innovation.",
