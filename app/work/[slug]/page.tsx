@@ -9,6 +9,7 @@ import { QuoteCTA } from "@/components/quote-cta"
 import { contactCta } from "@/lib/pages/contact"
 import { getWorkRole, workRoles } from "@/lib/pages/work"
 import { WorkContentGallery } from "@/components/work-content-gallery"
+import { WorkHeroImage } from "@/components/work-hero-image"
 
 type WorkDetailParams = { slug: string }
 type WorkPageParams = { params: Promise<WorkDetailParams> }
@@ -104,13 +105,7 @@ export default async function WorkDetailPage({ params }: WorkPageParams) {
                   ))}
                 </ul>
               </div>
-              <div className="overflow-hidden rounded-[32px] border border-white/10 bg-white/5">
-                <img
-                  src={role.heroImage}
-                  alt={`${role.company} hero`}
-                  className="h-full w-full object-cover"
-                />
-              </div>
+              <WorkHeroImage src={role.heroImage} alt={`${role.company} hero`} />
             </div>
           </div>
         </section>
@@ -120,7 +115,9 @@ export default async function WorkDetailPage({ params }: WorkPageParams) {
             <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
                 <div className="text-[12px] font-display uppercase tracking-superwide text-white/60">Content Gallery</div>
-                <h2 className="mt-4 font-serif text-4xl">Campaign reels, portraits, and process artifacts.</h2>
+                <h2 className="mt-4 font-serif text-4xl">
+                  {isSensei ? "Campaign reels, portraits, and process artifacts." : "My time on the west side."}
+                </h2>
               </div>
               <div className="text-xs font-display uppercase tracking-[0.35em] text-white/60">
                 {role.gallery.length} assets
