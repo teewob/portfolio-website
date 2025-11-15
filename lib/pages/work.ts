@@ -33,7 +33,7 @@ export const workRoles: WorkRole[] = [
     summary:
       "Sensei Farms is an indoor hydroponic farming company dedicated to strengthening local food security by growing fresh produce year-round. As part of the in-house marketing team, I helped translate the farm’s mission and innovation into visual storytelling—producing reels, photography, and campaigns that highlighted sustainability, community impact, and Hawai‘i-grown wellness across digital platforms.",
     heroImage: "/homepage/sensei farms.png",
-    cardImage: "/cinematic-landscape-photography-hawaii-ocean.jpg",
+    cardImage: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763161805/L1090791_m5bo4e.jpg",
     contributions: [
       "Produced 100+ short-form videos and photo sets showcasing Sensei’s farm-to-table process, chef collaborations, and greenhouse innovation.",
       "Curated and maintained the Instagram grid and content calendar to grow engagement and align with brand campaigns..",
@@ -70,13 +70,15 @@ export const workRoles: WorkRole[] = [
         alt: "Harvesting and processing montage",
         aspect: "portrait",
       },
+
       {
-        id: "sf-video-feta-bake",
+        id: "sf-video-seeding",
         type: "video",
-        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763161781/Tomato_Feta_Bake_wxqs3a.mov",
-        alt: "Tomato feta bake test kitchen reel",
+        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763160169/Seeding_vers2_m3ykfx.mp4",  //switch
+        alt: "Seedling cycle montage",
         aspect: "portrait",
       },
+      
       {
         id: "sf-video-ride-along",
         type: "video",
@@ -175,11 +177,11 @@ export const workRoles: WorkRole[] = [
         alt: "Sensei farm facts motion pack",
         aspect: "portrait",
       },
-      {
-        id: "sf-video-seeding",
+    {
+        id: "sf-video-feta-bake",
         type: "video",
-        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763160169/Seeding_vers2_m3ykfx.mp4",
-        alt: "Seedling cycle montage",
+        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763161781/Tomato_Feta_Bake_wxqs3a.mov",
+        alt: "Tomato feta bake test kitchen reel",
         aspect: "portrait",
       },
       {
@@ -197,11 +199,11 @@ export const workRoles: WorkRole[] = [
         aspect: "portrait",
       },
       {
-        id: "sf-video-reef",
+        id: "sf-video-beach-photoshoot",
         type: "video",
-        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763160151/REEF_REEL_DRAFT_1_edas5h.mp4",
-        alt: "Reef cleanup recap",
-        aspect: "portrait",
+        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763160024/Beach_Photoshoot_jz0hdf.mp4", //ari
+        alt: "Beach photoshoot behind the scenes",
+        aspect: "landscape",
       },
       {
         id: "sf-video-prince",
@@ -240,12 +242,12 @@ export const workRoles: WorkRole[] = [
         aspect: "portrait",
       },
 
-        {
-        id: "sf-video-pistachio",
-        type: "video",
-        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763160142/PISTACHIO_STRAWBERRY_SALAD_scbroy.mp4",
-        alt: "Pistachio strawberry salad build",
-        aspect: "portrait",
+      {
+        id: "sf-photo-19",
+        type: "image",
+        src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763160017/AgJan22-1-2_uwlsyf.jpg",
+        alt: "January agriculture journal spread",
+        aspect: "landscape",
       },
       {
         id: "sf-photo-09",
@@ -436,20 +438,8 @@ export const workRoles: WorkRole[] = [
         alt: "Beach lifestyle reel",
         aspect: "landscape",
       },
-      {
-        id: "sf-video-beach-photoshoot",
-        type: "video",
-        src: "http://res.cloudinary.com/djgkz5rkx/video/upload/v1763160024/Beach_Photoshoot_jz0hdf.mp4",
-        alt: "Beach photoshoot behind the scenes",
-        aspect: "landscape",
-      },
-      {
-        id: "sf-photo-19",
-        type: "image",
-        src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763160017/AgJan22-1-2_uwlsyf.jpg",
-        alt: "January agriculture journal spread",
-        aspect: "landscape",
-      },
+
+  
     ],
     location: "Lānaʻi, HI",
   },
