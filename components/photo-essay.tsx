@@ -3,7 +3,7 @@
 import { useMemo, useState, type MouseEvent } from "react"
 import { ArrowLeft, ArrowRight, X } from "lucide-react"
 
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog"
 import { PhotoStory } from "@/lib/pages/photography"
 import { resolveMediaUrl } from "@/lib/utils"
 
@@ -122,6 +122,10 @@ export function PhotoEssay({ story }: PhotoEssayProps) {
           style={{ top: 0, left: 0 }}
           onClick={handleBackdropClick}
         >
+          <div className="sr-only">
+            <DialogTitle>{currentImage?.heading ?? "Photo essay image"}</DialogTitle>
+            <DialogDescription>Use arrows to navigate through the story</DialogDescription>
+          </div>
           <button className="absolute right-6 top-6 rounded-full border border-white/40 bg-black/70 p-3" onClick={() => setOpen(false)} aria-label="Close gallery">
             <X className="size-4" />
           </button>

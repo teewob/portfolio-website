@@ -3,7 +3,7 @@
 import { useCallback, useState, type MouseEvent } from "react"
 import { ArrowLeft, ArrowRight, X } from "lucide-react"
 
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog"
 import type { WorkGalleryItem } from "@/lib/pages/work"
 import { cn } from "@/lib/utils"
 
@@ -134,6 +134,10 @@ export function WorkContentGallery({ items }: { items: WorkGalleryItem[] }) {
           style={{ top: 0, left: 0 }}
           onClick={handleBackdropClick}
         >
+          <div className="sr-only">
+            <DialogTitle>{activeItem?.alt ?? "Work gallery asset"}</DialogTitle>
+            <DialogDescription>Fullscreen viewer with navigation controls</DialogDescription>
+          </div>
           {activeItem && (
             <div className="relative flex h-full w-full max-w-6xl flex-col" onClick={(event) => event.stopPropagation()}>
               <button

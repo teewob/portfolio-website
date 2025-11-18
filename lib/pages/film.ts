@@ -43,7 +43,7 @@ export const filmProjects: FilmProject[] = [
     videoUrl: "https://www.youtube.com/embed/G5DVhND8MD4?rel=0",
     stats: [
       { label: "Release", value: "2025" },
-      { label: "Runtime", value: "08:54" },
+      { label: "Runtime", value: "8:54" },
       { label: "Location", value: "O'ahu" },
     ],
     credits: [
@@ -57,47 +57,47 @@ export const filmProjects: FilmProject[] = [
       "Partnership • Hawai'i State Climate Commission",
     ],
     festivalGallery: [
-      { src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088011/IMG_7407_c22rmj.jpg", alt: "Q&A at Doris Duke Theatre — panel wide shot" },
-      { src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763087977/IMG_7404_tdtx4y.jpg", alt: "Tiara Tenorio speaking during festival Q&A" },
-      { src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763087960/IMG_7403_iao4ah.jpg", alt: "Panel close-up at the Doris Duke Theatre" },
-      { src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088000/IMG_7415_xadqbo.jpg", alt: "Audience question during Loko Iʻa Hoʻōla screening" },
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088011/IMG_7407_c22rmj.jpg", alt: "Q&A at Doris Duke Theatre — panel wide shot" },
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763087977/IMG_7404_tdtx4y.jpg", alt: "Tiara Tenorio speaking during festival Q&A" },
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763087960/IMG_7403_iao4ah.jpg", alt: "Panel close-up at the Doris Duke Theatre" },
+      { src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088000/IMG_7415_xadqbo.jpg", alt: "Audience question during Loko Iʻa Hoʻōla screening" },
     ],
     gallery: [
    
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088733/Screenshot_2025-11-13_164231_zrwpeo.png", alt: "Loko Iʻa still 01" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088733/Screenshot_2025-11-13_164231_zrwpeo.png", alt: "Loko Iʻa still 01" },
       
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088732/Screenshot_2025-11-13_164308_jygmah.png", alt: "Loko Iʻa still 02" },
-      //moanalua fishpond http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088733/Screenshot_2025-11-13_164505_eiiy60.png
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088733/Screenshot_2025-11-13_164505_eiiy60.png", alt: "Loko Iʻa still 03" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088732/Screenshot_2025-11-13_164308_jygmah.png", alt: "Loko Iʻa still 02" },
+      //moanalua fishpond https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088733/Screenshot_2025-11-13_164505_eiiy60.png
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088733/Screenshot_2025-11-13_164505_eiiy60.png", alt: "Loko Iʻa still 03" },
       //koolau mountain range
       { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763089703/Screenshot_2025-11-13_164741_ifl5xz.png", alt: "Loko Iʻa still 04" },
      //grid fishpond 
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088733/Screenshot_2025-11-13_164243_u0wht9.png", alt: "Loko Iʻa still 05" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088732/Screenshot_2025-11-13_164333_wjr4x1.png", alt: "Loko Iʻa still 06" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088734/Screenshot_2025-11-13_164256_ihezsb.png", alt: "Loko Iʻa still 07" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088734/Screenshot_2025-11-13_164913_psopij.png", alt: "Loko Iʻa still 08" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088734/Screenshot_2025-11-13_164948_bapt2l.png", alt: "Loko Iʻa still 09" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088735/Screenshot_2025-11-13_164831_v4glvt.png", alt: "Loko Iʻa still 10" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088735/Screenshot_2025-11-13_164851_k4fla5.png", alt: "Loko Iʻa still 11" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088733/Screenshot_2025-11-13_164243_u0wht9.png", alt: "Loko Iʻa still 05" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088732/Screenshot_2025-11-13_164333_wjr4x1.png", alt: "Loko Iʻa still 06" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088734/Screenshot_2025-11-13_164256_ihezsb.png", alt: "Loko Iʻa still 07" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088734/Screenshot_2025-11-13_164913_psopij.png", alt: "Loko Iʻa still 08" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088734/Screenshot_2025-11-13_164948_bapt2l.png", alt: "Loko Iʻa still 09" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088735/Screenshot_2025-11-13_164831_v4glvt.png", alt: "Loko Iʻa still 10" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088735/Screenshot_2025-11-13_164851_k4fla5.png", alt: "Loko Iʻa still 11" },
       { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088741/Screenshot_2025-11-13_164928_znvr6k.png", alt: "Loko Iʻa still 12" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088742/Screenshot_2025-11-13_164543_yjk7ut.png", alt: "Loko Iʻa still 13" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088736/Screenshot_2025-11-13_164608_ukqknw.png", alt: "Loko Iʻa still 14" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088736/Screenshot_2025-11-13_164637_z3n2cn.png", alt: "Loko Iʻa still 15" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088736/Screenshot_2025-11-13_164616_paomye.png", alt: "Loko Iʻa still 16" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088737/Screenshot_2025-11-13_164703_etfdvt.png", alt: "Loko Iʻa still 17" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088742/Screenshot_2025-11-13_164543_yjk7ut.png", alt: "Loko Iʻa still 13" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088736/Screenshot_2025-11-13_164608_ukqknw.png", alt: "Loko Iʻa still 14" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088736/Screenshot_2025-11-13_164637_z3n2cn.png", alt: "Loko Iʻa still 15" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088736/Screenshot_2025-11-13_164616_paomye.png", alt: "Loko Iʻa still 16" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088737/Screenshot_2025-11-13_164703_etfdvt.png", alt: "Loko Iʻa still 17" },
 
       //composition trash 
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088741/Screenshot_2025-11-13_164645_sobwg2.png", alt: "Loko Iʻa still 18" },
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088741/Screenshot_2025-11-13_164721_zvbjtw.png", alt: "Loko Iʻa still 19" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088741/Screenshot_2025-11-13_164645_sobwg2.png", alt: "Loko Iʻa still 18" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088741/Screenshot_2025-11-13_164721_zvbjtw.png", alt: "Loko Iʻa still 19" },
 
       //blue fish pond
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088737/Screenshot_2025-11-13_165016_lhw5te.png", alt: "Loko Iʻa still 20" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088737/Screenshot_2025-11-13_165016_lhw5te.png", alt: "Loko Iʻa still 20" },
 
     //i'a gates 
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088735/Screenshot_2025-11-13_165002_x99mxa.png", alt: "Loko Iʻa still 21" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088735/Screenshot_2025-11-13_165002_x99mxa.png", alt: "Loko Iʻa still 21" },
 
       //underwater gopro
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088735/Screenshot_2025-11-13_164954_xh5yfg.png", alt: "Loko Iʻa still 22" },
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088735/Screenshot_2025-11-13_164954_xh5yfg.png", alt: "Loko Iʻa still 22" },
     ],
   },
   {
@@ -144,16 +144,16 @@ export const filmProjects: FilmProject[] = [
       { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763092497/Screenshot_2025-11-13_174912_wb0qmr.png", alt: "Pedestrians still 10" }, //5-2
  
     ],
-    //1-1 http://res.cloudinary.com/djgkz5rkx/image/upload/v1763092399/Screenshot_2025-11-13_174056_j6d8wv.png
-    //1-2 http://res.cloudinary.com/djgkz5rkx/image/upload/v1763092400/Screenshot_2025-11-13_174109_ge6vf6.png
-    //2-1 http://res.cloudinary.com/djgkz5rkx/image/upload/v1763091604/Screenshot_2024-05-05_205444_mwjaod.png
-    //2-2 http://res.cloudinary.com/djgkz5rkx/image/upload/v1763092424/Screenshot_2025-11-13_174557_b1oo08.png
-    //3-1 http://res.cloudinary.com/djgkz5rkx/image/upload/v1763091587/Screenshot_2024-05-05_201531_zgq4xr.png
-    //3-2 http://res.cloudinary.com/djgkz5rkx/image/upload/v1763091588/Screenshot_2024-05-05_205106_sraq64.png
-    //4-1 http://res.cloudinary.com/djgkz5rkx/image/upload/v1763092463/Screenshot_2025-11-13_174944_erqsno.png
-    //4-2 http://res.cloudinary.com/djgkz5rkx/image/upload/v1763092481/Screenshot_2025-11-13_175003_wecqu6.png
-    //5-1 http://res.cloudinary.com/djgkz5rkx/image/upload/v1763091606/Screenshot_2024-05-05_205659_e3dowm.png
-    //5-2 http://res.cloudinary.com/djgkz5rkx/image/upload/v1763092497/Screenshot_2025-11-13_174912_wb0qmr.png
+    //1-1 https://res.cloudinary.com/djgkz5rkx/image/upload/v1763092399/Screenshot_2025-11-13_174056_j6d8wv.png
+    //1-2 https://res.cloudinary.com/djgkz5rkx/image/upload/v1763092400/Screenshot_2025-11-13_174109_ge6vf6.png
+    //2-1 https://res.cloudinary.com/djgkz5rkx/image/upload/v1763091604/Screenshot_2024-05-05_205444_mwjaod.png
+    //2-2 https://res.cloudinary.com/djgkz5rkx/image/upload/v1763092424/Screenshot_2025-11-13_174557_b1oo08.png
+    //3-1 https://res.cloudinary.com/djgkz5rkx/image/upload/v1763091587/Screenshot_2024-05-05_201531_zgq4xr.png
+    //3-2 https://res.cloudinary.com/djgkz5rkx/image/upload/v1763091588/Screenshot_2024-05-05_205106_sraq64.png
+    //4-1 https://res.cloudinary.com/djgkz5rkx/image/upload/v1763092463/Screenshot_2025-11-13_174944_erqsno.png
+    //4-2 https://res.cloudinary.com/djgkz5rkx/image/upload/v1763092481/Screenshot_2025-11-13_175003_wecqu6.png
+    //5-1 https://res.cloudinary.com/djgkz5rkx/image/upload/v1763091606/Screenshot_2024-05-05_205659_e3dowm.png
+    //5-2 https://res.cloudinary.com/djgkz5rkx/image/upload/v1763092497/Screenshot_2025-11-13_174912_wb0qmr.png
 
   },
   {

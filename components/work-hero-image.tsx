@@ -3,7 +3,7 @@
 import { useState, type MouseEvent } from "react"
 import { X } from "lucide-react"
 
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog"
 import { cn } from "@/lib/utils"
 
 type WorkHeroImageProps = {
@@ -63,6 +63,10 @@ export function WorkHeroImage({
           style={{ top: 0, left: 0 }}
           onClick={handleBackdropClick}
         >
+          <div className="sr-only">
+            <DialogTitle>{alt}</DialogTitle>
+            <DialogDescription>Fullscreen hero image preview</DialogDescription>
+          </div>
           <div className="relative flex h-full w-full max-w-5xl flex-col" onClick={(event) => event.stopPropagation()}>
             {!hideCloseButton && (
               <button

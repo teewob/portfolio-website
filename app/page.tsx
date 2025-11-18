@@ -65,7 +65,7 @@ export default function HomePage() {
                 <div className="grain-mask  p-10 shadow-[0_35px_90px_rgba(0,0,0,0.65)]">
                 <div className="mx-auto aspect-square w-[60vw] max-w-[500px]">
                     <img
-                      src="http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448942/fqs_2025-02-03_082522.637_npbc9e.jpg"
+                      src="https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448942/fqs_2025-02-03_082522.637_npbc9e.jpg"
                       alt="Tiara Tenorio portrait"
                       className="h-full w-full object-cover object-center"
                     />
@@ -255,7 +255,7 @@ export default function HomePage() {
             <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
               <div className="flex justify-center">
                 <WorkHeroImage
-                  src="http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448936/tiara-oceanside_ep59cf.jpg"
+                  src="https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448936/tiara-oceanside_ep59cf.jpg"
                   alt="Tiara Tenorio sitting oceanside at dusk"
                   unstyled
                   className="w-full max-w-3xl"

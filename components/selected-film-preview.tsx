@@ -5,14 +5,14 @@ import { useEffect, useMemo, useState } from "react"
 import { cn } from "@/lib/utils"
 
 const filmThumbs = [
-  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448873/Screenshot_2025-11-14_003016_fj2ghj.png",
-  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448867/Screenshot_2025-11-14_002939_c92aaw.png",
-  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448850/Screenshot_2025-11-13_164231_rjshoe.png",
-  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448841/Screenshot_2025-11-14_002641_wepecu.png",
-  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448836/Screenshot_2025-11-13_174407_kbgxfo.png",
-  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448826/Screenshot_2025-11-13_164913_zm4btj.png",
-  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448821/Screenshot_2025-11-13_164851_lno0le.png",
-  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448811/Screenshot_2025-11-13_164645_mc6ez8.png",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448873/Screenshot_2025-11-14_003016_fj2ghj.png",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448867/Screenshot_2025-11-14_002939_c92aaw.png",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448850/Screenshot_2025-11-13_164231_rjshoe.png",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448841/Screenshot_2025-11-14_002641_wepecu.png",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448836/Screenshot_2025-11-13_174407_kbgxfo.png",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448826/Screenshot_2025-11-13_164913_zm4btj.png",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448821/Screenshot_2025-11-13_164851_lno0le.png",
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448811/Screenshot_2025-11-13_164645_mc6ez8.png",
 ]
 
 type SelectedFilmPreviewProps = {

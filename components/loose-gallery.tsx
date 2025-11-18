@@ -3,7 +3,7 @@
 import { useEffect, useState, type MouseEvent } from "react"
 import { ArrowLeft, ArrowRight, X } from "lucide-react"
 
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog"
 import { cn, resolveMediaUrl } from "@/lib/utils"
 
 type LooseGalleryItem = string | { src: string; type?: "image" | "video"; alt?: string }
@@ -126,6 +126,10 @@ export function LooseGallery({
           style={{ top: 0, left: 0 }}
           onClick={handleBackdropClick}
         >
+          <div className="sr-only">
+            <DialogTitle>{current.alt ?? `Gallery item ${index + 1}`}</DialogTitle>
+            <DialogDescription>Fullscreen gallery viewer with navigation controls</DialogDescription>
+          </div>
           <button
             type="button"
             className="absolute right-6 top-6 rounded-full border border-white/40 bg-black/70 p-3"

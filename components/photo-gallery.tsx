@@ -4,7 +4,7 @@ import { useState, type MouseEvent } from "react"
 import Image from "next/image"
 import { ArrowLeft, ArrowRight, X } from "lucide-react"
 
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog"
 import { cn, resolveMediaUrl } from "@/lib/utils"
 
 type GalleryItem = {
@@ -42,6 +42,8 @@ export function PhotoGallery({ items, layout = "grid", showCaptions = true }: Ph
   }
 
   if (!items?.length) return null
+
+  const currentItem = items[index] ?? items[0]
 
   return (
     <>
@@ -98,6 +100,10 @@ export function PhotoGallery({ items, layout = "grid", showCaptions = true }: Ph
           style={{ top: 0, left: 0 }}
           onClick={handleBackdropClick}
         >
+          <div className="sr-only">
+            <DialogTitle>{currentItem?.caption || `Gallery image ${index + 1}`}</DialogTitle>
+            <DialogDescription>Fullscreen preview with navigation controls</DialogDescription>
+          </div>
           <button className="absolute right-6 top-6 rounded-full border border-white/40 bg-black/70 p-3" onClick={() => setOpen(false)} aria-label="Close gallery">
             <X className="size-4" />
           </button>
@@ -105,8 +111,8 @@ export function PhotoGallery({ items, layout = "grid", showCaptions = true }: Ph
             <div className="relative flex-1">
               <div className="absolute inset-0 flex items-center justify-center p-6">
                 <Image
-                  src={resolveMediaUrl(items[index].src)}
-                  alt={items[index].caption}
+                  src={resolveMediaUrl(currentItem.src)}
+                  alt={currentItem.caption}
                   fill
                   className="!static h-full w-full object-contain"
                   priority
