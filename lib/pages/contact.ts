@@ -13,8 +13,8 @@ export const contactInfo = {
     },
     {
       label: "Instagram",
-      value: "@tiaratenorio",
-      href: "https://instagram.com",
+      value: "@filmsfromtiara",
+      href: "https://instagram.com/filmsfromtiara",
     },
   ],
 }
@@ -23,9 +23,9 @@ export const contactCta = {
   quote: "Learn more about inquiring or collaboration on projects.",
   email: "tiaraoreos@gmail.com",
   socials: [
-    { label: "Instagram", href: "https://instagram.com/worksbytiara" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "YouTube", href: "https://youtube.com" },
+    { label: "Instagram", href: "https://instagram.com/filmsfromtiara" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/tiara-marie-tenorio-345a9624b/" },
+    { label: "YouTube", href: "https://www.youtube.com/@tiaraoreos" },
   ],
 }
 
