@@ -50,8 +50,8 @@ const roll001Photos: LooseRollMedia[] = [
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940654/waikikisunsets_xjr6pc.jpg", //P waikiki sunset
   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941056/sunteeportraits_lrwsg5.mp4", type: "video" }, //P tiara sun gif
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940652/teesun1_ws2ygy.jpg", //P tee sun 1
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940644/teesun2_de3rd4.jpg", //P tee sun 2
-  { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940963/teeinsun_k5dwoe.mp4", type: "video" },
+  //"https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940644/teesun2_de3rd4.jpg", //P tee sun 2
+ // { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940963/teeinsun_k5dwoe.mp4", type: "video" },
 
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940660/dolepark_n9gvym.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940573/dolepark1_j1qzcq.jpg",
@@ -194,7 +194,7 @@ const roll001Photos: LooseRollMedia[] = [
     { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941036/kubshif_d5v6dj.mp4", type: "video" },
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940617/geetar1_jhocih.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940616/geetar2_pan4qx.jpg",
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940618/geetar3_duat1r.jpg",
+
 
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940547/cat1_v1kfia.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940547/cat2_etcxcs.jpg",
