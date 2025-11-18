@@ -5,14 +5,14 @@ import { useEffect, useMemo, useState } from "react"
 import { cn } from "@/lib/utils"
 
 const filmThumbs = [
-  "/homepage/Screenshot%202025-11-13%20164645.png",
-  "/homepage/Screenshot%202025-11-13%20164851.png",
-  "/homepage/Screenshot%202025-11-13%20164913.png",
-  "/homepage/Screenshot%202025-11-13%20174557.png",
-  "/homepage/Screenshot%202025-11-14%20002641.png",
-  "/homepage/Screenshot%202025-11-14%20002826.png",
-  "/homepage/Screenshot%202025-11-14%20002939.png",
-  "/homepage/Screenshot%202025-11-14%20003016.png",
+  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448873/Screenshot_2025-11-14_003016_fj2ghj.png",
+  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448867/Screenshot_2025-11-14_002939_c92aaw.png",
+  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448850/Screenshot_2025-11-13_164231_rjshoe.png",
+  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448841/Screenshot_2025-11-14_002641_wepecu.png",
+  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448836/Screenshot_2025-11-13_174407_kbgxfo.png",
+  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448826/Screenshot_2025-11-13_164913_zm4btj.png",
+  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448821/Screenshot_2025-11-13_164851_lno0le.png",
+  "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448811/Screenshot_2025-11-13_164645_mc6ez8.png",
 ]
 
 type SelectedFilmPreviewProps = {

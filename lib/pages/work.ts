@@ -34,7 +34,7 @@ export const workRoles: WorkRole[] = [
    
     summary:
       "Sensei Farms is an indoor hydroponic farming company dedicated to strengthening local food security by growing fresh produce year-round. As part of the in-house marketing team, I helped translate the farm’s mission and innovation into visual storytelling—producing reels, photography, and campaigns that highlighted sustainability, community impact, and Hawai‘i-grown wellness across digital platforms.",
-    heroImage: "/homepage/sensei farms.png",
+    heroImage: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448913/sensei_farms_wlcrtv.png",
     cardImage: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763161805/L1090791_m5bo4e.jpg",
     contributions: [
       "Produced 100+ short-form videos and photo sets showcasing Sensei’s farm-to-table process, chef collaborations, and greenhouse innovation.",
@@ -454,8 +454,8 @@ export const workRoles: WorkRole[] = [
 
     summary:
       "Located at the most populated destination in Waikīkī, Hans Hedemann Surf School is one of Hawaiʻi’s most established surf institutions—founded by professional surfer Hans Hedemann to share the joy and discipline of surfing with visitors from around the world. Within this setting, I support both lesson operations and creative media, guiding students through ocean safety and hands-on instruction while documenting their surf experiences through aerial and DSLR footage.",
-    heroImage: "/homepage/IMG_1360.jpg",
-    cardImage: "/homepage/IMG_1360.jpg",
+    heroImage: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448784/IMG_1360_xkoqee.jpg",
+    cardImage: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448784/IMG_1360_xkoqee.jpg",
     contributions: [
       "Led ocean safety briefings and personalized surf lessons based on skill level and conditions.",
       "Operated drone and DSLR systems to capture surf footage and create guest media packages.",
@@ -539,8 +539,8 @@ export const workRoles: WorkRole[] = [
       "",
     summary:
       "Through Kupu’s Conservation Leadership Development Program, I served with Grow Good Hawaiʻi, an organization advancing community food security and regenerative land practices on Oʻahu’s west side. Working in a team alongside the Indigenous Food Systems Manager, our project, “Trees for People,” seeks to plant 2,000 fruit and native trees across the Waiʻanae Coast and Waimānalo, cultivating urban food forests rooted in traditional Hawaiian agroforestry systems.",
-    heroImage: "/homepage/IMG_0294.jpeg",
-    cardImage: "/homepage/IMG_0294.jpeg",
+    heroImage: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448762/IMG_0294_czxxk0.jpg",
+    cardImage: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763448762/IMG_0294_czxxk0.jpg",
     contributions: [
       "Maintain nursery workflows—propagating seedlings, managing irrigation, and tracking plant development across multiple garden sites.",
       "Support the installation of community food gardens, coordinating logistics, soil preparation, and post-planting care.",
