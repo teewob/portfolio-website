@@ -4,7 +4,7 @@ import { useState, type MouseEvent } from "react"
 import { X } from "lucide-react"
 
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog"
-import { cn } from "@/lib/utils"
+import { cn, resolveMediaUrl } from "@/lib/utils"
 
 type WorkHeroImageProps = {
   src: string
@@ -46,7 +46,7 @@ export function WorkHeroImage({
         aria-label="Open hero image"
       >
         <img
-          src={src}
+          src={resolveMediaUrl(src)}
           alt={alt}
           className={cn(
             "h-full w-full object-cover transition",
@@ -82,7 +82,7 @@ export function WorkHeroImage({
             <div className="relative flex-1">
               <div className="absolute inset-0 flex items-center justify-center p-6">
                 <img
-                  src={src}
+                  src={resolveMediaUrl(src)}
                   alt={alt}
                   className={cn(
                     "max-h-[90vh] w-full object-contain",

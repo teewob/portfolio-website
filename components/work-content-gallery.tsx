@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, X } from "lucide-react"
 
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog"
 import type { WorkGalleryItem } from "@/lib/pages/work"
-import { cn } from "@/lib/utils"
+import { cn, resolveMediaUrl } from "@/lib/utils"
 
 type Orientation = NonNullable<WorkGalleryItem["aspect"]>
 
@@ -97,18 +97,19 @@ export function WorkContentGallery({ items }: { items: WorkGalleryItem[] }) {
                       loop
                       muted
                       playsInline
-                      poster={item.poster}
+                      preload="metadata"
+                      poster={resolveMediaUrl(item.poster ?? "", "image")}
                       onLoadedMetadata={(event) =>
                         registerOrientation(item.id, event.currentTarget.videoWidth, event.currentTarget.videoHeight)
                       }
                       className="absolute inset-0 h-full w-full cursor-pointer object-cover"
                     >
-                      <source src={item.src} />
+                      <source src={resolveMediaUrl(item.src, "video")} />
                     </video>
                   )
                 ) : (
                   <img
-                    src={item.src}
+                    src={resolveMediaUrl(item.src)}
                     alt={item.alt}
                     onLoad={(event) =>
                       registerOrientation(item.id, event.currentTarget.naturalWidth, event.currentTarget.naturalHeight)
@@ -166,18 +167,19 @@ export function WorkContentGallery({ items }: { items: WorkGalleryItem[] }) {
                     ) : (
                       <video
                         key={activeItem.id}
-                        src={activeItem.src}
-                        poster={activeItem.poster}
+                        src={resolveMediaUrl(activeItem.src, "video")}
+                        poster={resolveMediaUrl(activeItem.poster ?? "", "image")}
                         autoPlay
                         loop
                         controls
                         playsInline
+                        preload="metadata"
                         className="max-h-[90vh] w-full rounded-[32px] object-contain"
                       />
                     )
                   ) : (
                     <img
-                      src={activeItem.src}
+                      src={resolveMediaUrl(activeItem.src)}
                       alt={activeItem.alt}
                       className="max-h-[90vh] w-full rounded-[32px] object-contain"
                     />
