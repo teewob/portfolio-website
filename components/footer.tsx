@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { Instagram, Mail } from "lucide-react"
 
 export function Footer() {
   return (
@@ -49,25 +48,12 @@ export function Footer() {
           </div>
 
           <div className="space-y-4">
-            <div className="text-[12px] uppercase tracking-[0.4em] text-muted-foreground font-display">Connect</div>
-            <div className="flex items-center gap-4">
-              <Link
-                href="/contact"
-                className="inline-flex size-11 items-center justify-center rounded-full border border-border/70 bg-background/90 text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
-              >
-                <Mail className="h-4 w-4" />
-                <span className="sr-only">Email</span>
-              </Link>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex size-11 items-center justify-center rounded-full border border-border/70 bg-background/90 text-muted-foreground transition-colors hover:border-foreground hover:text-foreground"
-              >
-                <Instagram className="h-4 w-4" />
-                <span className="sr-only">Instagram</span>
-              </a>
-            </div>
+            <Link
+              href="/contact"
+              className="text-[12px] uppercase tracking-[0.4em] text-muted-foreground transition-colors hover:text-foreground font-display inline-flex items-center gap-2"
+            >
+              Connect →
+            </Link>
           </div>
         </div>
 

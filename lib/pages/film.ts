@@ -58,9 +58,9 @@ export const filmProjects: FilmProject[] = [
     ],
     festivalGallery: [
       { src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088011/IMG_7407_c22rmj.jpg", alt: "Q&A at Doris Duke Theatre — panel wide shot" },
-      { src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088000/IMG_7415_xadqbo.jpg", alt: "Audience question during Loko Iʻa Hoʻōla screening" },
       { src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763087977/IMG_7404_tdtx4y.jpg", alt: "Tiara Tenorio speaking during festival Q&A" },
       { src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763087960/IMG_7403_iao4ah.jpg", alt: "Panel close-up at the Doris Duke Theatre" },
+      { src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088000/IMG_7415_xadqbo.jpg", alt: "Audience question during Loko Iʻa Hoʻōla screening" },
     ],
     gallery: [
    
@@ -79,11 +79,7 @@ export const filmProjects: FilmProject[] = [
       { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088734/Screenshot_2025-11-13_164948_bapt2l.png", alt: "Loko Iʻa still 09" },
       { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088735/Screenshot_2025-11-13_164831_v4glvt.png", alt: "Loko Iʻa still 10" },
       { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088735/Screenshot_2025-11-13_164851_k4fla5.png", alt: "Loko Iʻa still 11" },
-
-      //herb
-      { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088741/Screenshot_2025-11-13_164928_znvr6k.png", alt: "Loko Iʻa still 12" },
-
-      //derek
+      { type: "image", src: "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763088741/Screenshot_2025-11-13_164928_znvr6k.png", alt: "Loko Iʻa still 12" },
       { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088742/Screenshot_2025-11-13_164543_yjk7ut.png", alt: "Loko Iʻa still 13" },
       { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088736/Screenshot_2025-11-13_164608_ukqknw.png", alt: "Loko Iʻa still 14" },
       { type: "image", src: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763088736/Screenshot_2025-11-13_164637_z3n2cn.png", alt: "Loko Iʻa still 15" },

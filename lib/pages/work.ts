@@ -454,8 +454,8 @@ export const workRoles: WorkRole[] = [
 
     summary:
       "Located at the most populated destination in Waikīkī, Hans Hedemann Surf School is one of Hawaiʻi’s most established surf institutions—founded by professional surfer Hans Hedemann to share the joy and discipline of surfing with visitors from around the world. Within this setting, I support both lesson operations and creative media, guiding students through ocean safety and hands-on instruction while documenting their surf experiences through aerial and DSLR footage.",
-    heroImage: "/cinematic-landscape-photography-hawaii-ocean-sunse.jpg",
-    cardImage: "http://res.cloudinary.com/djgkz5rkx/image/upload/v1763195294/IMG_0060_ul8oo4.jpg",
+    heroImage: "/homepage/IMG_1360.jpg",
+    cardImage: "/homepage/IMG_1360.jpg",
     contributions: [
       "Led ocean safety briefings and personalized surf lessons based on skill level and conditions.",
       "Operated drone and DSLR systems to capture surf footage and create guest media packages.",
@@ -467,10 +467,20 @@ export const workRoles: WorkRole[] = [
       {
         id: "hhs-video-01",
         type: "video",
-        src: "https://www.youtube.com/embed/niiKuU22jt4?autoplay=1&mute=1&loop=1&controls=0&playsinline=1&playlist=niiKuU22jt4",
-        fullscreenSrc: "https://www.youtube.com/embed/niiKuU22jt4?autoplay=1&controls=1&rel=0&mute=0",
+        src: "https://www.youtube.com/embed/niiKuU22jt4?rel=0&controls=1",
+        fullscreenSrc: "https://www.youtube.com/embed/niiKuU22jt4?autoplay=1&rel=0",
         alt: "Drone flyover capturing Waikīkī surf lineup",
         caption: "Aerial drone pass over Publics lineup",
+        provider: "youtube",
+        aspect: "landscape",
+      },
+      {
+        id: "hhs-video-01b",
+        type: "video",
+        src: "https://www.youtube.com/embed/63z6T1j82iE?rel=0&controls=1",
+        fullscreenSrc: "https://www.youtube.com/embed/63z6T1j82iE?autoplay=1&rel=0",
+        alt: "Guest surf highlights edit",
+        caption: "Drone operations & visual assets reel",
         provider: "youtube",
         aspect: "landscape",
       },

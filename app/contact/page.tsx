@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import { Instagram, Mail, MapPin } from "lucide-react"
+import { Instagram, Linkedin, Mail, MapPin, Youtube } from "lucide-react"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -189,12 +189,54 @@ export default function ContactPage() {
                         Instagram
                       </div>
                       <a
-                        href="https://instagram.com"
+                        href="https://instagram.com/filmsfromtiara"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-3 block text-sm text-foreground transition-colors hover:text-accent"
                       >
-                        @tiaratenorio
+                        @filmsfromtiara
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="rounded-[28px] border border-border/70 bg-card/80 p-0">
+                  <CardContent className="flex items-start gap-4 p-7">
+                    <div className="flex size-10 items-center justify-center rounded-full border border-border/60 bg-secondary/50 text-muted-foreground">
+                      <Linkedin className="size-5" />
+                    </div>
+                    <div>
+                      <div className="font-display text-[11px] uppercase tracking-[0.32em] text-muted-foreground/70">
+                        LinkedIn
+                      </div>
+                      <a
+                        href="https://www.linkedin.com/in/tiara-marie-tenorio-345a9624b/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 block text-sm text-foreground transition-colors hover:text-accent"
+                      >
+                        linkedin.com/in/tiara-marie-tenorio-345a9624b
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="rounded-[28px] border border-border/70 bg-card/80 p-0">
+                  <CardContent className="flex items-start gap-4 p-7">
+                    <div className="flex size-10 items-center justify-center rounded-full border border-border/60 bg-secondary/50 text-muted-foreground">
+                      <Youtube className="size-5" />
+                    </div>
+                    <div>
+                      <div className="font-display text-[11px] uppercase tracking-[0.32em] text-muted-foreground/70">
+                        YouTube
+                      </div>
+                      <a
+                        href="https://www.youtube.com/@tiaraoreos"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 block text-sm text-foreground transition-colors hover:text-accent"
+                      >
+                        youtube.com/@tiaraoreos
                       </a>
                     </div>
                   </CardContent>
