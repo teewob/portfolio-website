@@ -99,7 +99,7 @@ const roll001Photos: LooseRollMedia[] = [
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940552/3greenkube_kyo36d.jpg", //green kube coconut
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940637/4greenkube_buzsvk.jpg",
 
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940554/IMG_3946_pfsrwb.jpg", //ava tee at hulas
+ 
 
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940621/ket_vzwxmu.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940622/ket1_ol9tap.jpg",
@@ -260,7 +260,7 @@ const roll002Photos: LooseRollMedia[] = [
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844820/brooke_tdzjzj.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844820/brooke1_guuccv.jpg",
   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762844984/ellaguitar_hlpkv9.mp4", type: "video" },
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844833/fqs_2025-05-03_235343.454_yf5kbm.jpg",
+  //"https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844833/fqs_2025-05-03_235343.454_yf5kbm.jpg", //ella
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844834/fqs_2025-05-03_235353.507_zld4zz.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844834/fqs_2025-05-03_235439.855_sq4ize.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762844834/fqs_2025-05-04_093044.785_xvlhmm.jpg",
