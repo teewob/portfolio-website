@@ -64,7 +64,7 @@ export default function ContactPage() {
                     <input
                       type="hidden"
                       name="_next"
-                      value="https://your-domain.com/contact?sent=1"
+                      value="https://filmsfromtiara.vercel.app/contact?sent=1"
                     />
                     <input
                       type="hidden"
