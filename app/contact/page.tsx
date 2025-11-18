@@ -20,13 +20,6 @@ export default function ContactPage() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Placeholder submission handling
-    console.log("Form submitted:", formData)
-    alert("Thank you for your message! This is a placeholder — connect this form to your preferred email service.")
-  }
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
       ...prev,
@@ -59,7 +52,26 @@ export default function ContactPage() {
             <div className="mt-16 grid gap-8 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,0.8fr)]">
               <Card className="rounded-[32px] border border-border/70 bg-card/80 p-0">
                 <CardContent className="p-10">
-                  <form onSubmit={handleSubmit} className="space-y-7">
+                  {/* ✅ Form wired to FormSubmit */}
+                  <form
+                    action="https://formsubmit.co/tiaraoreos@gmail.com"
+                    method="POST"
+                    className="space-y-7"
+                  >
+                    {/* Hidden config fields */}
+                    <input type="hidden" name="_captcha" value="false" />
+                    {/* change this to your deployed URL if you want a custom thank-you page */}
+                    <input
+                      type="hidden"
+                      name="_next"
+                      value="https://your-domain.com/contact?sent=1"
+                    />
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      value="New message from your portfolio contact form"
+                    />
+
                     <div className="grid gap-2">
                       <Label
                         htmlFor="name"
@@ -145,6 +157,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
+              {/* right column stays the same */}
               <div className="space-y-6">
                 <Card className="rounded-[28px] border border-border/70 bg-card/80 p-0">
                   <CardContent className="flex items-start gap-4 p-7">
