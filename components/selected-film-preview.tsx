@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react"
 
-import { cn, resolveMediaUrl } from "@/lib/utils"
+import { cn } from "@/lib/utils"
 
 const filmThumbs = [
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448873/Screenshot_2025-11-14_003016_fj2ghj.png",
@@ -36,7 +36,7 @@ export function SelectedFilmPreview({ className }: SelectedFilmPreviewProps) {
       {images.map((src, idx) => (
         <img
           key={src}
-          src={resolveMediaUrl(src)}
+          src={src}
           alt="Film still from selected work"
           className={cn(
             "absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out",
