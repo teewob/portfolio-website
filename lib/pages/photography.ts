@@ -72,11 +72,9 @@ const roll001Photos: LooseRollMedia[] = [
 
   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940916/teenaps_agdcpi.mp4", type: "video" },
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940585/ella1_c92r5n.jpg",
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940594/ella2_ac0ofv.jpg",
+  //"https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940594/ella2_ac0ofv.jpg",
 
 
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940623/kap_ysu4vq.jpg",//ella kap
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940627/kap2_djjmah.jpg",
 
   
   
@@ -86,7 +84,7 @@ const roll001Photos: LooseRollMedia[] = [
 
 
   
-  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940623/kewaled_alxxoo.jpg", //KEWALOS
+
   
 
 
@@ -101,6 +99,9 @@ const roll001Photos: LooseRollMedia[] = [
 
  
 
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940623/kap_ysu4vq.jpg",//ella kap
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940627/kap2_djjmah.jpg",
+  
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940621/ket_vzwxmu.jpg",
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940622/ket1_ol9tap.jpg",
 
@@ -129,6 +130,8 @@ const roll001Photos: LooseRollMedia[] = [
 
 
   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762941021/kubobeachport_xtvuyi.mp4", type: "video" }, //kubo beach sand
+
+  "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940623/kewaled_alxxoo.jpg", //KEWALOS
 
   "https://res.cloudinary.com/djgkz5rkx/image/upload/v1762940625/kewaled1_htek2f.jpg", //KEWALOS SUNSET
   { src: "https://res.cloudinary.com/djgkz5rkx/video/upload/v1762940950/purplekewalowaves_uyaf97.mp4", type: "video" },
