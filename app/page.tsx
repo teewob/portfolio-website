@@ -11,7 +11,6 @@ import { SelectedFilmPreview } from "@/components/selected-film-preview"
 import { SelectedIllustrationPreview } from "@/components/selected-illustration-preview"
 import { contactCta } from "@/lib/pages/contact"
 import { experiences } from "@/lib/pages/home"
-import { WorkHeroImage } from "@/components/work-hero-image"
 
 export default function HomePage() {
   return (
@@ -215,7 +214,7 @@ export default function HomePage() {
                   <Link
                     key={experience.company}
                     href={`/work/${experience.slug}`}
-                    aria-label={`View ${experience.company} resume`}
+                    aria-label={`View ${experience.company} case study`}
                     className="group relative flex min-w-[280px] max-w-[360px] snap-start flex-col rounded-[28px] border border-white/10 bg-white/5 shadow-[0_25px_60px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                   >
                     <div className="relative h-56 overflow-hidden rounded-t-[28px]">
@@ -254,13 +253,10 @@ export default function HomePage() {
           <div className="mx-auto w-full max-w-6xl px-6 py-24 md:px-8 md:py-36">
             <div className="grid gap-12 lg:grid-cols-[1.05fr_1fr] lg:items-center">
               <div className="flex justify-center">
-                <WorkHeroImage
-                  src="https://res.cloudinary.com/djgkz5rkx/image/upload/v1763448936/tiara-oceanside_ep59cf.jpg"
+                <img
+                  src="/homepage/tiara-oceanside.jpg"
                   alt="Tiara Tenorio sitting oceanside at dusk"
-                  unstyled
-                  className="w-full max-w-3xl"
-                  imageClassName="w-full h-auto object-contain"
-                  hideCloseButton
+                  className="w-full max-w-3xl h-auto object-contain"
                 />
               </div>
 
@@ -287,8 +283,8 @@ export default function HomePage() {
                     light, pace, and gesture.
                   </p>
                   <p>
-                    Today I live on Oʻahu inspired by Hawai'i whilst carrying the voices that raised me from Guam and Saipan. If my work does
-                    its job, it helps people recognize themselves, honor their elders, and care for land. If you want to
+                    Today I live on Oʻahu, inspired by Hawai'i whilst carrying the voices that raised me from Guam and Saipan. If my work does
+                    its job, it helps people recognize themselves, honor their elders, and care for the land. If you want to
                     collaborate on film, photo, or community documentation—let’s take our time together.
                   </p>
                 </div>
